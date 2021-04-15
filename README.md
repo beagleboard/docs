@@ -1,6 +1,5 @@
 # Support
-<p>
-BeagleBoard.org products and <a href="https://www.oshwa.org/definition/" class="external">open hardware</a> designs are supported via the on-line community resources. We
+<p>BeagleBoard.org products and <a href="https://www.oshwa.org/definition/" class="external">open hardware</a> designs are supported via the on-line community resources. We
     are very confident in our community's ability to provide useful answers in a timely
     manner. If you don't get a productive response within 24 hours, please escalate
     issues to Jason Kridner (contact info available on the <a href="https://beagleboard.org/about">About Page</a>).
