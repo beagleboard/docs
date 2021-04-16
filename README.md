@@ -13,21 +13,25 @@
  consult the mailing list and IRC channel for support. BeagleBoard.org is a "community"
  project with support only given to those who are willing to discussing their issues 
  openly for the benefit of the entire community.</p>
+
 * <a href="https://beagleboard.org/support/faq">Frequently Asked Questions</a>
 * <a href="https://beagleboard.org//Community">Mailing List and IRC Channel</a>
 
 # Diagnostic resources
 <p>Best to be prepared with good diagnostic information to aide with support.</p>
+
 * <a class="external" href="https://groups.google.com/d/msg/beagleboard/4oo4oL20BEs/MVwxfR-XCAAJ">Example run of 'version.sh' script needed for support requests</a>
 * <a class="external" href="https://github.com/jadonk/beagle-tester">Beagle Tester source</a>
 * <a class="external" href="https://github.com/beagleboard/buildroot/releases">Beagle Tester image releases</a>
 
 # Consulting and other resources
 <p>Need timely response or contract resources because you are building a product?</p>
-* <a href="https://beagleboard.org/resources">Resources</a></li>
+
+* <a href="https://beagleboard.org/resources">Resources</a>
 
 # Repairs
 <p>Repairs and replacements only provided on unmodified boards purchased via an authorized distributor within the first 90 days.  All repaired board will have their flash reset to factory contents.  For repairs and replacements, please contact 'support' at BeagleBoard.org using the RMA form:</p>
+
 * <a href="https://beagleboard.org//support/rma" title="Complete Return Material Authorization form">RMA request</a>
 
 # Understanding Your Beagle
