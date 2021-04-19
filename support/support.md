@@ -42,4 +42,3 @@ Repairs and replacements only provided on unmodified boards purchased via an aut
   * [BeagleBone Cookbook](https://beagleboard.org//cookbook)
   * [Bad to the Bone](https://beagleboard.org//bad-to-the-bone)
 
-

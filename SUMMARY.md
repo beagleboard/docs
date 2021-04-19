@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Support](support.md)
-* [Getting Started](getting-started.md)
+
+## Support
+
+* [Support](support/support.md)
+* [Getting Started](support/getting-started.md)
 
