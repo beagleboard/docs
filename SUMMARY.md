@@ -10,4 +10,5 @@
 ---
 
 * [PRU Cookbook](prucookbook/docs/book.adoc)
+* [BeagleBone Black](beaglebone-black.wiki/System-Reference-Manual.asciidoc)
 
