@@ -6,14 +6,23 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@0.4
-      with:
-        pre-build-command: "apt update -y && apt install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
-        docs-folder: "./"
-        build-command: "sphinx-build -b latexpdf . _build"
+    - run: "apt update -y && apt install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+    - run: pip install sphinx sphinx_typo3_theme
+    - run: "make latexpdf"
     - uses: actions/upload-artifact@v1
       with:
         name: DocsPDF
         path: "_build/latexpdf/BeagleBoard.pdf"
+
+
+#    - uses: ammaraskar/sphinx-action@0.4
+#      with:
+#        pre-build-command: "apt update -y && apt install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended sphinx-common sphinxbase-utils"
+#        docs-folder: "./"
+#        build-command: "sphinx-build -b latexpdf . _build"
+#    - uses: actions/upload-artifact@v1
+#      with:
+#        name: DocsPDF
+#        path: "_build/latexpdf/BeagleBoard.pdf"
 
 
