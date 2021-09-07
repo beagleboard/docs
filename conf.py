@@ -31,8 +31,8 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'BeagleBoard'
-copyright = '2021, BeagleBoard.org'
+project = 'BeagleBoard Docs'
+copyright = '2021, BeagleBoard.org Foundation'
 author = 'BeagleBoard.org'
 
 # The short X.Y version
@@ -183,7 +183,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'BeagleBoard', 'BeagleBoard Documentation',
-     author, 'BeagleBoard', 'One line description of project.',
+     author, 'BeagleBoard.org Foundation', 'Community supported open hardware computers for makers, educators and professionals.',
      'Miscellaneous'),
 ]
 
