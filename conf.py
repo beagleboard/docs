@@ -207,6 +207,7 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
+theme_github_repository = "https://github.com/beagleboard/docs"
 
 # -- Options for intersphinx extension ---------------------------------------
 
