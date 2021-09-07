@@ -22,8 +22,8 @@ import os
 sys.path.append('.')
 #sys.path.insert(0, os.path.abspath('.'))
 #sys.path.insert(0, os.path.abspath('/links'))
-from links.link import *
-from link import *
+#from links.link import *
+#from link import *
 # import sphinx_bootstrap_theme
 # import pydata_sphinx_theme
 # import sphinx_press_theme
