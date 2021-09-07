@@ -16,7 +16,7 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: DocsPDF
-        path: "_build/latexpdf/BeagleBoard.pdf"
+        path: "_build/latex/BeagleBoard.pdf"
 
 
 #    - uses: ammaraskar/sphinx-action@0.4
