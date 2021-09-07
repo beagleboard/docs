@@ -11,12 +11,10 @@ Welcome to BeagleBoard.org's documentation!
    :caption: Contents:
    :glob:
 
-   hello world
-
    docs/README.md
    docs/SUMMARY.md
-   PRUCookbook <https://docs.beagle.cc/PRUCookbook/index.html>
-   BeagleBoard Docs PDF <https://docs.beagle.cc/pdf/BeagleBoard.pdf>
+   PRUCookbook <https://docs.beagleboard.org/PRUCookbook/index.html>
+   BeagleBoard Docs PDF <https://docs.beagleboard.org/BeagleBoard.pdf>
 
 Indices and tables
 ==================
