@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v1
-    - run: "sudo apt update -y && apt install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+    - run: "sudo apt update -y && sudo apt install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
     - run: "sudo pip install sphinx sphinx_typo3_theme"
     - run: "make latexpdf"
     - uses: actions/upload-artifact@v1
