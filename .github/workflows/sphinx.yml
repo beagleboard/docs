@@ -9,10 +9,10 @@ jobs:
     - run: "sudo apt update -y && sudo apt install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
     - uses: actions/cache@v2
       with:
-        path: ~/.cache/.pip
-        key: ${{ hashFiles('requirements.txt') }}
-    - run: "sudo pip install -r requirements.txt"
-    - run: "make latexpdf"
+        path: ~/.cache/pip
+        key: ${{ hashFiles('setup.sh') }}-${{ hashFiles('requirements.txt') }}
+    - run: "./setup.sh"
+    - run: "./build.sh"
     - uses: actions/upload-artifact@v1
       with:
         name: DocsPDF
