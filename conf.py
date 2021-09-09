@@ -32,8 +32,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'BeagleBoard Docs'
-copyright = '2021, BeagleBoard.org Foundation'
-author = 'BeagleBoard.org'
+copyright = '(C) 2021 BeagleBoard.org Foundation. Licensed under CC-BY-SA-4.0.'
+author = 'BeagleBoard.org Foundation'
 
 # The short X.Y version
 version = ''
@@ -69,7 +69,7 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst', '.md', '.adoc']
 
 # The master toctree document.
 master_doc = 'index'
@@ -130,6 +130,10 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
+html_baseurl = 'https://docs.beagleboard.org/'
+html_favicon = 'https://beagleboard.org/static/favicon.ico'
+
+#TODO: need the logo here: html_logo
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
@@ -142,7 +146,7 @@ htmlhelp_basename = 'BeagleBoarddoc'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'letterpaper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
@@ -162,7 +166,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'BeagleBoard.tex', 'BeagleBoard Documentation',
-     'BeagleBoard.org', 'manual', 'false'),
+     'BeagleBoard.org Foundation', 'manual', 'false'),
 ]
 
 
@@ -207,7 +211,13 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
-theme_github_repository = "https://github.com/beagleboard/docs"
+github_repository = "https://github.com/beagleboard/docs"
+github_branch = "master"
+
+global_search_action = "https://beagleboard.org/search"
+
+project_home = "https://beagleboard.org"
+project_issues = "https://github.com/beagleboard/docs/issues"
 
 # -- Options for intersphinx extension ---------------------------------------
 
