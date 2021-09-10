@@ -113,7 +113,13 @@ html_theme = 'sphinx_typo3_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'github_repository': "https://github.com/beagleboard/docs",
+    'github_branch': "master",
+    'global_search_action': "https://beagleboard.org/search",
+    'project_home': "https://beagleboard.org",
+    'project_issues' "https://github.com/beagleboard/docs/issues",
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -209,15 +215,6 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-
-# -- Extension configuration -------------------------------------------------
-github_repository = "https://github.com/beagleboard/docs"
-github_branch = "master"
-
-global_search_action = "https://beagleboard.org/search"
-
-project_home = "https://beagleboard.org"
-project_issues = "https://github.com/beagleboard/docs/issues"
 
 # -- Options for intersphinx extension ---------------------------------------
 
