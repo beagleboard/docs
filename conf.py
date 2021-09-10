@@ -118,7 +118,7 @@ html_theme_options = {
     'github_branch': "master",
     'global_search_action': "https://beagleboard.org/search",
     'project_home': "https://beagleboard.org",
-    'project_issues' "https://github.com/beagleboard/docs/issues",
+    'project_issues' "https://github.com/beagleboard/docs/issues"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
