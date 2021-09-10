@@ -121,6 +121,7 @@ html_theme_options = {
     'global_search_action': "https://beagleboard.org/search",
     'project_home': "https://beagleboard.org",
     'project_issues': "https://github.com/beagleboard/docs/issues",
+    'h2edit_url': "https://docs.beagleboard.org/docs-howto",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
