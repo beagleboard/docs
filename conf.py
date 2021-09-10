@@ -114,8 +114,10 @@ html_theme = 'sphinx_typo3_theme'
 # documentation.
 #
 html_theme_options = {
-    'github_repository': "https://github.com/beagleboard/docs",
-    'github_branch': "master",
+    'github_repository': "beagleboard/docs",
+    'github_branch': "main",
+    'github_sphinx_locale': "",
+    'path_to_documentation_dir': "/",
     'global_search_action': "https://beagleboard.org/search",
     'project_home': "https://beagleboard.org",
     'project_issues': "https://github.com/beagleboard/docs/issues",
