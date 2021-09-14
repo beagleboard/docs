@@ -11,9 +11,9 @@ Welcome to BeagleBoard.org's documentation!
    :caption: Contents:
    :glob:
 
-   docs/README.md
-   docs/SUMMARY.md
-   PRUCookbook <https://docs.beagleboard.org/PRUCookbook/index.html>
+   README.md
+   SUMMARY.md
+   PRUCookbook/docs/index.html
    BeagleBoard Docs PDF <https://docs.beagleboard.org/BeagleBoard.pdf>
 
 Indices and tables
