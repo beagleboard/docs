@@ -28,7 +28,11 @@ Indices and tables
 License
 =======
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Attribute original work to BeagleBoard.org Foundation.
+This work is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>`_. Attribute original work to BeagleBoard.org Foundation.
 
-[![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+.. image:: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+    :width: 88px
+    :height: 31px
+    :align: left
+    :target: http://creativecommons.org/licenses/by-sa/4.0/
 
