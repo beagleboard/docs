@@ -11,10 +11,11 @@ Welcome to the definitive home for BeagleBoard.org documentation.
 Click on the table of contents on the left for the documentation section of interest or jump forward or back sections by clicking on the section titles below.
 
 .. toctree::
-   :maxdepth: 6
+   :maxdepth: 2
    :caption: Contents:
    :glob:
 
+   Support <support/index.md>
    PRU Cookbook <PRUCookbook/docs/index.html>
    BeagleBoard Docs PDF <https://docs.beagleboard.org/BeagleBoard.pdf>
 
