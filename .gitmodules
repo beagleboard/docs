@@ -1,0 +1,3 @@
+[submodule "PRUCookbook"]
+	path = PRUCookbook
+	url = https://github.com/beagleboard/PRUCookbook
