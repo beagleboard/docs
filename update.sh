@@ -1,3 +1,5 @@
 #!/bin/bash
-git pull --recurse-submodules
+cd $(dirname $0)
+git pull
+git submodule update --init --recursive
 ./build.sh
