@@ -21,7 +21,8 @@ Best to be prepared with good diagnostic information to aide with support.
 Please execute the board diagnostics, review the hardware documentation, and consult the mailing list and IRC channel for support. BeagleBoard.org is a "community" project with free support only given to those who are willing to discussing their issues openly for the benefit of the entire community.
 
 * [Frequently Asked Questions](https://beagleboard.org/support/faq)
-* [Mailing List and IRC Channel](https://beagleboard.org//Community)
+* [Mailing List](https://forum.beagleboard.org)
+* [Live Chat](https://beagleboard.org/chat)
 
 ## Consulting and other resources
 
