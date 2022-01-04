@@ -32,8 +32,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'BeagleBoard Docs'
-copyright = '2021, BeagleBoard.org Foundation'
-author = 'BeagleBoard.org'
+copyright = '(C) 2021 BeagleBoard.org Foundation. Licensed under CC-BY-SA-4.0.'
+author = 'BeagleBoard.org Foundation'
 
 # The short X.Y version
 version = ''
@@ -116,7 +116,16 @@ html_css_files = [
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'github_repository': "beagleboard/docs",
+    'github_branch': "main",
+    'github_sphinx_locale': "",
+    'path_to_documentation_dir': "/",
+    'global_search_action': "https://beagleboard.org/search",
+    'project_home': "https://beagleboard.org",
+    'project_issues': "https://github.com/beagleboard/docs/issues",
+    'h2edit_url': "https://docs.beagleboard.org/docs-howto",
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -133,6 +142,10 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
+html_baseurl = 'https://docs.beagleboard.org/'
+html_favicon = 'https://beagleboard.org/static/favicon.ico'
+
+#TODO: need the logo here: html_logo
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
@@ -145,7 +158,7 @@ htmlhelp_basename = 'BeagleBoarddoc'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'letterpaper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
@@ -165,7 +178,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'BeagleBoard.tex', 'BeagleBoard Documentation',
-     'BeagleBoard.org', 'manual', 'false'),
+     'BeagleBoard.org Foundation', 'manual', 'false'),
 ]
 
 
@@ -208,9 +221,6 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-
-# -- Extension configuration -------------------------------------------------
-theme_github_repository = "https://github.com/beagleboard/docs"
 
 # -- Options for intersphinx extension ---------------------------------------
 
