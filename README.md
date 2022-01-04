@@ -1,5 +1,7 @@
 # Introduction
 
+EDITED
+
 Welcome to the definitive home for BeagleBoard.org documentation.
 
 Click on the table of contents on the left for the documentation section of interest or jump forward or back sections by clicking on the section titles below.

@@ -100,7 +100,10 @@ pygments_style = None
 
 # html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_typo3_theme'
-
+html_logo = "_static/img/beagleBoardLogo.svg"
+html_css_files = [
+    'css/custom.css',
+]
 # html_theme = 'bootstrap'
 # html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
