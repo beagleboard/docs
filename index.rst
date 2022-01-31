@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to BeagleBoard.org's documentation!
-=======================================
+===========================================
 
 Welcome to the definitive home for BeagleBoard.org documentation.
 
