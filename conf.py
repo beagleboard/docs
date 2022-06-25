@@ -61,7 +61,7 @@ html_context = {
     "gitlab_user": "docs",
     "gitlab_repo": "docs.beagleboard.io",
     "gitlab_version": "main",
-    "conf_py_path": ".",
+    "conf_py_path": "/",
 }
 
 # -- Options for LaTeX output ---------------------------------------------
