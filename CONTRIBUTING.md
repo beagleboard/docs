@@ -1,6 +1,6 @@
 # Contributing to docs.beagleboard.io
 
-:+1::tada: First off, thanks for taking the time to think about contributing! :tada::+1:
+**First off, thanks for taking the time to think about contributing!**
 
 The following is a set of guidelines for contributing to docs.beagleboard.io, which is hosted by the BeagleBoard.org Foundation at https://git.beagleboard.org/docs/docs.beagleboard.io. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
