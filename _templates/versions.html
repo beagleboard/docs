@@ -1,0 +1,26 @@
+{# Add rst-badge after rst-versions for small badge style. #}
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> BeagleBoard Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>{{ _('Document Release Versions') }}</dt>
+        {% for slug, url in versions %}
+          <dd><a href="{{ url }}">{{ slug }}</a></dd>
+        {% endfor %}
+      </dl>
+      <dl>
+        <dt>{{ _('Downloads') }}</dt>
+        <dd><a href="bbdocs.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>{{ _('BeagleBoard.org Links') }}</dt>
+          <dd>
+            <a href="https://git.beagleboard.org/docs/docs.beagleboard.io/">Docs</a>
+          </dd>
+      </dl>
+    </div>
+  </div>

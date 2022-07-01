@@ -21,12 +21,11 @@ project = 'BeagleBoard Docs'
 copyright = '2022, BeagleBoard.org Foundation'
 author = 'BeagleBoard.org Foundation'
 
-release = '0.0.4-beta'
-
 
 # -- General configuration ---------------------------------------------------
 
 extensions = [
+    "sphinxcontrib.rsvgconverter",
 ]
 
 templates_path = ['_templates']
@@ -64,6 +63,49 @@ html_context = {
     "conf_py_path": "/",
 }
 
+# parse version from 'VERSION' file
+with open(BBDOCS_BASE  / "VERSION") as f:
+    m = re.match(
+        (
+            r"^VERSION_MAJOR\s*=\s*(\d+)$\n"
+            + r"^VERSION_MINOR\s*=\s*(\d+)$\n"
+            + r"^PATCHLEVEL\s*=\s*(\d+)$\n"
+            + r"^VERSION_TWEAK\s*=\s*\d+$\n"
+            + r"^EXTRAVERSION\s*=\s*(.*)$"
+        ),
+        f.read(),
+        re.MULTILINE,
+    )
+
+    if not m:
+        sys.stderr.write("Warning: Could not extract kernel version\n")
+        version = "Unknown"
+    else:
+        major, minor, patch, extra = m.groups(1)
+        version = ".".join((major, minor, patch))
+        if extra:
+            version += "-" + extra
+
+release = version
+
+is_release = tags.has("release")
+reference_prefix = ""
+
+if tags.has("publish"):
+    reference_prefix = f"/{version}" if is_release else "/latest"
+
+docs_title = "BBDocs / {}".format(version if is_release else "Latest")
+
+html_context = {
+    "show_license": True,
+    "docs_title": docs_title,
+    "is_release": is_release,
+    "current_version": version,
+    "versions": (
+        ("latest", "/"),
+    )
+}
+
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
@@ -73,7 +115,6 @@ latex_elements = {
     "fontpkg": r"\usepackage{charter}",
     "sphinxsetup": ",".join(
         (
-            # NOTE: colors match those found in light.css stylesheet
             "verbatimwithframe=false",
             "VerbatimColor={HTML}{f0f2f4}",
             "InnerLinkColor={HTML}{2980b9}",
