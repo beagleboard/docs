@@ -1,19 +1,25 @@
 image: python:3.9-alpine
 
-pages:
-  stage: deploy
-  script:
+stages:
+  - deploy
+
+before_script:
   - pip install -U sphinx
   - pip install sphinxcontrib-svg2pdfconverter
   - pip install latexmk.py
   - pip install sphinx_rtd_theme
-  - sphinx-build -b html . public
-  - sphinx-build -b latex . public
-  - cd ./public/
-  - pwd
-  - uname -r
-  - latexmk.py
-  - cd..
+  - apk add texlive-full
+
+pages:
+  stage: deploy
+  script:
+    - sphinx-build -b html . public
+    - sphinx-build -b latex . public
+    - cd ./public/
+    - pwd
+    - uname -r
+    - latexmk.py
+    - cd ..
   artifacts:
     paths:
     - public
