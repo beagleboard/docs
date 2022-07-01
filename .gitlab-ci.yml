@@ -18,8 +18,8 @@ pages:
     - cd ./public/
     - pwd
     - uname -r
-    - latexmk.py
-    - cd ..
+    #- latexmk.py
+    #- cd ..
   artifacts:
     paths:
     - public
