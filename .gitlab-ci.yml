@@ -5,8 +5,15 @@ pages:
   script:
   - pip install -U sphinx
   - pip install sphinxcontrib-svg2pdfconverter
+  - pip install latexmk.py
   - pip install sphinx_rtd_theme
   - sphinx-build -b html . public
+  - sphinx-build -b latex . public
+  - cd ./public/
+  - pwd
+  - uname -r
+  - latexmk.py
+  - cd..
   artifacts:
     paths:
     - public
