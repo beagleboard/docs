@@ -14,6 +14,7 @@ Sections
    :caption: Boards:
 
    black/index.rst
+   ai64/index.rst
 
 
 
