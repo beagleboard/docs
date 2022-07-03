@@ -8,6 +8,7 @@ before_script:
   - python -m pip install --upgrade pip
   - pip install -U sphinx
   - pip install sphinxcontrib-svg2pdfconverter
+  - apk add librsvg
   - pip install sphinx_rtd_theme
   - apk add texlive-full
   - apk add make
