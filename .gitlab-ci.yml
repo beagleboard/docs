@@ -18,10 +18,9 @@ pages:
   script:
   - sphinx-build -b html . public
   - sphinx-build -M latexpdf . public
-  - mv public/latex/bbdocs.pdf public
+  - mv public/latex/beagleboard-docs.pdf public/
   artifacts:
     paths:
     - public
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-

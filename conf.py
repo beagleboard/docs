@@ -110,7 +110,7 @@ latex_elements = {
 }
 latex_logo = str(BBDOCS_BASE / "_static" / "images" / "logo-latex.pdf")
 latex_documents = [
-    ("index-tex", "bbdocs.tex", "BeagleBoard Docs", author, "manual"),
+    ("index-tex", "beagleboard-docs.tex", "BeagleBoard Docs", author, "manual"),
 ]
 
 def setup(app):
