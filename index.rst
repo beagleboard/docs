@@ -15,6 +15,8 @@ Sections
 
    support.rst 
 
+.. toctree::
+   :maxdepth: 1
    :caption: Boards
 
    beaglebone-black/index.rst
