@@ -1,8 +1,7 @@
 image: python:3.9-alpine
 
 stages:
-  - deploy-main
-  - deploy-branch
+  - deploy
 
 before_script:
   - apk update
@@ -14,28 +13,14 @@ before_script:
   - apk add texlive-full
   - apk add make
 
-pages_main:
-  stage: deploy-main
+pages:
+  stage: deploy
   script:
-  - sphinx-build -b html . public/latest
-  - sphinx-build -M latexpdf . public/latest
-  - mv public/latest/latex/beagleboard-docs.pdf public/latest/
-  - cp redirect.html public/index.html
+  - sphinx-build -b html . public
+  - sphinx-build -M latexpdf . public
+  - mv public/latest/latex/beagleboard-docs.pdf public/
   artifacts:
     paths:
     - public
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-
-pages_branch:
-  stage: deploy-branch
-  script:
-  - sphinx-build -b html . public/$CI_COMMIT_REF_NAME
-  - sphinx-build -M latexpdf . public/$CI_COMMIT_REF_NAME
-  - mv public/$CI_COMMIT_REF_NAME/latex/beagleboard-docs.pdf public/$CI_COMMIT_REF_NAME/
-  artifacts:
-    paths:
-    - public
-  rules:
-    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
-
