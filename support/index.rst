@@ -1,8 +1,7 @@
 Support
 =======
 
-.. note:: #TODO# all the links need updating and content moved into this
-repo.
+.. note:: #TODO# all the links need updating and content moved into this repo.
 
 Getting started
 ---------------
