@@ -18,7 +18,7 @@ pages:
   script:
   - sphinx-build -b html . public
   - sphinx-build -M latexpdf . public
-  - mv public/latest/latex/beagleboard-docs.pdf public/
+  - mv public/latex/beagleboard-docs.pdf public/
   artifacts:
     paths:
     - public
