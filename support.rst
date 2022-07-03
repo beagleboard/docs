@@ -1,8 +1,10 @@
 # Support
 
+#NOTE: #TODO# all the links need updating and content moved into this repo.
+
 ## Getting started
 
-The starting experience for all Beagles has been made to be as consistent as is possible. For any of the Beagle Linux-based open hardware computers, visit our [getting started guide](https://docs.beagleboard.org/support/getting-started).
+The starting experience for all Beagles has been made to be as consistent as is possible. For any of the Beagle Linux-based open hardware computers, visit our [getting started guide](support/getting-started).
 
 ## Getting support
 
@@ -38,11 +40,11 @@ Repairs and replacements only provided on unmodified boards purchased via an aut
 
 ## Understanding Your Beagle
 
-* [BeagleBone Introduction](https://beagleboard.org//Support/bone101)
-* [Hardware](https://beagleboard.org//Support/Hardware+Support)
-* [Software](https://beagleboard.org//Support/Software+Support)
-* [BoneScript JavaScript library](https://beagleboard.org//Support/bonescript)
-* [Books](https://beagleboard.org//books)
-  * [Exploring BeagleBone](https://beagleboard.org//ebb)
-  * [BeagleBone Cookbook](https://beagleboard.org//cookbook)
-  * [Bad to the Bone](https://beagleboard.org//bad-to-the-bone)
+* [BeagleBone Introduction](https://beagleboard.org/Support/bone101)
+* [Hardware](https://beagleboard.org/Support/Hardware+Support)
+* [Software](https://beagleboard.org/Support/Software+Support)
+* [BoneScript JavaScript library](https://beagleboard.org/Support/bonescript)
+* [Books](https://beagleboard.org/books)
+  * [Exploring BeagleBone](https://beagleboard.org/ebb)
+  * [BeagleBone Cookbook](https://beagleboard.org/cookbook)
+  * [Bad to the Bone](https://beagleboard.org/bad-to-the-bone)

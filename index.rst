@@ -11,11 +11,13 @@ Sections
 
 .. toctree::
    :maxdepth: 1
-   :caption: Boards:
 
+   :caption: Support
+   support.rst 
+
+   :caption: Boards
    beaglebone-black/index.rst
    beaglebone-ai-64/index.rst
-
 
 
 Indices and tables
