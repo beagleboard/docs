@@ -16,12 +16,12 @@ before_script:
 pages:
   stage: deploy
   script:
-  - make html
-  - make latexpdf
-  - mv _build/latex/bbdocs.pdf _build/html/bbdocs.pdf
+  - sphinx-build -b html . public
+  - sphinx-build -M latexpdf . public
+  - mv public/latex/bbdocs.pdf public
   artifacts:
     paths:
-    - _build/html
+    - public
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
 
