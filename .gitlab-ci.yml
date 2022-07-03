@@ -1,7 +1,8 @@
 image: python:3.9-alpine
 
 stages:
-  - deploy
+  - deploy-main
+  - deploy-branch
 
 before_script:
   - apk update
@@ -13,15 +14,28 @@ before_script:
   - apk add texlive-full
   - apk add make
 
-pages:
-  stage: deploy
+pages_main:
+  stage: deploy-main
   script:
-  - sphinx-build -b html . public
-  - sphinx-build -M latexpdf . public
-  - mv public/latex/bbdocs.pdf public
+  - sphinx-build -b html . public/latest
+  - sphinx-build -M latexpdf . public/latest
+  - mv public/latex/bbdocs.pdf public/latest
+  - cp redirect.html public/index.html
   artifacts:
     paths:
     - public
   rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+
+pages_branch:
+  stage: deploy-branch
+  script:
+  - sphinx-build -b html . public/$CI_COMMIT_REF_NAME
+  - sphinx-build -M latexpdf . public/$CI_COMMIT_REF_NAME
+  - mv public/latex/bbdocs.pdf public/$CI_COMMIT_REF_NAME
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
 
