@@ -10,8 +10,6 @@ BeagleBoard Docs
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Boards:
-
+   support/index.rst
    beaglebone-black/index.rst
    beaglebone-ai-64/index.rst
