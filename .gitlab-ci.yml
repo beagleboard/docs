@@ -21,9 +21,9 @@ pages:
   - sphinx-build -b latex . public
   - pwd
   - cd ./public
-  - make
   - pwd
   - ls
+  - make
   - mv bbdocs.pdf ./public/
   artifacts:
     paths:
