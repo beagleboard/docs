@@ -13,21 +13,12 @@ before_script:
 pages:
   stage: deploy
   script:
-  - pip install -U sphinx
-  - pip install sphinxcontrib-svg2pdfconverter
-  - pip install latexmk.py
-  - pip install sphinx_rtd_theme
-  - sphinx-build -b html . public
-  - sphinx-build -b latex . public
-  - pwd
-  - cd ./public
-  - pwd
-  - ls
-  - make
-  - mv bbdocs.pdf ./public/
+  - make html
+  - make latexpdf
+  - mv _build/latex/bbdocs.pdf _build/html/bbdocs.pdf
   artifacts:
     paths:
-    - public
+    - _build/html
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
 
