@@ -13,8 +13,8 @@ Sections
    :maxdepth: 1
    :caption: Boards:
 
-   black/index.rst
-   ai64/index.rst
+   beaglebone-black/index.rst
+   beaglebone-ai-64/index.rst
 
 
 
