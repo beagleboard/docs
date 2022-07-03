@@ -19,7 +19,7 @@ pages_main:
   script:
   - sphinx-build -b html . public/latest
   - sphinx-build -M latexpdf . public/latest
-  - mv public/latest/latex/bbdocs.pdf public/latest
+  - mv public/latest/latex/beagleboard-docs.pdf public/latest/
   - cp redirect.html public/index.html
   artifacts:
     paths:
@@ -32,7 +32,7 @@ pages_branch:
   script:
   - sphinx-build -b html . public/$CI_COMMIT_REF_NAME
   - sphinx-build -M latexpdf . public/$CI_COMMIT_REF_NAME
-  - mv public/$CI_COMMIT_REF_NAME/latex/bbdocs.pdf public/$CI_COMMIT_REF_NAME
+  - mv public/$CI_COMMIT_REF_NAME/latex/beagleboard-docs.pdf public/$CI_COMMIT_REF_NAME/
   artifacts:
     paths:
     - public
