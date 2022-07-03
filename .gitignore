@@ -19,6 +19,7 @@ cscope.*
 .cache
 
 _build/*
+build/*
 public/*
 .*project
 .settings

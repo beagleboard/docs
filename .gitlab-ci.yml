@@ -4,22 +4,21 @@ stages:
   - deploy
 
 before_script:
+  - apk update
+  - python -m pip install --upgrade pip
   - pip install -U sphinx
   - pip install sphinxcontrib-svg2pdfconverter
-  - pip install latexmk.py
+  - apk add librsvg
   - pip install sphinx_rtd_theme
   - apk add texlive-full
+  - apk add make
 
 pages:
   stage: deploy
   script:
-    - sphinx-build -b html . public
-    - sphinx-build -b latex . public
-    - cd ./public/
-    - pwd
-    - uname -r
-    #- latexmk.py
-    #- cd ..
+  - sphinx-build -b html . public
+  - sphinx-build -M latexpdf . public
+  - mv public/latex/bbdocs.pdf public
   artifacts:
     paths:
     - public
