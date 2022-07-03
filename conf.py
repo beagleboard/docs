@@ -54,14 +54,6 @@ html_domain_indices = False
 html_split_index = True
 html_show_sourcelink = True
 html_baseurl = 'https://docs.beagleboard.io/'
-html_context = {
-    "display_gitlab": True,
-    "gitlab_host": "git.beagleboard.org",
-    "gitlab_user": "docs",
-    "gitlab_repo": "docs.beagleboard.io",
-    "gitlab_version": "main",
-    "conf_py_path": "/",
-}
 
 # parse version from 'VERSION' file
 with open(BBDOCS_BASE  / "VERSION") as f:
@@ -86,21 +78,13 @@ with open(BBDOCS_BASE  / "VERSION") as f:
         if extra:
             version += "-" + extra
 
-release = version
-
-is_release = tags.has("release")
-reference_prefix = ""
-
-if tags.has("publish"):
-    reference_prefix = f"/{version}" if is_release else "/latest"
-
-docs_title = "BBDocs / {}".format(version if is_release else "Latest")
-
 html_context = {
-    "show_license": True,
-    "docs_title": docs_title,
-    "is_release": is_release,
-    "current_version": version,
+    "display_gitlab": True,
+    "gitlab_host": "git.beagleboard.org",
+    "gitlab_user": "docs",
+    "gitlab_repo": "docs.beagleboard.io",
+    "gitlab_version": "main",
+    "conf_py_path": "/",
     "versions": (
         ("latest", "/"),
     )
