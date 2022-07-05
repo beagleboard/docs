@@ -78,6 +78,8 @@ with open(BBDOCS_BASE  / "VERSION") as f:
         if extra:
             version += "-" + extra
 
+release = version
+
 html_context = {
     "display_gitlab": True,
     "gitlab_host": "git.beagleboard.org",
