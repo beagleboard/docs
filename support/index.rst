@@ -9,7 +9,7 @@ Getting started
 The starting experience for all Beagles has been made to be as
 consistent as is possible. For any of the Beagle Linux-based open
 hardware computers, visit our `getting started
-guide <support/getting-started>`__.
+guide <getting-started>`__.
 
 Getting support
 ---------------
