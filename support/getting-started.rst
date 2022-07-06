@@ -1,7 +1,7 @@
 .. _beagleboard-getting-started:
 
 Getting Started
-##################
+==================
 
 Beagles are tiny computers ideal for learning and prototyping with electronics. 
 Read the step-by-step getting started tutorial below to begin developing with your Beagle in minutes.
