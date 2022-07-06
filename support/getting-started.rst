@@ -218,7 +218,7 @@ Perfect for high-school seniors or freshman univerisity level text, consider usi
 A lighter treatment suitable for a bit broader audience without the backgrounders on programming and
 electronics, consider "BeagleBone Cookbook"
 
-`Exploring BeaglebBone <https://bbb.io/ebb>`_ and `Embedded Linux Primer <https://bbb.io/elp>`_
+`Exploring BeagleBone <https://bbb.io/ebb>`_ and `Embedded Linux Primer <https://bbb.io/elp>`_
 
 To take things to the next level of detail, consider "Exploring BeagleBone" which can be considered
 the missing software manual and utilize "Embedded Linux Primer" as a companion textbook to provide
