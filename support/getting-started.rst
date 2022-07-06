@@ -56,7 +56,7 @@ and apply power, either by the USB cable or 5V adapter.
 	
 If using an original BeagleBone or PocketBeagle, you are done. 
 	
-If using BeagleBone Black, BeagleBone Blue, BeagleBone AI or other board with on-board eMMC 
+If using BeagleBone Black, BeagleBone Blue, BeagleBone AI, BeagleBone AI-64 or other board with on-board eMMC 
 flash and you desire to write the image to your on-board eMMC, you'll need to follow the 
 instructions at http://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Flashing_eMMC. 
 When the flashing is complete, all 4 USRx LEDs will be steady on or off. The latest Debian 
@@ -67,20 +67,19 @@ Start your Beagle
 ------------------
 
 If any step fails, it is recommended to update to the 
-`latest software image <https://gitbook.beagleboard.org/support/getting-started>`_ 
+`latest software image <https://beagleboard.org/latest-images>`_ 
 using the instructions above.
 
 Power and boot
 ----------------
 
-Most Beagles include a USB cable, providing a convenient way to provide both power to your 
-Beagle and connectivity to your computer. If you provide your own, ensure it is of good quality.
+Most Beagles can be powered via a USB cable, providing a convenient way to provide both power to your 
+Beagle and connectivity to your computer. Be sure the cable is of good quality and your source can provide enough power.
 
-Alternatively, your Beagle may have a barrel jack. The voltage should be 5V except for 
-BeagleBoard-X15 and BeagleBone Blue which use 12V.
+Alternatively, your Beagle may have a barrel jack.
 
 .. Note::
-	BeagleBoard-X15 must always be powered by a 12V adapter with a barrel jack.
+	Use only a 5V center positive adapter for all Beagles except BeagleBone Blue and BeagleBoard-X15 (12V).
 
 If you are using your Beagle with an `SD (microSD) card <https://en.wikipedia.org/wiki/Secure_Digital>`_, make sure it is inserted ahead of providing power. 
 Most Beagles include programmed on-board flash and therefore do not require an SD card to be inserted.
@@ -115,11 +114,7 @@ to your computer. If your computer supports mDNS, you should see your Beagle as 
 Non-BeagleBone boards will utilize alternate names. Multiple BeagleBone boards on the same 
 network will add a suffix such as beaglebone-2.local.
 
-The below table summarizes the typical addresses and should dynamically update to indicate an active connection.
-
-.. Note::
-	You must "load unsafe scripts" or load `this page <http://beagleboard.org/getting-started>`_ 
-	without HTTPS security for the automatic detection to work.
+The below table summarizes the typical addresses.
 
 .. list-table::
     :header-rows: 1
@@ -128,23 +123,23 @@ The below table summarizes the typical addresses and should dynamically update t
       - Connection type
       - Operating System(s)
       - Status
-    * - 192.168.7.2
+    * - http://192.168.7.2
       - USB
       - Windows
       - Inactive
-    * - 192.168.6.2
+    * - http://192.168.6.2
       - USB
       - Mac OS X, Linux
       - Inactive
-    * - 192.168.8.1
+    * - http://192.168.8.1
       - WiFi
       - all
       - Inactive
-    * - beaglebone.local
+    * - http://beaglebone.local
       - all
       - mDNS enabled
       - Inactive
-    * - beaglebone-2.local
+    * - http://beaglebone-2.local
       - all
       - mDNS enabled
       - Inactive
