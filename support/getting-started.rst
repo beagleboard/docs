@@ -197,35 +197,12 @@ an older operating system or need additional drivers for serial access to older 
 
 	Visit https://beagleboard.org/support for additional debugging tips.
 
-Other currently available software images
-------------------------------------------
-
-Some of the starting images below involve multiple steps to produce an SD card image or otherwise 
-change some of the steps above, so be sure to read all the instructions on their pages. 
-Choose the starting point you want, download or produce the SD card image and follow the steps above.
-
-At the time of release, not all of these distributions support BeagleBone Black, but should soon.
-
-- Texas Instruments releases: `Android <https://beagleboard.org/project/android/>`_, `Linux <https://beagleboard.org/project/amsdk/>`_, `StarterWare (no OS) <https://beagleboard.org/project/starterware/>`_
-- Linux: `Debian <https://beagleboard.org/project/Debian/>`_, `Angstrom Distribution <https://beagleboard.org/project/angstrom>`_, `Ubuntu <https://beagleboard.org/project/ubuntu/>`_, `ArchLinux <https://beagleboard.org/project/AM/>`_, `Gentoo <https://beagleboard.org/project/Gentoo/>`_, `Sabayon <https://beagleboard.org/project/sabayon/>`_, `Buildroot <https://beagleboard.org/project/buildroot/>`_, `Erlang <https://beagleboard.org/project/Nerves/>`_, `Fedora <https://beagleboard.org/project/fedora/>`_
-- Other: `QNX <https://beagleboard.org/project/QNX+Neutrino+on+OMAP/>`_, `FreeBSD <https://beagleboard.org/project/freebsd/>`_
-- `Project page<https://beagleboard.org/project>`_
-
 Hardware documentation
 --------------------------
 
-Time to read that manual and check out the design materials: `BeagleBoard <https://github.com/beagleboard/beagleboard>`_, 
-`BeagleBoard-xM <https://github.com/beagleboard/beagleboard-xm>`_, 
-`BeagleBoard-x15 <https://github.com/beagleboard/beagleboard-x15>`_, 
-`BeagleBone <https://github.com/beagleboard/beaglebone>`_, 
-`BeagleBone Black <https://github.com/beagleboard/beaglebone-black>`_,  
-`BeagleBone Black Wireless <https://github.com/beagleboard/beaglebone-black-wireless>`_, 
-`BeagleBone Blue <https://github.com/beagleboard/beaglebone-blue>`_, 
-`PocketBeagle <https://github.com/beagleboard/pocketbeagle>`_, 
-`BeagleBone AI <https://github.com/beagleboard/beaglebone-ai>`_, 
-`BeagleBone AI-64 <https://github.com/beagleboard/beaglebone-ai-64>`_
+Be sure to check check the latest hardware documentation for your board at https://docs.beagleboard.org.
 
-Other links to design materials for various releases can be found at https://beagleboard.org/hardware/design
+Other links to design materials for various releases can be found at https://git.beagleboard.org/beagleboard.
 
 Books
 -----
