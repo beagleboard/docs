@@ -11,7 +11,6 @@ Sections
 
 .. toctree::
    :maxdepth: 1
-   :caption: Support
 
    support/index.rst
 
