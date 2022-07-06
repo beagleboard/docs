@@ -78,7 +78,3 @@ Understanding Your Beagle
    -  `BeagleBone Cookbook <https://beagleboard.org/cookbook>`__
    -  `Bad to the Bone <https://beagleboard.org/bad-to-the-bone>`__
 
-.. toctree::
-   :maxdepth: 1
-
-   getting-started.rst
