@@ -119,7 +119,7 @@ Browse to your Beagle
 
 A web server with an IDE should be running on your Beagle. Point your browser to it to begin development.
 
-.. NOTE:: 
+.. NOTE::
     Use either `Firefox <https://www.mozilla.org/firefox>`_ or `Chrome <https://www.google.com/chrome>`_ 
     (Internet Explorer will NOT work), browse to the web server running on your board. It will load a presentation 
     showing you the capabilities of the board. Use the arrow keys on your keyboard to navigate the presentation.
