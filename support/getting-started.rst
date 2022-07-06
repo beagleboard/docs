@@ -147,11 +147,11 @@ The below table summarizes the typical addresses.
 Browse to your beagle
 ----------------------
 
-Use either `Firefox <http://www.mozilla.org/firefox>`_ or `Chrome <https://www.google.com/chrome>`_ 
+Use either `Firefox <https://www.mozilla.org/firefox>`_ or `Chrome <https://www.google.com/chrome>`_ 
 (Internet Explorer will NOT work), browse to the web server running on your board. It will load a presentation 
 showing you the capabilities of the board. Use the arrow keys on your keyboard to navigate the presentation.
 
-Click here to launch: https://192.168.7.2 Older software images require you to EJECT the BEAGLE_BONE 
+Click here to launch: http://192.168.7.2 Older software images require you to EJECT the BEAGLE_BONE 
 drive to start the network. With the latest software image, that step is no longer required.
 
 Troubleshooting
