@@ -1,5 +1,5 @@
-Support
-=======
+Overview
+========
 
 .. note:: #TODO# all the links need updating and content moved into this repo.
 
@@ -8,8 +8,7 @@ Getting started
 
 The starting experience for all Beagles has been made to be as
 consistent as is possible. For any of the Beagle Linux-based open
-hardware computers, visit our `getting started
-guide <getting-started>`__.
+hardware computers, visit our `getting started guide <getting-started>`__.
 
 Getting support
 ---------------
@@ -32,11 +31,8 @@ Diagnostic tools
 Best to be prepared with good diagnostic information to aide with
 support.
 
--  `Example run of ‘version.sh’ script needed for support
-   requests <https://groups.google.com/d/msg/beagleboard/4oo4oL20BEs/MVwxfR-XCAAJ>`__
--  `Beagle Tester source <https://github.com/jadonk/beagle-tester>`__
--  `Beagle Tester image
-   releases <https://github.com/beagleboard/buildroot/releases>`__
+-  Output of ‘beagle-version’ script needed for support requests
+-  `Beagle Tester source <https://git.beagleboard.org/jkridner/beagle-tester>`__
 
 Community resources
 -------------------
@@ -47,7 +43,7 @@ BeagleBoard.org is a “community” project with free support only given to
 those who are willing to discussing their issues openly for the benefit
 of the entire community.
 
--  `Frequently Asked Questions <https://beagleboard.org/support/faq>`__
+-  `Frequently Asked Questions <https://forum.beagleboard.org/c/faq>`__
 -  `Mailing List <https://forum.beagleboard.org>`__
 -  `Live Chat <https://beagleboard.org/chat>`__
 
@@ -83,3 +79,8 @@ Understanding Your Beagle
    -  `Exploring BeagleBone <https://beagleboard.org/ebb>`__
    -  `BeagleBone Cookbook <https://beagleboard.org/cookbook>`__
    -  `Bad to the Bone <https://beagleboard.org/bad-to-the-bone>`__
+
+.. toctree::
+   :maxdepth: 1
+
+   getting-started.rst

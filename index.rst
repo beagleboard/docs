@@ -14,7 +14,6 @@ Sections
    :caption: Support
 
    support/index.rst
-   support/getting-started.rst
 
 .. toctree::
    :maxdepth: 1
