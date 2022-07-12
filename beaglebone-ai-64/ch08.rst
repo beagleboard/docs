@@ -1,3 +1,5 @@
+:orphan:
+
 .. _cape-board-support-1:
 
 Cape Board Support

@@ -1,3 +1,5 @@
+.. _beagleboneblack-mechanical:
+
 BeagleBone Black Mechanical
 ###############################
 
@@ -20,7 +22,8 @@ Silkscreen and Component Locations
 --------------------------------------
 
 .. figure:: media/image88.jpg
-   :width: 400px
+   :width: 530px
+   :height: 782px
    :align: center
    :alt: Board Dimensions
 
@@ -28,7 +31,8 @@ Silkscreen and Component Locations
 
 
 .. figure:: media/image89.jpg
-   :width: 400px
+   :width: 493px
+   :height: 818px
    :align: center
    :alt: Component Side Silkscreen
 
@@ -36,7 +40,8 @@ Silkscreen and Component Locations
 
 
 .. figure:: media/image90.jpg
-   :width: 400px
+   :width: 501px
+   :height: 772px
    :align: center
    :alt: Circuit Side Silkscreen
 

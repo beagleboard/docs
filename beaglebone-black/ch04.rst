@@ -1,3 +1,5 @@
+.. _beagleboneblack-overview:
+
 BeagleBone Black Overview
 #############################
 
@@ -102,21 +104,26 @@ the reasons for the differences.
 
 * GPIO3_21 has a 24.576 MHZ clock on it.
   
-  * This is required by the HDMI Framer for Audio purposes. We needed to run a clock into the processor to generate the correct clock frequency.
-  
-The pin on the processor was already routed to the expansion header. In order not to remove this feature on the expansion header, it was left
-connected. In order to use the pin as a GPIO pin, you need to disable the clock. While this disables audio to the HDMI, the fact that you want to use this pin for something else, does the same thing.
+  * This is required by the HDMI Framer for Audio purposes. 
+    We needed to run a clock into the processor to generate the correct clock frequency. 
+    The pin on the processor was already routed to the expansion header. In order not 
+    to remove this feature on the expansion header, it was left connected. In order to 
+    use the pin as a GPIO pin, you need to disable the clock. While this disables audio 
+    to the HDMI, the fact that you want to use this pin for something else, does the 
+    same thing.
 
 BeagleBone Black Features and Specification
 -----------------------------------------------
 
 This section covers the specifications and features of the board and
 provides a high level description of the major components and interfaces
-that make up the board.
+that make up the board. table below provides a list of the features.
 
 
 .. list-table:: BeagleBone Black Features
    :header-rows: 1
+   :widths: 20 80
+   :class: longtable
 
    * -
      - Feature
@@ -181,8 +188,12 @@ the various components on the board.
 Connectors, LEDs, and Switches
 ************************************
 
+figure below shows the locations of the connectors, LEDs, and
+switches on the PCB layout of the board.
+
 .. figure:: media/image28.jpg
-   :width: 400px
+   :width: 509px
+   :height: 340px
    :align: center
    :alt: Connectors, LEDs and Switches
 
@@ -203,8 +214,12 @@ Connectors, LEDs, and Switches
 Key Components
 ********************
 
+figure below shows the locations of the key components on the PCB
+layout of the board.
+
 .. figure:: media/image29.jpg
-   :width: 400px
+   :width: 575px
+   :height: 417px
    :align: center
    :alt: Key Components
 
