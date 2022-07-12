@@ -1,4 +1,4 @@
-.. _bbb-introduction:
+.. _beagleboneblack-introduction:
 
 Introduction
 #################
@@ -18,9 +18,7 @@ experience. Software updates will be frequent and will be independent of
 the hardware revisions and as such not result in a change in the
 revision number.
 
-Make sure you check the support Wikis frequently for the most up to date
+Make sure you check the docs repository frequently for the most up to date
 information.
 
-https://github.com/beagleboard/beaglebone-black/wiki
-
-https://elinux.org/Beagleboard:BeagleBoneBlack
+https://git.beagleboard.org/docs/docs.beagleboard.io/-/tree/main/beaglebone-black

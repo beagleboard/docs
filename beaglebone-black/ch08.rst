@@ -1,3 +1,5 @@
+.. _beagleboneblack-capes:
+
 Cape Board Support
 ######################
 
@@ -57,6 +59,8 @@ These signals are listed in *Table 15* below.
 
 .. list-table:: P8 LCD Conflict Pins
    :header-rows: 1
+   :class: longtable
+   :align: center
 
    * - PIN 
      - PROC 
@@ -169,7 +173,8 @@ The proper mode is MODE2.
 
 .. list-table:: P8 eMMC Conflict Pins
    :header-rows: 1
-
+   :align: center
+   :class: longtable
 
    * - PIN 
      - PROC 
@@ -247,7 +252,7 @@ this. No, we will not designate a pin for this function. It will be
 determined on a cape by cape basis by the designer of the respective
 cape.
 
-8.2 EEPROM
+EEPROM
 ----------
 
 Each cape must have its own EEPROM containing information that will
@@ -270,7 +275,8 @@ a 64-byte page write buffer and supports the Standard (100 kHz), Fast
 
 
 .. figure:: media/image78.png
-   :width: 400px
+   :width: 509px
+   :height: 228px
    :align: center
    :alt: Expansion Board EEPROM Without Write Protect
 
@@ -344,10 +350,9 @@ discretion of the cape designer.
 *Variable & MAC Memory*
 VDD_3V3B
 
-
-
 .. figure:: media/image79.png
-   :width: 400px
+   :width: 567px
+   :height: 189px
    :align: center
    :alt: Expansion Board EEPROM Write Protect
 
@@ -364,6 +369,8 @@ by the user when the EEPROM contents are dumped.
 
 .. list-table:: Expansion Board EEPROM
    :header-rows: 1
+   :class: longtable
+   :align: center
 
    * - Name
      - Offset
@@ -461,6 +468,8 @@ for the AIN signals.
 
 .. list-table:: EEPROM Pin Usage
    :header-rows: 1
+   :class: longtable
+   :align: center
 
 
    * - `+` 
@@ -1619,11 +1628,12 @@ as they appear on the BeagleBone Black.:
 
 
 .. figure:: media/image80.png
-   :width: 400px
+   :width: 530px
+   :height: 468px
    :align: center
-   :alt: 63*
+   :alt: Boot signals
 
-   63*
+   Boot signals
 
 If you plan to use any of these signals, then on power up, these pins
 should not be driven. If you do, it can affect the boot mode of the
@@ -1659,7 +1669,7 @@ configurations for the expansion headers:
 The following sections describe how the connectors are to be implemented
 and used for each of the different configurations.
 
-Non-StaCape
+Non-Stacking Headers-Single Cape
 **************************************
 
 For non-stacking capes single configurations or where the cape can be
@@ -1670,7 +1680,8 @@ dual row 23 position 2.54mm x 2.54mm connectors.
 
 
 .. figure:: media/image81.jpg
-   :width: 400px
+   :width: 65px
+   :height: 90px
    :align: center
    :alt: Single Expansion Connector
 
@@ -1684,7 +1695,8 @@ of the dual row headers.
 
 
 .. figure:: media/image82.jpg
-   :width: 400px
+   :width: 575px
+   :height: 54px
    :align: center
    :alt: Single Cape Expansion Connector
 
@@ -1709,7 +1721,8 @@ the BeagleBone Black
 
 .. list-table:: Single Cape Connectors
    :header-rows: 1
-
+   :class: longtable
+   :align: center
 
    * - SUPPLIER 
      - PARTNUMBER
@@ -1734,7 +1747,8 @@ as well as long as the contact area is gold. Other possible sources are
 Sullins and Samtec for these connectors. You will need to ensure the
 depth into the connector is sufficient
 
-Main Ex*************************************
+Main Expansion Headers-Stacking
+*************************************
 
 For stacking configuration, the two 46 pin expansion headers use the
 same connectors. *Figure 66* is a picture of the connector. These are
@@ -1743,7 +1757,8 @@ dual row 23 position 2.54mm x 2.54mm connectors.
 
 
 .. figure:: media/image83.jpg
-   :width: 400px
+   :width: 69px
+   :height: 90px
    :align: center
    :alt: Expansion Connector
 
@@ -1757,7 +1772,8 @@ connector configuration for the connector.
 
 
 .. figure:: media/image84.jpg
-   :width: 400px
+   :width: 575px
+   :height: 65px
    :align: center
    :alt: Stacked Cape Expansion Connector
 
@@ -1780,6 +1796,8 @@ The third part listed in *Table 20* will have insertion force issues.
 
 .. list-table:: Stacked Cape Connectors
    :header-rows: 1
+   :class: longtable
+   :align: center
 
    * - SUPPLIER    
      - PARTNUMBER      
@@ -1820,7 +1838,8 @@ nonstacking style connectors.
 
 
 .. figure:: media/image85.jpg
-   :width: 400px
+   :width: 575px
+   :height: 71px
    :align: center
    :alt: Stacked w/Signal Stealing Expansion Connector
 
@@ -1851,7 +1870,8 @@ overhang.
 
 
 .. figure:: media/image86.jpg
-   :width: 400px
+   :width: 552px
+   :height: 314px
    :align: center
    :alt: Connector Pin Insertion Depth
 
@@ -1907,7 +1927,8 @@ are supplied by connector**P9**. The current ratings listed are per pin.
 
 .. list-table:: Expansion Voltages
    :header-rows: 1
-
+   :class: longtable
+   :align: center
 
    * - Current 
      - Name 
@@ -2000,7 +2021,8 @@ Standard Cape Size
 
 
 .. figure:: media/image87.jpg
-   :width: 400px
+   :width: 575px
+   :height: 369px
    :align: center
    :alt: Cape Board Dimensions
 

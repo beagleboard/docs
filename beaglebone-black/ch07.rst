@@ -1,3 +1,5 @@
+.. _beagleboneblack-connectors:
+
 Connectors
 ##############
 
@@ -53,6 +55,11 @@ to align with the mode column will give that function on that pin.
 THE BOARD. IT WILL DAMAGE THE PROCESSOR AND VOID THE WARRANTY.*
 
 *NO PINS ARE TO BE DRIVEN UNTIL AFTER THE SYS_RESET LINE GOES HIGH.*
+
+.. raw:: latex
+
+  \begin{landscape}
+  \tiny
 
 .. list-table:: Expansion Header P8 Pinout
    :header-rows: 1
@@ -564,6 +571,10 @@ THE BOARD. IT WILL DAMAGE THE PROCESSOR AND VOID THE WARRANTY.*
      - pr1_pru1_pru_r31_1
      - gpio2[7]
 
+.. raw:: latex
+
+  \end{landscape}
+
 
 Connector P9
 ******************
@@ -601,6 +612,10 @@ THE BOARD. IT WILL DAMAGE THE PROCESSOR AND VOID THE WARRANTY.*
  
 * Both of these signals connect to pin 42 of P11. Resistors are installed that allow for the GPIO3_18 connection to be removed by removing R202. The intent is to allow the SW to use either of these signals, on pin 42. SW should set the unused pin in input mode when using the other pin. This allowed us to get an extra signal out to the expansion header.
 
+.. raw:: latex
+
+  \begin{landscape}
+  \tiny
 
 .. list-table:: Expansion Header P9 Pinout
    :header-rows: 1
@@ -1067,8 +1082,12 @@ THE BOARD. IT WILL DAMAGE THE PROCESSOR AND VOID THE WARRANTY.*
      -
      - 
      -
-    
-7.2 Power Jack
+
+.. raw:: latex
+
+  \end{landscape}
+
+Power Jack
 --------------
 
 The DC power jack is located next to the RJ45 Ethernet connector as
@@ -1078,7 +1097,8 @@ the original BeagleBone. The connector has a 2.1mm diameter center post
 
 
 .. figure:: media/image69.jpg
-   :width: 400px
+   :width: 579px
+   :height: 411px
    :align: center
    :alt: 5VDC Power Jack
 
@@ -1088,7 +1108,7 @@ The board requires a regulated 5VDC +/-.25V supply at 1A. A higher
 current rating may be needed if capes are plugged into the expansion
 headers. Using a higher current power supply will not damage the board.
 
-7.3 USB Client
+USB Client
 --------------
 
 The USB Client connector is accessible on the bottom side of the board
@@ -1099,7 +1119,8 @@ board.
 
 
 .. figure:: media/image71.jpg
-   :width: 400px
+   :width: 633px
+   :height: 454px
    :align: center
    :alt: USB Client
 
@@ -1108,7 +1129,7 @@ board.
 This port is a USB Client only interface and is intended for connection
 to a PC.
 
-7.4 USB Host
+USB Host
 ------------
 
 There is a single USB Host connector on the board and is shown in
@@ -1116,7 +1137,8 @@ There is a single USB Host connector on the board and is shown in
 
 
 .. figure:: media/image71.jpg
-   :width: 400px
+   :width: 593px
+   :height: 387px
    :align: center
    :alt: USB Host Connector
 
@@ -1130,8 +1152,9 @@ Serial Header
 Each board has a debug serial interface that can be accessed by using a special serial cable that is plugged into the serial header as shown in *Figure 54* below.
 
 
-.. figure:: media/image73.jpg
-   :width: 400px
+.. figure:: media/image71.jpg
+   :width: 527px
+   :height: 351px
    :align: center
    :alt: Serial Debug Header
 
@@ -1142,8 +1165,9 @@ these signals are 3.3V. In order to access these signals, a FTDI USB to
 Serial cable is recommended as shown in *Figure 55* below.
 
 
-.. figure:: media/image71.jpg
-   :width: 400px
+.. figure:: media/image73.jpg
+   :width: 428px
+   :height: 162px
    :align: center
    :alt: PRU-ICSS Block Diagram
 
@@ -1163,6 +1187,8 @@ Table is the pinout of the connector as reflected in the schematic. It is the sa
 
 .. list-table:: J1 Serial Header Pins
    :header-rows: 1
+   :class: longtable
+   :align: center
    :widths: auto
 
    * - PIN NUMBER 
@@ -1176,13 +1202,14 @@ Table is the pinout of the connector as reflected in the schematic. It is the sa
 
 
 .. figure:: media/image75.jpg
-   :width: 400px
+   :width: 373px
+   :height: 387px
    :align: center
    :alt: Serial Header
 
    Serial Header
 
-7.6 HDMI
+HDMI
 --------
 
 Access to the HDMI interface is through the HDMI connector that is
@@ -1190,7 +1217,8 @@ located on the bottom side of the board as shown in *Figure 57* below.
 
 
 .. figure:: media/image71.jpg
-   :width: 400px
+   :width: 579px
+   :height: 387px
    :align: center
    :alt: HDMI Connector
 
@@ -1203,13 +1231,15 @@ be purchased from several different sources.
 
 
 .. figure:: media/image77.jpg
-   :width: 400px
+   :width: 196px
+   :height: 196px
+   :class: longtable
    :align: center
    :alt: HDMI Cable
 
    HDMI Cable
 
-7.7 microSD
+microSD
 -----------
 
 A microSD connector is located on the back or bottom side of the board
@@ -1218,7 +1248,8 @@ board.
 
 
 .. figure:: media/image71.jpg
-   :width: 400px
+   :width: 579px
+   :height: 438px
    :align: center
    :alt: microSD Connector
 
@@ -1233,15 +1264,16 @@ the connector.
 
 Do not pull the SD card out or you could damage the connector.
 
-7.8 Ethernet
+Ethernet
 ------------
 
 The board comes with a single 10/100 Ethernet interface located next to
-the power jack as shown in *Figure 60*.
+the power jack as shown in Figure below.
 
 
 .. figure:: media/image71.jpg
-   :width: 400px
+   :width: 579px
+   :height: 387px
    :align: center
    :alt: Ethernet Connector
 

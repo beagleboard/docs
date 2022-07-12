@@ -1,19 +1,20 @@
-.. _bbb-Change-History:
+.. _beagleboneblack-Change-History:
 
 Change History
 ##################
 
 This section describes the change history of this document and board.
 Document changes are not always a result of a board change. A board
-change will always result in a document change.
+change will always connectivityresult in a document change.
 
 Document Change History
 ---------------------------
 
-.. list-table:: Change History
+.. list-table:: AsciiDoc Change History
    :header-rows: 1
    :class: longtable
    :widths: 8, 60, 25,7
+   :align: center
 
    * - Rev
      - Changes
@@ -109,9 +110,58 @@ Document Change History
      - Numerous community edits and format changes to asciidoc.
      - May 6, 2020
      - JK
-   
+   * - C.3
+     - Added information for board rev C3.
+     - August 24, 2021
+     - JK
+
 Board Changes
 -----------------
+
+Rev C3
+********
+
+PCB revision C.
+
+* Updated microSD card cage due to availability. See https://github.com/beagleboard/beaglebone-black/issues/6. Added series resistors and depopulated C5.
+* Added reset option (GPIO1_8) for Ethernet PHY to avoid possible start-up issue. See https://github.com/beagleboard/beaglebone-black/issues/4.
+* Added series resistors to MMC1 lines and depopulated C24.
+* Connected pin A6 of J5 on U13 (eMMC IC) to DGND.
+* Changed USB1_VBUS series resistor to 0 ohm.
+* Change required PCB revision to C.
+
+Initial boxes mistakenly say rev C1.
+
+Rev C2
+*******
+
+PCB revision B6.
+
+* Update memories based on availability. See https://github.com/beagleboard/beaglebone-black/commit/74914bd01efeb61376ec3dda4bf9143ad2bb635c.
+   
+  * DDR3:
+    
+    * Kingston D2516EC4BXGGB-U
+  
+  * eMMC:
+    
+    * Kingston MMC04G-M627-X02U
+
+Rev C1
+********
+
+PCB revision B6.
+
+* Update memories based on availability. See https://github.com/beagleboard/beaglebone-black/commit/5787736d816832cc8cc9629d19f334b6a12e67f9.
+  
+  * DDR3:
+    
+    * Micron MT41K256M16TW-107:P
+  
+  * eMMC:
+    
+    * Micron MTFC4GACAJCN-1M WT
+    * Kingston EMMC04G-S100-A08U
 
 Rev C
 ***********
