@@ -1,16 +1,20 @@
+.. _beagleboneblack-pictures:
+
 Pictures
 #############
 
 
 .. figure:: media/image91.jpg
-   :width: 400px
+   :width: 476px
+   :height: 768px
    :align: center
    :alt: Top Side
 
    Top Side
 
 .. figure:: media/image92.jpg
-   :width: 400px
+   :width: 486px
+   :height: 764px
    :align: center
    :alt: Bottom Side
 

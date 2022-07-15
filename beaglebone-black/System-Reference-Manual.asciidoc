@@ -11,10 +11,10 @@
 image:media/image1.jpg[media/image1.jpg,title="media/image1.jpg",width=598,height=400,align="center"]
 
 [.text-center]
-*Revision C.2 (wiki to PDF snapshot)*
+*Revision C.3 (wiki to PDF snapshot)*
 
 [.text-center]
-*Last PDF conversion: May 6, 2020*
+*Last PDF conversion: August 24, 2021*
 
 ______________________________________________________________________________________________________________________________________________________
 *Maintaining editor: Jason Kridner* _jkridner@beagleboard.org_
@@ -271,6 +271,7 @@ https://elinux.org/Beagleboard:BeagleBoneBlack
 
 [[change-history]]
 == 2.0 Change History
+
 This section describes the change history of this document and board.
 Document changes are not always a result of a board change. A board
 change will always result in a document change.
@@ -319,13 +320,51 @@ pin. +
 2. Added additional supplier to DDR2 and eMMC. |March 21,2014 |GC
 |C.1 |1. Added note to recommend powering off the board with the power |March 22, 2014 |GC
 |C.2 |Numerous community edits and format changes to asciidoc. |May 6, 2020 |JK
+|C.3 |Added information for board rev C3. |August 24, 2021 |JK
 |=======================================================================
 
 [[board-changes]]
 === 2.2 Board Changes
 
+[[rev-c3]]
+==== 2.2.1 Rev C3
+
+PCB revision C.
+
+* Updated microSD card cage due to availability. See https://github.com/beagleboard/beaglebone-black/issues/6. Added series resistors and depopulated C5.
+* Added reset option (GPIO1_8) for Ethernet PHY to avoid possible start-up issue. See https://github.com/beagleboard/beaglebone-black/issues/4.
+* Added series resistors to MMC1 lines and depopulated C24.
+* Connected pin A6 of J5 on U13 (eMMC IC) to DGND.
+* Changed USB1_VBUS series resistor to 0 ohm.
+* Change required PCB revision to C.
+
+Initial boxes mistakenly say rev C1.
+
+[[rev-c2]]
+==== 2.2.2 Rev C2
+
+PCB revision B6.
+
+* Update memories based on availability. See https://github.com/beagleboard/beaglebone-black/commit/74914bd01efeb61376ec3dda4bf9143ad2bb635c.
+** DDR3:
+*** Kingston D2516EC4BXGGB-U
+** eMMC:
+**** Kingston MMC04G-M627-X02U
+
+[[rev-c1]]
+==== 2.2.3 Rev C1
+
+PCB revision B6.
+
+* Update memories based on availability. See https://github.com/beagleboard/beaglebone-black/commit/5787736d816832cc8cc9629d19f334b6a12e67f9.
+** DDR3:
+*** Micron MT41K256M16TW-107:P
+** eMMC:
+*** Micron MTFC4GACAJCN-1M WT
+*** Kingston EMMC04G-S100-A08U
+
 [[rev-c]]
-==== 2.2.1 Rev C
+==== 2.2.4 Rev C
 
 * Changed the eMMC from 2GB to 4GB.
 
@@ -334,12 +373,12 @@ required us to move to 4GB. We now have two sources for the device. This
 will however, require an increase in the price of the board.
 
 [[rev-b]]
-==== 2.2.2 Rev B
+==== 2.2.5 Rev B
 
 * Changed the processor to the AM3358BZCZ100.
 
 [[rev-a6a]]
-==== 2.2.3 Rev A6A
+==== 2.2.6 Rev A6A
 
 * Added connection from 32KHz OSC_GND to system ground and changed C106
 to 1uF.
@@ -348,7 +387,7 @@ boards where the board would not boot in 1 in 20 tries.
 * Change required PCB revision to B6.
 
 [[rev-a6]]
-==== 2.2.4 Rev A6
+==== 2.2.7 Rev A6
 
 * In random instances there could be a glitch in the SYS_RESETn signal
 from the processor where the SYS_RESETn signal was taken high for a
@@ -361,7 +400,7 @@ resistor was added to connect the OSC_GND to the system ground.
 There are no new features added as a result of these changes.
 
 [[rev-a5c]]
-==== 2.2.5 Rev A5C
+==== 2.2.8 Rev A5C
 
 We were seeing some fallout in production test where we were seeing some
 jitter on the HDMI display test. It started showing up on out second
@@ -373,7 +412,7 @@ issue was caught in production test. No impact on features or
 functionality resulted from this change.
 
 [[rev-a5b]]
-==== 2.2.6 Rev A5B
+==== 2.2.9 Rev A5B
 
 There is no operational difference between the Rev A5A and the Rev A5B.
 There were two changes made to the A5B version.
@@ -390,7 +429,7 @@ was not a result of any hardware changes but only updated software. The
 A5A version also supports this resolution.
 
 [[rev-a5a]]
-==== 2.2.7 Rev A5A
+==== 2.2.10 Rev A5A
 
 This is the initial production release of the board. We will be tracking
 changes from this point forward.
@@ -988,7 +1027,7 @@ warm reset only and will not force a boot mode_ _change._
 === 5.4 Power Management
 
 The *TPS65217C* power management device is used along with a separate
-LDO to provide power to the system. The**TPS65217C** version provides
+LDO to provide power to the system. The **TPS65217C** version provides
 for the proper voltages required for the DDR3L. This is the same device
 as used on the original BeagleBone with the exception of the power rail
 configuration settings which will be changed in the internal EEPROM to
@@ -1266,7 +1305,7 @@ limited to 500mA max. When powering from the USB port, the VDD_5V rail
 is not provided to the expansion headers, so capes that require the 5V
 rail to supply the cape direct, bypassing the *TPS65217C*, will not have
 that rail available for use. The 5VDC supply from the USB port is
-provided on the SYS_5V, the one that comes from the**TPS65217C**, rail
+provided on the SYS_5V, the one that comes from the **TPS65217C**, rail
 of the expansion header for use by a cape. *Figure 24* is the connection
 of the USB power input on the PMIC.
 
@@ -1281,7 +1320,7 @@ The selection of either the 5VDC or the USB as the power source is
 handled internally to the *TPS65217C* and automatically switches to 5VDC
 power if both are connected. SW can change the power configuration via
 the I2C interface from the processor. In addition, the SW can read
-the**TPS65217C** and determine if the board is running on the 5VDC input
+the **TPS65217C** and determine if the board is running on the 5VDC input
 or the USB input. This can be beneficial to know the capability of the
 board to supply current for things like operating frequency and
 expansion cards.
@@ -1298,7 +1337,7 @@ momentary switch, the same type of switch used for reset and boot
 selection on the board.
 
 If you push the button the *TPS65217C* will send an interrupt to the
-processor. It is up to the processor to then pull the**PMIC_POWER_EN**
+processor. It is up to the processor to then pull the **PMIC_POWER_EN**
 pin low at the correct time to power down the board. At this point, the
 PMIC is still active, assuming that the power input was not removed.
 Pressing the power button will cause the board to power up again if the
@@ -1391,14 +1430,14 @@ signals. Each of these signals is described below.
 ===== 6.1.8.1 I2C0
 
 I2C0 is the control interface between the processor and the *TPS65217C*.
-It allows the processor to control the registers inside the**TPS65217C**
+It allows the processor to control the registers inside the **TPS65217C**
 for such things as voltage scaling and switching of the input rails.
 
 [[pmc_powr_en]]
 ===== 6.1.8.2 PMIC_POWR_EN
 
 On power up the *VDD_RTC* rail activates first. After the RTC circuitry
-in the processor has activated it instructs the**TPS65217C** to initiate
+in the processor has activated it instructs the **TPS65217C** to initiate
 a full power up cycle by activating the *PMIC_POWR_EN* signal by taking
 it HI. When powering down, the processor can take this pin low to start
 the power down process.
@@ -1408,7 +1447,7 @@ the power down process.
 
 This signal connects to the *RTC_PORZn* signal, RTC power on reset. The
 small “*n*” indicates that the signal is an active low signal. Word
-processors seem to be unable to put a bar over a word so the**n** is
+processors seem to be unable to put a bar over a word so the **n** is
 commonly used in electronics. As the RTC circuitry comes up first, this
 signal indicates that the LDOs, the 1.8V VRTC rail, is up and stable.
 This starts the power up process.
@@ -1417,13 +1456,13 @@ This starts the power up process.
 ===== 6.1.8.4 PMIC_PGOOD
 
 Once all the rails are up, the *PMIC_PGOOD* signal goes high. This
-releases the**PORZn** signal on the processor which was holding the
+releases the **PORZn** signal on the processor which was holding the
 processor reset.
 
 [[wakeup]]
 ===== 6.1.8.5 WAKEUP
 
-The WAKEUP signal from the *TPS65217C* is connected to the**EXT_WAKEUP**
+The WAKEUP signal from the *TPS65217C* is connected to the **EXT_WAKEUP**
 signal on the processor. This is used to wake up the processor when it
 is in a sleep mode. When an event is detected by the *TPS65217C*, such
 as the power button being pressed, it generates this signal.
@@ -1463,7 +1502,7 @@ The *VDD_3V3A* rail is supplied by the **TPS65217C** and provides the
 
 The current supplied by the *VDD_3V3A* rail is not sufficient to power
 all of the 3.3V rails on the board. So a second LDO is supplied, U4,
-a**TL5209A**, which sources the *VDD_3V3B* rail. It is powered up just
+a **TL5209A**, which sources the *VDD_3V3B* rail. It is powered up just
 after the *VDD_3V3A* rail.
 
 ===== 6.1.9.4 VDD_1V8 Rail
@@ -1507,7 +1546,7 @@ Instruments.
 .Figure 26. Power Rail Power Up Sequencing
 image:media/image40.png[media/image40.png,title="media/image40.png",width=547,height=397]
 
-<<figure-27>> the voltage rail sequencing for the**TPS65217C** as it
+<<figure-27>> the voltage rail sequencing for the **TPS65217C** as it
 powers up and the voltages on each rail. The power sequencing starts at
 15 and then goes to one. That is the way the *TPS65217C* is configured.
 You can refer to the TPS65217C datasheet for more information.
@@ -1521,7 +1560,7 @@ image:media/image41.png[media/image41.png,title="media/image41.png",width=225,he
 
 The power LED is a blue LED that will turn on once the *TPS65217C* has
 finished the power up procedure. If you ever see the LED flash once,
-that means that the**TPS65217C** started the process and encountered an
+that means that the **TPS65217C** started the process and encountered an
 issue that caused it to shut down. The connection of the LED is shown in
 <<figure-25>>.
 
@@ -1549,11 +1588,11 @@ processor is released.
 
 Once the *RTC_PORZn* reset is released, the processor starts the
 initialization process. After the RTC stabilizes, the processor launches
-the rest of the power up process by activating the**PMIC_POWER_EN**
+the rest of the power up process by activating the **PMIC_POWER_EN**
 signal that is connected to the *TPS65217C* which starts the *TPS65217C*
 power up process.
 
-The *LDO_PGOOD* signal is provided by the**TPS65217C** to the processor.
+The *LDO_PGOOD* signal is provided by the **TPS65217C** to the processor.
 As this signal is 1.8V from the *TPS65217C* by virtue of the *TPS65217C*
 VIO rail being set to 1.8V, and the *RTC_PORZ* signal on the processor
 is 3.3V, a voltage level shifter, *U4*, is used. Once the LDOs and
@@ -1565,7 +1604,7 @@ rail on the processor.
 ==== 6.1.12 Processor Control Interface
 
 <<figure-28>> above shows two interfaces between the processor and
-the**TPS65217C** used for control after the power up sequence has
+the **TPS65217C** used for control after the power up sequence has
 completed.
 
 The first is the *I2C0* bus. This allows the processor to turn on and
@@ -1588,13 +1627,13 @@ to the HW design.
 
 In this mode all rails are turned off except the *VDD_RTC*. The
 processor will need to turn off all the rails to enter this mode.
-The**VDD_RTC** staying on will keep the RTC active and provide for the
+The **VDD_RTC** staying on will keep the RTC active and provide for the
 wakeup interfaces to be active to respond to a wake up event.
 
 ===== 6.1.13.2 RTC Plus DDR
 
 In this mode all rails are turned off except the *VDD_RTC* and
-the**VDDS_DDR**, which powers the DDR3L memory. The processor will need
+the **VDDS_DDR**, which powers the DDR3L memory. The processor will need
 to turn off all the rails to enter this mode. The *VDD_RTC* staying on
 will keep the RTC active and provide for the wakeup interfaces to be
 active to respond to a wake up event.
@@ -1809,13 +1848,13 @@ LOAD MODE command. ODT is referenced to VREFCA.
 ==== 6.2.8 Power Rails
 
 The *DDR3L* memory device and the DDR3 rails on the processor are
-supplied by the**TPS65217C**. Default voltage is 1.5V but can be scaled
+supplied by the **TPS65217C**. Default voltage is 1.5V but can be scaled
 down to 1.35V if desired.
 
 [[vref]]
 ==== 6.2.9 VREF
 
-The *VREF* signal is generated from a voltage divider on the**VDDS_DDR**
+The *VREF* signal is generated from a voltage divider on the **VDDS_DDR**
 rail that powers the processor DDR rail and the DDR3L device itself.
 *Figure 33* below shows the configuration of this signal and the
 connection to the DDR3L memory device and the processor.
@@ -1986,7 +2025,7 @@ sent.
 There is no separate card detect pin in the microSD specification. It
 uses *MMCO_DAT3* for that function. However, most microSD connectors
 still supply a CD function on the connectors. In the BeagleBone Black
-design, this pin is connected to the**MMC0_SDCD** pin for use by the
+design, this pin is connected to the **MMC0_SDCD** pin for use by the
 processor. You can also change the pin to *GPIO0_6*, which is able to
 wake up the processor from a sleep mode when an microSD card is inserted
 into the connector.
@@ -2139,7 +2178,7 @@ The VDD_3V3B rail is the main power rail for the *LAN8710A*. It
 originates at the VD_3V3B regulator and is the primary rail that
 supports all of the peripherals on the board. This rail also supplies
 the VDDIO rails which set the voltage levels for all of the I/O signals
-between the processor and the**LAN8710A**.
+between the processor and the **LAN8710A**.
 
 ===== 6.9.3.2 VDD_PHYA Rail
 
@@ -2259,7 +2298,7 @@ The *Figure 44* shows the connections between the processor and the HDMI
 framer device. There are 16 bits of display data, 5-6-5 that is used to
 drive the framer. The reason for 16 bits is that allows for
 compatibility with display and LCD capes already available on the
-original BeagleBone. The unused bits on the**TDA19988** are tied low. In
+original BeagleBone. The unused bits on the **TDA19988** are tied low. In
 addition to the data signals are the VSYNC, HSYNC, DE, and PCLK signals
 that round out the video interface from the processor.
 
@@ -2363,7 +2402,7 @@ image:media/image66.png[media/image66.png,title="media/image66.png",width=570,he
 
 *U8* is a switch that allows the power to the connector to be turned on
 or off by the processor. It also has an over current detection that can
-alert the processor if the current gets too high via the**USB1_OC**
+alert the processor if the current gets too high via the **USB1_OC**
 signal. The power is controlled by the *USB1_DRVBUS* signal from the
 processor.
 
@@ -4650,7 +4689,7 @@ the operation of these pins if used for other functions.
 framer being powered through these input pins which would not a be a
 good idea.
 * These pins are also the *SYSBOOT* pins. DO NOT drive them before
-the**SYS_RESETN** signal goes high. If you do, the board may not boot
+the **SYS_RESETN** signal goes high. If you do, the board may not boot
 because you would be changing the boot order of the processor.
 
 In order to use these pins, the SW will need to reconfigure them to

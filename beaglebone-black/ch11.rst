@@ -1,3 +1,5 @@
+.. _beagleboneblack-support:
+
 Support Information
 ########################
 
@@ -45,21 +47,24 @@ filling out the form at `http://beagleboard.org/support/rma <http://beagleboard.
 
 
 .. figure:: media/image93.jpg
-   :width: 400px
+   :width: 518px
+   :height: 308px
    :align: center
    :alt: Initial Serial Number and Revision Locations
    
    Initial Serial Number and Revision Locations
 
 .. figure:: media/image94.jpg
-   :width: 400px
+   :width: 518px
+   :height: 230px
    :align: center
    :alt: Second Phase Serial Number and Revision Location
 
    Second Phase Serial Number and Revision Location
 
 .. figure:: media/image95.jpg
-   :width: 400px
+   :width: 575px
+   :height: 222px
    :align: center
    :alt: Third Phase Serial Number and Revision Location
 

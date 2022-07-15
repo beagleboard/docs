@@ -1,3 +1,5 @@
+.. _beagleboneblack-hardware:
+
 Detailed Hardware Design
 ############################
 
@@ -6,7 +8,8 @@ This can be useful for interfacing, writing drivers, or using it to help
 modify specifics of your own design.
 
 .. figure:: media/image30.jpg
-   :width: 400px
+   :width: 521px
+   :height: 454px
    :align: center
    :alt: BeagleBone Black Block Diagram
 
@@ -16,7 +19,8 @@ Power Section
 -----------------
 
 .. figure:: media/image31.png
-   :width: 400px
+   :width: 417px
+   :height: 278px
    :align: center
    :alt: High Level Power Block Diagram
 
@@ -64,7 +68,8 @@ For more information on the *TPS65217C*, refer to
 `http://www.ti.com/product/tps65217C <http://www.ti.com/product/tps65217C>`_
 
 .. figure:: media/image37.png
-   :width: 400px
+   :width: 550px
+   :height: 629px
    :align: center
    :alt: TPS65217C Block Diagram
 
@@ -74,7 +79,8 @@ DC Input
 **************
 
 .. figure:: media/image38.png
-   :width: 400px
+   :width: 458px
+   :height: 408px
    :align: center
    :alt: TPS65217 DC Connection
 
@@ -105,7 +111,8 @@ of the expansion header for use by a cape. *Figure 24* is the connection
 of the USB power input on the PMIC.
 
 .. figure:: media/image96.png
-   :width: 400px
+   :width: 519px
+   :height: 622px
    :align: center
    :alt: USB Power Connections
 
@@ -163,6 +170,9 @@ via a cape if desired. The four signals are listed below in *table-3* .
 
 .. list-table:: BeagleBone Black Battery Pins
    :header-rows: 1
+   :class: longtable
+   :widths: 15 15 70
+   :align: center
 
    * - PIN
      - DESIGNATION
@@ -207,6 +217,9 @@ following configuration:
 
 .. list-table:: BeagleBone Black Power Consumption(mA@5V)
    :header-rows: 1
+   :class: longtable
+   :widths: 40 20 20 20
+   :align: center
 
    * - MODE
      - USB
@@ -294,7 +307,8 @@ Power Rails
 *****************
 
 .. figure:: media/image39.jpg
-   :width: 400px
+   :width: 562px
+   :height: 505px
    :align: center
    :alt: Power Rails
 
@@ -357,7 +371,8 @@ diagrams. It is from the processor datasheet supplied by Texas
 Instruments.
 
 .. figure:: media/image40.png
-   :width: 400px
+   :width: 547px
+   :height: 397px
    :align: center
    :alt: Power Rail Power Up Sequencing
 
@@ -369,7 +384,8 @@ powers up and the voltages on each rail. The power sequencing starts at
 You can refer to the TPS65217C datasheet for more information.
 
 .. figure:: media/image41.png
-   :width: 400px
+   :width: 225px
+   :height: 188px
    :align: center
    :alt: TPS65217C Power Sequencing Timing
 
@@ -387,12 +403,13 @@ issue that caused it to shut down. The connection of the LED is shown in
 TPS65217C Power Up Process
 *********************************
 
-*figure-28* shows the interface between the **TPS65217C** and the
+Figure below shows the interface between the **TPS65217C** and the
 processor. It is a cut from the PDF form of the schematic and reflects
 what is on the schematic.
 
 .. figure:: media/image42.jpg
    :width: 400px
+   :height: 185px
    :align: center
    :alt: Power Processor Interfaces
 
@@ -486,11 +503,12 @@ processor.
 Description
 *****************
 
-*figure-29* is a high level block diagram of the processor. For more information on the processor, go to
+Figure below shows is a high level block diagram of the processor. For more information on the processor, go to
 `http://www.ti.com/product/am3358 <http://www.ti.com/product/am3358>`_
 
 .. figure:: media/image43.png
-   :width: 400px
+   :width: 503px
+   :height: 511px
    :align: center
    :alt: Sitara AM3358BZCZ Block Diagram
 
@@ -503,6 +521,9 @@ High Level Features
 
 .. list-table:: Processor Features
    :header-rows: 1
+   :class: longtable
+   :align: center
+   :widths: 25 30 25 20
 
    * - Operating Systems
      - Linux, Android, Windows Embedded CE,QNX,ThreadX 
@@ -576,7 +597,8 @@ Crystal Circuitry
 ***********************
 
 .. figure:: media/image44.png
-   :width: 400px
+   :width: 570px
+   :height: 223px
    :align: center
    :alt: Processor Crystals
 
@@ -603,7 +625,8 @@ using an open drain buffer. These ensure that the line does not
 momentarily go high on power up.
 
 .. figure:: media/image45.png
-   :width: 400px
+   :width: 568px
+   :height: 333px
    :align: center
    :alt: Board Reset Circuitry
 
@@ -669,7 +692,8 @@ are disabled during powerdown. Input buffers (excluding CKE and RESET#)
 are disabled during SELF REFRESH. CKE is referenced to VREFCA.
 
 .. figure:: media/image46.png
-   :width: 400px
+   :width: 566px
+   :height: 525px
    :align: center
    :alt: DDR3L Memory Design
 
@@ -710,7 +734,8 @@ rail that powers the processor DDR rail and the DDR3L device itself.
 connection to the DDR3L memory device and the processor.
 
 .. figure:: media/image47.jpg
-   :width: 400px
+   :width: 376px
+   :height: 269px
    :align: center
    :alt: DDR3L VREF Design
 
@@ -766,7 +791,8 @@ Pullup resistors are used to increase the rise time on the signals to
 compensate for any capacitance on the board.
 
 .. figure:: media/image48.png
-   :width: 400px
+   :width: 542px
+   :height: 224px
    :align: center
    :alt: eMMC Memory Design
 
@@ -775,7 +801,8 @@ compensate for any capacitance on the board.
 The pins used by the eMMC1 in the boot mode are listed below in *Table 6*.
 
 .. figure:: media/image49.png
-   :width: 400px
+   :width: 528px
+   :height: 112px
    :align: center
    :alt: eMMC Boot Pins
 
@@ -811,6 +838,9 @@ the contents of the EEPROM.
 
 .. list-table:: EEPROM Contents
    :header-rows: 1
+   :class: longtable
+   :align: center
+   :widths: 20 15 65
 
    * - Name 
      - Size (bytes) 
@@ -844,7 +874,8 @@ the contents of the EEPROM.
      - Available space for other non-volatile codes/data
 
 .. figure:: media/image50.png
-   :width: 400px
+   :width: 473px
+   :height: 194px
    :align: center
    :alt: EEPROM Design Rev A5
 
@@ -869,7 +900,8 @@ microSD Design
 ********************
 
 .. figure:: media/image51.png
-   :width: 400px
+   :width: 550px
+   :height: 216px
    :align: center
    :alt: microSD Design
 
@@ -905,7 +937,8 @@ GPIO pins on the processor. *Figure 37* shows the interfaces for the
 user LEDs.
 
 .. figure:: media/image52.png
-   :width: 400px
+   :width: 570px
+   :height: 290px
    :align: center
    :alt: User LEDs
 
@@ -916,7 +949,8 @@ boards.
 
 .. list-table:: User LED Control Signals/Pins
    :header-rows: 1
-
+   :class: longtable
+   :align: center
 
    * - LED 
      - GPIO SIGNAL 
@@ -966,7 +1000,8 @@ to determine the boot order. S2 is used to change the level of one bit
 from HI to LO which changes the boot order.
 
 .. figure:: media/image53.png
-   :width: 400px
+   :width: 448px
+   :height: 367px
    :align: center
    :alt: Processor Boot Configuration Design
 
@@ -986,7 +1021,8 @@ Based on the selected option found in *figure-39* below, each of the
 boot sequences for each of the two settings is shown.
 
 .. figure:: media/image54.jpg
-   :width: 400px
+   :width: 601px
+   :height: 130px
    :align: center
    :alt: Processor Boot Configuration
 
@@ -1015,7 +1051,8 @@ described in the following sections.
 **********************************
 
 .. figure:: media/image55.png
-   :width: 400px
+   :width: 448px
+   :height: 312px
    :align: center
    :alt: Ethernet Processor Interface
 
@@ -1031,7 +1068,8 @@ The off board side of the PHY connections are shown in *Figure 41*
 below.
 
 .. figure:: media/image56.png
-   :width: 400px
+   :width: 570px
+   :height: 347px
    :align: center
    :alt: Ethernet Connector Interface
 
@@ -1043,7 +1081,8 @@ Ethernet PHY Power, Reset, and Clocks
 *******************************************
 
 .. figure:: media/image57.png
-   :width: 400px
+   :width: 570px
+   :height: 367px
    :align: center
    :alt: Ethernet PHY, Power, Reset, and Clocks
 
@@ -1093,7 +1132,8 @@ value pull up resistors are used. *Figure 43* below shows the three mode
 pin resistors.
 
 .. figure:: media/image97.png
-   :width: 400px
+   :width: 386px
+   :height: 349px
    :align: center
    :alt: Ethernet PHY Mode Pins
 
@@ -1124,6 +1164,8 @@ the highest compatible resolution is selected.
 
 .. list-table:: HDMI Supported Monitor Resolutions
    :header-rows: 1
+   :class: longtable
+   :align: center
 
    * - RESOLUTION 
      - AUDIO
@@ -1198,7 +1240,8 @@ addition to the data signals are the VSYNC, HSYNC, DE, and PCLK signals
 that round out the video interface from the processor.
 
 .. figure:: media/image58.png
-   :width: 400px
+   :width: 449px
+   :height: 481px
    :align: center
    :alt: HDMI Framer Processor Interface
 
@@ -1215,7 +1258,8 @@ tied low. The I2C interface supports both 400kHz and 100KhZ operation.
 *Table 10* shows the I2C address.
 
 .. figure:: media/image59.png
-   :width: 400px
+   :width: 527px
+   :height: 72px
    :align: center
    :alt: TDA19988 I2C Address
 
@@ -1256,7 +1300,8 @@ if the need was there to use the pin on the expansion header. *Figure
 45* shows the oscillator circuitry.
 
 .. figure:: media/image60.png
-   :width: 400px
+   :width: 575px
+   :height: 169px
    :align: center
    :alt: 24.576MHZ Oscillator
 
@@ -1270,7 +1315,8 @@ voltage rails for the device are at 1.8V. A filter is provided to
 minimize any noise from the 1.8V rail getting back into the device.
 
 .. figure:: media/image64.png
-   :width: 400px
+   :width: 550px
+   :height: 315px
    :align: center
    :alt: HDMI Power Connections
 
@@ -1286,7 +1332,8 @@ HDMI Connector Interface
 and the connector.
 
 .. figure:: media/image65.png
-   :width: 400px
+   :width: 521px
+   :height: 430px
    :align: center
    :alt: Connector Interface Circuitry
 
@@ -1304,7 +1351,8 @@ single USB Type A female connector. <<figure-48>> is the design of the USB
 Host circuitry.
 
 .. figure:: media/image66.png
-   :width: 400px
+   :width: 570px
+   :height: 205px
    :align: center
    :alt: USB Host circuit
 
@@ -1370,7 +1418,8 @@ PRU-ICSS Block Diagram
 *****************************
 
 .. figure:: media/image67.png
-   :width: 400px
+   :width: 427px
+   :height: 275px
    :align: center
    :alt: PRU-ICSS Block Diagram
 
@@ -1387,235 +1436,213 @@ for example. Listed below is what ports can be accessed on each PRU.
 * 13 outputs or 14 inputs
 * UART0_TXD, UART0_RXD, UART0_CTS, UART0_RTS
 
-.. list-table:: PRU0 and PRU1 Access
+.. list-table:: P8 PRU0 and PRU1 Access
    :header-rows: 1
+   :class: longtable
+   :align: center
+   :widths: 5 8 15 24 24 24
 
-   * - 
-     - PIN 
+   * - PIN 
      - PROC 
      - NAME 
      - 
      -
      -
-   * - P8 
-     - 11 
+   * - 11 
      - R12 
      - GPIO1_13 
      - 
      - pr1_pru0_pru_r30_15 (Output)  
      - 
-   * - 
-     - 12 
+   * - 12 
      - T12 
      - GPIO1_12 
      - 
      - pr1_pru0_pru_r30_14 (Output) 
      - 
-   * - 
-     - 15 
+   * - 15 
      - U13 
      - GPIO1_15 
      - 
      - pr1_pru0_pru_r31_15 (Input) 
      - 
-   * - 
-     - 16 
+   * - 16 
      - V13 
      - GPIO1_14 
      - 
      - pr1_pru0_pru_r31_14 (Input) 
      - 
-   * - 
-     - 20 
+   * - 20 
      - V9 
      - GPIO1_31 
      - pr1_pru1_pru_r30_13 (Output) 
      - pr1_pru1_pru_r31_13 (INPUT) 
      - 
-   * -
-     - 21 
+   * - 21 
      - U9 
      - GPIO1_30 
      - pr1_pru1_pru_r30_12 (Output) 
      - pr1_pru1_pru_r31_12 (INPUT) 
      - 
-   * - 
-     - 27 
+   * - 27 
      - U5 
      - GPIO2_22 
      - pr1_pru1_pru_r30_8 (Output) 
      - pr1_pru1_pru_r31_8 (INPUT) 
      - 
-   * - 
-     - 28 
+   * - 28 
      - V5 
      - GPIO2_24 
      - pr1_pru1_pru_r30_10 (Output) 
      - pr1_pru1_pru_r31_10 (INPUT) 
      - 
-   * -
-     - 29 
+   * - 29 
      - R5 
      - GPIO2_23 
      - pr1_pru1_pru_r30_9 (Output) 
      - pr1_pru1_pru_r31_9 (INPUT) 
      - 
-   * - 
-     - 39 
+   * - 39 
      - T3 
      - GPIO2_12 
      - pr1_pru1_pru_r30_6 (Output) 
      - pr1_pru1_pru_r31_6 (INPUT) 
      - 
-   * -
-     - 40 
+   * - 40 
      - T4 
      - GPIO2_13 
      - pr1_pru1_pru_r30_7 (Output) 
      - pr1_pru1_pru_r31_7 (INPUT) 
      -
-   * - 
-     - 41 
+   * - 41 
      - T1 
      - GPIO2_10 
      - pr1_pru1_pru_r30_4 (Output) 
      - pr1_pru1_pru_r31_4 (INPUT) 
      - 
-   * -
-     - 42 
+   * - 42 
      - T2 
      - GPIO2_11 
      - pr1_pru1_pru_r30_5 (Output) 
      - pr1_pru1_pru_r31_5 (INPUT) 
      - 
-   * - 
-     - 43 
+   * - 43 
      - R3 
      - GPIO2_8 
      - pr1_pru1_pru_r30_2 (Output) 
      - pr1_pru1_pru_r31_2 (INPUT) 
      - 
-   * -
-     - 44 
+   * - 44 
      - R4 
      - GPIO2_9 
      - pr1_pru1_pru_r30_3 (Output) 
      - pr1_pru1_pru_r31_3 (INPUT) 
      - 
-   * -
-     - 45 
+   * - 45 
      - R1 
      - GPIO2_6 
      - pr1_pru1_pru_r30_0 (Output) 
      - pr1_pru1_pru_r31_0 (INPUT) 
      - 
-   * -
-     - 46 
+   * - 46 
      - R2 
      - GPIO2_7 
      - pr1_pru1_pru_r30_1 (Output) 
      - pr1_pru1_pru_r31_1 (INPUT) 
      - 
-   * -
+
+
+.. list-table:: P9 PRU0 and PRU1 Access
+   :header-rows: 1
+   :class: longtable
+   :align: center
+   :widths: 5 8 15 24 24 24
+
+   * - PIN 
+     - PROC 
+     - NAME 
+     - 
      -
      -
-     -
-     -
-     -
-     -
-   * - P9 
-     - 17 
+   * - 17 
      - A16 
      - I2C1_SCL 
      - pr1_uart0_txd 
      - 
      -
-   * -
-     - 18 
+   * - 18 
      - B16 
      - I2C1_SDA 
      - pr1_uart0_rxd 
      - 
      -
-   * -
-     - 19 
+   * - 19 
      - D17 
      - I2C2_SCL 
      - pr1_uart0_rts_n 
      - 
      -
-   * -
-     - 20 
+   * - 20 
      - D18 
      - I2C2_SDA 
      - pr1_uart0_cts_n 
      - 
      - 
-   * -
-     - 21 
+   * - 21 
      - B17 
      - UART2_TXD 
      - pr1_uart0_rts_n 
      - 
      -
-   * -
-     - 22 
+   * - 22 
      - A17 
      - UART2_RXD 
      - pr1_uart0_cts_n 
      - 
      -
-   * -
-     - 24 
+   * - 24 
      - D15 
      - UART1_TXD 
      - pr1_uart0_txd 
      - pr1_pru0_pru_r31_16 (Input) 
      - 
-   * -
-     - 25 
+   * - 25 
      - A14 
      - GPIO3_21
      - pr1_pru0_pru_r30_5 (Output) 
      - pr1_pru0_pru_r31_5 (Input) 
      - 
-   * -
-     - 26 
+   * - 26 
      - D16 
      - UART1_RXD 
      - pr1_uart0_rxd 
      - pr1_pru1_pru_r31_16 
      -
-   * -
-     - 27 
+   * - 27 
      - C13 
      - GPIO3_19 
      - pr1_pru0_pru_r30_7 (Output) 
      - pr1_pru0_pru_r31_7 (Input) 
      - 
-   * - 
-     - 28 
+   * - 28 
      - C12 
      - SPI1_CS0 
      - eCAP2_in_PWM2_out 
      - pr1_pru0_pru_r30_3 (Output) 
      - pr1_pru0_pru_r31_3 (Input)
-   * -
-     - 29 
+   * - 29 
      - B13 
      - SPI1_D0 
      - pr1_pru0_pru_r30_1 (Output) 
      - pr1_pru0_pru_r31_1 (Input) 
      - 
-   * -
-     - 30 
+   * - 30 
      - D12 
      - SPI1_D1 
      - pr1_pru0_pru_r30_2 (Output) 
      - pr1_pru0_pru_r31_2 (Input) 
      -
-   * -
-     - 31 
+   * - 31 
      - A13 
      - SPI1_SCLK 
      - pr1_pru0_pru_r30_0 (Output) 

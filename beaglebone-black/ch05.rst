@@ -1,3 +1,5 @@
+.. _beagleboneblack-specifications:
+
 BeagleBone Black High Level Specification
 #############################################
 
@@ -8,7 +10,8 @@ Block Diagram
 -----------------
 
 .. figure:: media/image30.jpg
-   :width: 400px
+   :width: 512px
+   :height: 454px
    :align: center
    :alt: BeagleBone Black Key Components
 
@@ -266,4 +269,4 @@ not be present or are limited to the BeagleBone Black. These include:
 * Another option is to use the microSD or serial boot modes and not use the eMMC.
 * The power expansion header is not on the BeagleBone Black so those functions are not supported.
 
-For more information on cape support refer to *section-9*.
+For more information on cape support refer to :ref:`beagleboneblack-mechanical` section.
