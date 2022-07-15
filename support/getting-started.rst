@@ -202,7 +202,7 @@ Hardware documentation
 
 Be sure to check check the latest hardware documentation for your board at https://docs.beagleboard.org.
 
-Detailed design materials for various boards can be found at https://git.beagleboard.org/explore/projects/topics/boards. 
+Detailed design materials for various boards can be found at https://git.beagleboard.org/explore/projects/topics/boards.
 
 Books
 -----
