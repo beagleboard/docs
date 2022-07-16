@@ -427,7 +427,7 @@ by the user when the EEPROM contents are dumped.
    * - DC Supplied
      - 242
      - 2
-     - Indicates whether or not the board is supplying voltage on the VDD_5V rail and the current rating 000=No 1-0xFFFF is the current supplied storing the decimal quivalent in HEX format
+     - Indicates whether or not the board is supplying voltage on the VDD_5V rail and the current rating 000=No 1-0xFFFF is the current supplied storing the decimal equivalent in HEX format
    * - Available
      - 244
      - 32543
@@ -2048,7 +2048,7 @@ example would be an LCD panel. There is no practical limit to the sizes
 of these types of boards. The notch for the key is also not required,
 but it is up to the supplier of these boards to ensure that the
 BeagleBone Black is not plugged in incorrectly in such a manner that
-damage would be cause to the BeagleBone Black or any other capes that
+damage would be caused to the BeagleBone Black or any other capes that
 may be installed. Any such damage will be the responsibility of the
 supplier of such a cape to repair.
 

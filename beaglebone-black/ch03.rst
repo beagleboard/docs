@@ -69,7 +69,7 @@ Tethered To A PC
 In this configuration, the board is powered by the PC via the provided
 USB cable--no other cables are required. The board is accessed either as
 a USB storage drive or via the browser on the PC. You need to use either
-Firefox or Chrome on the PC, IEx will not work properly. <<figure-2>>
+Firefox or Chrome on the PC, Internet Explorer will not work properly. <<figure-2>>
 shows this configuration.
 
 .. figure:: media/image8.jpg
@@ -126,7 +126,7 @@ Accessing the Board as a Storage Drive
 ********************************************
 
 The board will appear around a USB Storage drive on your PC after the
-kernel has booted, which will take a round 10 seconds. The kernel on the
+kernel has booted, which will take around 10 seconds. The kernel on the
 board needs to boot before the port gets enumerated. Once the board
 appears as a storage drive, do the following:
 
@@ -266,7 +266,7 @@ As soon as the power is applied to the board, it will start the booting up proce
 
    Board Boot Status
 
-While the four user LEDS can be over written and used as desired, they
+While the four user LEDs can be overwritten and used as desired, they
 do have specific meanings in the image that is shipped with the board
 once the Linux kernel has booted.
 

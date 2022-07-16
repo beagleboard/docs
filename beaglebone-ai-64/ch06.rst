@@ -213,9 +213,9 @@ the board boot processes. Measurements were taken with the board in the
 following configuration:
 
 * DC powered and USB powered
-*  monitor connected
+* monitor connected
 * USB HUB
-* 4GB Thumbdrive
+* 4GB USB flash drive
 * Ethernet connected @ 100M
 * Serial debug cable connected
 

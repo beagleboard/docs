@@ -16,6 +16,11 @@ Sections
 
 .. toctree::
    :maxdepth: 1
+
+   contribution/index.rst
+
+.. toctree::
+   :maxdepth: 1
    :caption: Boards
 
    beaglebone-black/index.rst

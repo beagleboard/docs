@@ -1397,7 +1397,7 @@ following configuration:
 * DC powered and USB powered
 * HDMI monitor connected
 * USB HUB
-* 4GB Thumbdrive
+* 4GB USB flash drive
 * Ethernet connected @ 100M
 * Serial debug cable connected
 

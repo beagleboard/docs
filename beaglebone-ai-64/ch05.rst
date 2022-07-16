@@ -230,7 +230,7 @@ As mentioned earlier, there are two boot modes:
 
 A switch is provided to allow switching between the modes.
 
-* Holding the boot switch down during a removal and reapplication of power without a microSD card inserted will force the boot source to be the USB port and if nothing is detected on the USB client port, it will goto the serial port for download.
+* Holding the boot switch down during a removal and reapplication of power without a microSD card inserted will force the boot source to be the USB port and if nothing is detected on the USB client port, it will go to the serial port for download.
 * Without holding the switch, the board will boot try to boot from the eMMC. If it is empty, then it will try booting from the microSD slot, followed by the serial port, and then the USB port.
 * If you hold the boot switch down during the removal and reapplication of power to the board, and you have a microSD card inserted with a bootable image, the board will boot from the microSD card.
 
@@ -263,7 +263,7 @@ Two serial debug ports are provided on board via 3pin micro headers,
 2. UART0: Main domain serial port
 
 
-In order to use the interfaces a `3pin micro to 6pin dupont adaptor header <https://uk.farnell.com/element14/1103004000156/beaglebone-ai-serials-cable/dp/3291081>`_ is required with a 6 pin USB to TTL adapter. The header is compatible with the one provided by FTDI and canbe purchased for about $$12 to $$20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.
+In order to use the interfaces a `3pin micro to 6pin dupont adaptor header <https://uk.farnell.com/element14/1103004000156/beaglebone-ai-serials-cable/dp/3291081>`_ is required with a 6 pin USB to TTL adapter. The header is compatible with the one provided by FTDI and can be purchased for about $$12 to $$20 from various sources. Signals supported are TX and RX. None of the handshake signals are supported.
 
 .. _usb1-host-port:
 

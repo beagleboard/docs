@@ -193,7 +193,7 @@ via a cape if desired. The four signals are listed below in *table-3* .
 
 There is no fuel gauge function provided by the *TPS65217C*. That would
 need to be added if that function was required. If you want to add a
-fuel gauge, and option is to use 1-wire SPI or I2C device. You will need
+fuel gauge, an option is to use 1-wire SPI or I2C device. You will need
 to add this using the expansion headers and place it on an expansion
 board.
 
@@ -210,7 +210,7 @@ following configuration:
 * DC powered and USB powered
 * HDMI monitor connected
 * USB HUB
-* 4GB Thumbdrive
+* 4GB USB flash drive
 * Ethernet connected @ 100M
 * Serial debug cable connected
 
@@ -1278,7 +1278,7 @@ Audio Interface
 There is an I2S audio interface between the processor and the
 *TDA19988*. Stereo audio can be transported over the HDMI interface to
 an audio equipped display. In order to create the required clock
-frequencies, and external 24.576MHz oscillator,*Y4*, is used. From this
+frequencies, an external 24.576MHz oscillator,*Y4*, is used. From this
 clock, the processor generates the required clock frequencies for the
 *TDA19988*.
 
