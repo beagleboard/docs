@@ -131,7 +131,7 @@ This section covers the specifications and features of the board and provides a 
         1. WKUP_UART0: Wake-up domain serial port 
         2. UART0: Main domain serial port
       
-       10-pin JTAG TAG-CONNECT footprin
+       10-pin JTAG TAG-CONNECT footprint
    * - **Power Source**    
      - USB C or DC Jack (5V, >3A)
    * - **PCB**  

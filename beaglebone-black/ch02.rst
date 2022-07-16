@@ -5,7 +5,7 @@ Change History
 
 This section describes the change history of this document and board.
 Document changes are not always a result of a board change. A board
-change will always connectivityresult in a document change.
+change will always result in a document change.
 
 Document Change History
 ---------------------------
@@ -196,7 +196,7 @@ Rev A5C
 *************
 
 We were seeing some fallout in production test where we were seeing some
-jitter on the HDMI display test. It started showing up on out second
+jitter on the HDMI display test. It started showing up on our second
 production run. R46, R47, R48 were changed to 0 ohm from 33 ohm. R45 was
 taken from 330 ohm to 22 ohm.
 

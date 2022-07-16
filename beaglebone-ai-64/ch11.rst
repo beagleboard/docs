@@ -3,7 +3,7 @@
 Support Information
 ####################
 
-All support for this design is through BeagleBoard.org community at: link: `BeagleBoard.org fourm <https://forum.beagleboard.org/>`_ .
+All support for this design is through BeagleBoard.org community at: link: `BeagleBoard.org forum <https://forum.beagleboard.org/>`_ .
 
 
 .. _hardware-design:
@@ -51,4 +51,4 @@ Troubleshooting video output issues
 Getting Help
 *************
 
-If you need some up to date troubleshooting techniques, you can post your queries on link: `BeagleBoard.org fourm <https://forum.beagleboard.org/>`_
+If you need some up to date troubleshooting techniques, you can post your queries on link: `BeagleBoard.org forum <https://forum.beagleboard.org/>`_
