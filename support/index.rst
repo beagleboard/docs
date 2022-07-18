@@ -10,3 +10,4 @@ Support
 
    overview.rst
    getting-started.rst
+   cape-interface-spec.rst
