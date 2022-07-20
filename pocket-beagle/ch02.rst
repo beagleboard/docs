@@ -1,0 +1,80 @@
+.. _pocketbeagle_change_history:
+
+Change History
+=====================
+
+This section describes the change history of this document and board.
+Document changes are not always a result of a board change. A board
+change will always result in a document change.
+
+.. _document_change_history:
+
+Document Change History
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. table:: Change History
+
+    ======= =================== ================== ======
+    **Rev** **Changes**         **Date**           **By**
+    ======= =================== ================== ======
+    A.x     Production Document *December 7, 2017* JK
+    ======= =================== ================== ======
+
+.. _board_changes:
+
+Board Changes
+~~~~~~~~~~~~~~~~~
+
+.. table:: Board History  
+
+    +---------+-----------------------+----------------------+--------+
+    | **Rev** | **Changes**           | **Date**             | **By** |
+    +=========+=======================+======================+========+
+    | A1      | Preliminary           | *February 14, 2017*  | JK     |
+    +---------+-----------------------+----------------------+--------+
+    | A2      | Production. Fixed     | *September 22, 2017* | JK     |
+    |         | mikroBUS Click reset  |                      |        |
+    |         | pins (made GPIO).     |                      |        |
+    +---------+-----------------------+----------------------+--------+
+
+PocketBone
+^^^^^^^^^^^^^^^^
+
+Upon the creation of the first, 27mm-by-27mm, Octavo Systems OSD3358
+SIP, Jason did a hack two-layer board in EAGLE called “PocketBone” to
+drop the Beagle name as this was a totally unofficial effort not geared
+at being a BeagleBoard.org Foundation project. The board never worked
+because the 32kHz and 24MHz crystals were backwards and Michael Welling
+decided to pick it up and redo the design in KiCad as a four-layer
+board. Jason paid for some prototypes and this resulted in the first
+successful “PocketBone”, a fully-open-source 1-GHz Linux computer in a
+fitting into a mini-mint tin.
+
+.. _rev_a1:
+
+Rev A1
+^^^^^^^^^^^^
+
+The Rev A1 of PocketBeagle was a prototype not released to production. A
+few lines were wrong to be able to control mikroBUS Click add-on board
+reset lines and they were adjusted.
+
+.. _rev_a2:
+
+Rev A2
+^^^^^^^^^^^^
+
+The Rev A2 of PocketBeagle was released to production and
+[https://www.prnewswire.com/news-releases/small-in-size--cost-meet-pocketbeagle-the-25-development-board-for-hobbyists-educators-and-professionals-300519950.html\ *launched
+at World MakerFaire 2017*].
+
+Known issues in rev A2:
+
++----------------------------------+----------------------------------+
+| **Issue**                        | **Link**                         |
++==================================+==================================+
+| GPIO44 is incorrectly labelled   | `github                          |
+| as GPIO48                        | .com/beagleboard/pocketbeagle/is |
+|                                  | sues/4 <https://github.com/beagl |
+|                                  | eboard/pocketbeagle/issues/4>`__ |
++----------------------------------+----------------------------------+

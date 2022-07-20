@@ -1,0 +1,71 @@
+.. _pocketbeagle_support_information:
+
+Support Information
+============================
+
+All support for this design is through the BeagleBoard.org community at:
+
+-  `beagleboard@googlegroups.com <https://beagleboard.org/chat>`__ or
+-  `beagleboard.org/discuss <https://beagleboard.org/discuss>`__.
+
+.. _hardware_design:
+
+Hardware Design
+~~~~~~~~~~~~~~~~~~~~
+
+Design documentation can be found on the wiki.
+https://github.com/beagleboard/pocketbeagle Including:
+
+-  Schematic in PDF
+   https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_sch.pdf
+-  Schematic and layout in EAGLE
+   https://github.com/beagleboard/pocketbeagle/tree/master/EAGLE
+-  Schematic and layout in KiCAD
+   https://github.com/beagleboard/pocketbeagle/tree/master/KiCAD
+-  Bill of Materials
+   https://github.com/beagleboard/pocketbeagle/blob/master/PocketBeagle_BOM.csv
+-  System Reference Manual https://github.com/beagleboard/pocketbeagle.
+
+.. _software_updates:
+
+Software Updates
+~~~~~~~~~~~~~~~~~~~~~
+
+It is a good idea to always use the latest software. Instructions for
+how to update your software to the latest version can be found at:
+
+Download the latest software files from
+`beagleboard.org/latest-images <https://beagleboard.org/latest-images>`__
+
+.. _export_information:
+
+Export Information
+~~~~~~~~~~~~~~~~~~~~~~~
+
+-  ECCN: EAR99
+-  CCATS: G173833
+-  Documentation:
+   `github.com/beagleboard/pocketbeagle/blob/master/regulatory/PocketBeagle_Export_Classification.pdf <https://github.com/beagleboard/pocketbeagle/blob/master/regulatory/PocketBeagle_Export_Classification.pdf>`__
+
+.. _rma_support:
+
+RMA Support
+~~~~~~~~~~~~~~~~
+
+If you feel your board is defective or has issues and before returning
+merchandise, please seek approval from the manufacturer using
+`beagleboard.org/support/rma <https://beagleboard.org/support/rma>`__.
+You will need the manufacturer, model, revision and serial number of the
+board.
+
+.. _getting_help:
+
+Getting Help
+~~~~~~~~~~~~~~~~~
+
+If you need some up to date troubleshooting techniques, the Wiki is a
+great place to start
+`github.com/beagleboard/pocketbeagle/wiki <https://github.com/beagleboard/pocketbeagle/wiki>`__.
+
+If you need professional support, check out
+`beagleboard.org/resources <https://beagleboard.org/resources>`__.
