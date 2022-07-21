@@ -13,4 +13,4 @@ BeagleBoard Docs
    support/index.rst
    beaglebone-black/index.rst
    beaglebone-ai-64/index.rst
-   pocket-beagle/index.rst
+   pocketbeagle/index.rst
