@@ -19,6 +19,9 @@ Document Change History
     ======= =================== ================== ======
     A.x     Production Document *December 7, 2017* JK
     ======= =================== ================== ======
+    0.0.5   Converted to .rst   *July 21, 2022*    DK
+             and gitlab hosting
+    ======= =================== ================== ======
 
 .. _board_changes:
 
