@@ -1,8 +1,0 @@
-.. _pocketbeagle_pocketcape_support:
-
-PocketCape Support
-==========================
-
-This is a placeholder for recommendations for those building their own
-PocketCape designs. If you'd like to join the conversation 
-`'check out the discussion on the google group for PocketBeagle' <https://groups.google.com/forum/#!category-topic/beagleboard/pocketbeagle/Uxx_9ce2YHM>`__
