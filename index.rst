@@ -26,7 +26,7 @@ Sections
    beaglebone-black/index.rst
    beaglebone-ai-64/index.rst
    pocketbeagle/index.rst
-
+   beaglebone-blue/index.rst
 
 Indices and tables
 ############################
