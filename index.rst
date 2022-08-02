@@ -28,6 +28,13 @@ Sections
    pocketbeagle/index.rst
    beaglebone-blue/index.rst
 
+.. toctree::
+   :maxdepth: 1
+   :caption: simpPRU
+
+   simppru/index.rst
+   simppru-examples/index.rst
+
 Indices and tables
 ############################
 
