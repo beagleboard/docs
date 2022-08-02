@@ -27,6 +27,7 @@ Sections
    beaglebone-ai-64/index.rst
    pocketbeagle/index.rst
    beaglebone-blue/index.rst
+   beagleconnect/index.rst
 
 .. toctree::
    :maxdepth: 1
