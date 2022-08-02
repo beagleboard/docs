@@ -1,4 +1,6 @@
-Welcome to simpPRU Docs
+.. _simppru_basics:
+
+simpPRU Basics
 ##############
 
 The PRU is a dual core micro-controller system present on the AM335x SoC
