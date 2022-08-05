@@ -36,6 +36,12 @@ Sections
    simppru/index.rst
    simppru-examples/index.rst
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Books
+
+   bone-cook-book/index.rst
+
 Indices and tables
 ############################
 
