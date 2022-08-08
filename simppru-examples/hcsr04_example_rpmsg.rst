@@ -1,12 +1,11 @@
 HCSR04 Distance Sensor example (sending distance data to ARM using RPMSG)
 =========================================================================
 
-!!! info “Schematic” === “Pocket Beagle” |image0|
-
-::
-
-   === "BeagleBone Black / Beagle Bone Black Wireless"
-       ![](images/hcsr04_beagle_bone_black.png)   
+.. image:: images/hcsr04_pocket_beagle.png
+   :width: 598
+   :align: center
+   :height: 400
+   :alt: HCSR04 Distance Sensor example
 
 Code
 ----

@@ -37,7 +37,7 @@ What is simpPRU
    assigned data types during compilation.
 -  It is typesafe, and data types of variables are decided during
    compilation.
--  simPRU codes have a ``.sim`` extension.
+-  simpPRU codes have a ``.sim`` extension.
 -  simpPRU provides a console app to use Remoteproc functionality.
 
 
