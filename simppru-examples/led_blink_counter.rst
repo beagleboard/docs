@@ -1,12 +1,11 @@
 LED blink using hardware counter
 ================================
 
-!!! info “Schematic” === “Pocket Beagle” |image0|
-
-::
-
-   === "BeagleBone Black / Beagle Bone Black Wireless"
-       ![](images/led_beagle_bone_black.png)
+.. image:: images/led_pocket_beagle.png
+   :width: 598
+   :align: center
+   :height: 400
+   :alt: LED blink using hardware counter
 
 Code
 ----
@@ -49,5 +48,3 @@ loop. Here, we check if ``read_counter`` is less than 200000000, as
 counter takes exactly 1 second to count this much cycles, so basically
 the LED is turned on for 1 second, and then turned off for 1 second.
 Thus if a LED is connected to the pin, we get a endlessly blinking LED.
-
-.. |image0| image:: images/led_pocket_beagle.png

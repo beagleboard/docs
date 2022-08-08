@@ -1,12 +1,11 @@
 Digital read example
 ====================
 
-!!! info “Schematic” === “Pocket Beagle” |image0|
-
-::
-
-   === "BeagleBone Black / Beagle Bone Black Wireless"
-       ![](images/led_button_beagle_bone_black.png)   
+.. image:: images/led_button_pocket_beagle.png
+   :width: 598
+   :align: center
+   :height: 400
+   :alt: Digital read example
 
 Code
 ----
@@ -33,4 +32,3 @@ This code runs a never ending loop, since it is ``while : true``. Inside
 P1_29 is HIGH, header pin P1_31 is set to LOW, and if header pin P1_29
 is LOW, header pin P1_31 is set to HIGH.
 
-.. |image0| image:: images/led_button_pocket_beagle.png

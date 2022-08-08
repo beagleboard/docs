@@ -14,8 +14,7 @@ Datatypes
 -  ``int`` - Integer datatype
 -  ``bool`` - Boolean datatype
 -  ``char`` / ``uint8`` - Character / Unsigned 8 bit integer datatype
--  ``void`` - Void datatype, can only be used a return type for
-   functions
+-  ``void`` - Void datatype, can only be used a return type for functions
 
 Constants
 ---------
@@ -27,8 +26,7 @@ Constants
 -  ``true`` - Boolean constant (True)
 -  ``false`` - Boolean constant (False)
 -  ``Px_yz`` - Pin mapping constants are Integer constant, where x is
-   1,2 or 8,9 and yz are the header pin numbers. For further details
-   refer to `this <io.md>`__
+   1,2 or 8,9 and yz are the header pin numbers.
 
 Operators
 ---------
@@ -81,8 +79,7 @@ Variable declaration
    ``boolean`` by default.
 -  Variables can be assigned other variables of same datatype.
    ``int``\ s and ``char``\ s can be assigned to each other.
--  Variables can be assigned expressions whose output is of same
-   datatype.
+-  Variables can be assigned expressions whose output is of same datatype.
 
 Declaration
 ~~~~~~~~~~~
@@ -147,8 +144,7 @@ Indexing:
 
 -  Arrays are zero-indexed.
 
--  The index can be either a char or an int or an expression involving
-   chars and ints.
+-  The index can be either a char or an int or an expression involving chars and ints.
 
 -  Accessing elements of an array:
 
@@ -269,8 +265,7 @@ Boolean expressions
    => 'a' < 'b';
    true
 
-!!! Note Expressions are evaluated following the `operator
-precedence <#operators>`__
+- **Note** : Expressions are evaluated following the `operator precedence <#operators>`
 
 If-else statement
 -----------------
@@ -373,9 +368,7 @@ Syntax
        ....
    }
 
-!!! Note **var** is a **integer**, and **start, stop, increment** can be
-**arithmetic expression, integer or character variable, or integer or
-character constant**.
+- **Note** : **var** is a **integer**, and **start, stop, increment** can be **arithmetic expression, integer or character variable, or integer or character constant**.
 
 .. _examples-1:
 
@@ -410,8 +403,7 @@ Examples
 While-loop statement
 --------------------
 
-While loop statement repeatedly executes a target statement as long as a
-given condition is true.
+While loop statement repeatedly executes a target statement as long as a given condition is true.
 
 .. _syntax-2:
 
@@ -453,8 +445,7 @@ Examples
 Control statements
 ------------------
 
-!!! Note ``break`` and ``continue`` can only be used inside looping
-statements
+- **Note** : ``break`` and ``continue`` can only be used inside looping statements
 
 break
 ~~~~~
@@ -525,7 +516,7 @@ declaration tells the compiler about a function’s name, return type, and
 parameters. A function definition provides the actual body of the
 function.
 
-!!! warning Function must be defined before calling it.
+- **Warning** : Function must be defined before calling it.
 
 .. _syntax-5:
 
@@ -542,27 +533,36 @@ Syntax
        return <data_type>;
    }
 
-!!! Note If return data type is void, then return statement is not
+- **Note** : If return data type is void, then return statement is not
 needed, and if still it is added, it must be return nothing, i.e.,
 something like this ``return ;``
 
-!!! Warning ``return`` can only be present in the body of the function
+- **Warning** : ``return`` can only be present in the body of the function
 only once, that too at the end of the function, not inside any compound
 statements.
 
-!!! fail “Wrong” \* ``return`` inside a compound statement, this syntax
-is not allowed.
-``python     def test : int : int a {         if : a < 4 {             return a;         }     }``
+- **Wrong** : ``return`` inside a compound statement, this syntax is not allowed.
 
-!!! done “Correct” \* ``return`` is not inside compound statments, It
-should be placed only at the end of function definition \```python def
-test : int : int a { int gf := 8; if : a < 4 { gf := 4; }
+.. code:: python
 
-::
-
-       return gf;
+   def test : int : int a {         
+   if : a < 4 {            
+   return a;        
+   }     
    }
-   ```
+
+- **Correct** :  ``return`` is not inside compound statments, It should be placed only at the end of function definition 
+
+.. code:: python
+
+   def test : int : int a {
+   int gf := 8;
+   if : a < 4 
+   { 
+   gf := 4; 
+   }
+   return gf;
+   }
 
 .. _examples-5:
 
@@ -571,52 +571,52 @@ Examples
 
 Examples according to return types
 
-=== “Integer” \```python def test_func : int : int a, int b { int aa :=
-a + 5;
+- **Integer** 
 
-::
+.. code:: python
 
-       if : aa < 3 {
+   def test_func : int : int a, int b 
+   { 
+      int aa := a + 5;
+      if : aa < 3 {
            aa : = 0;
-       }
+      }
 
-       return aa + b;
+      return aa + b;
    }
-   ```
 
-=== “Character” \```python def next_char : char : char ch, int inc {
-char chinc := ch + inc;
+- **Character** 
 
-::
+.. code:: python 
 
-       return chinc;
+   def next_char : char : char ch, int inc {
+      char chinc := ch + inc;
+      return chinc;
    }
-   ```
 
-=== “Boolean” \```python def compare : bool : int val { bool ret :=
-false;
 
-::
+- **Boolean**  
 
-       if : val < 0 {
-           ret := true;
-       }
+.. code:: python 
 
-       return ret;
-   }
-   ```
+   def compare : bool : int val {
+      bool ret :=false;
+         if : val < 0 {
+            ret := true;
+         }
+         return ret;
+      }
+ 
 
-=== “Void” \```python def example_func : void : bool qu { if : qu and
-true { … do something … } }
+- **Void**
 
-::
+.. code:: python 
 
    def example_func_v : void : {
        int temp := 90;
 
        return;
    }
-   ```
 
 Function call
 ~~~~~~~~~~~~~
@@ -639,24 +639,19 @@ Syntax
 Examples
 ^^^^^^^^
 
-We will consider functions defined in earlier
-`subsection <#examples_5>`__
+- **Integer** ``int a := 55;  int ret_val := test_func(4, a);``
 
-=== “Integer”
-``python     int a := 55;     int ret_val := test_func(4, a);``
+- **Character** ``char a := 'a'; char b := next_char(a, 1);``
 
-=== “Character”
-``python     char a := 'a';     char b := next_char(a, 1);``
+- **Boolean** ``bool val := compare(22);  compare(-2);``
 
-=== “Boolean” ``python     bool val := compare(22);     compare(-2);``
-
-=== “Void” ``python     example_func(false);     example_func_v();``
+- **Void**  ``example_func(false);  example_func_v();``
 
 Testing or Debugging
 ~~~~~~~~~~~~~~~~~~~~
 
-For testing or debugging code, use the –test or -t flag to enable print,
-println and stub functions. Use –preprocess to stop after generating the
+For testing or debugging code, use the --test or -t flag to enable print,
+println and stub functions. Use --preprocess to stop after generating the
 C code only. Then run the generated C code (at /tmp/temp.c) using
 ``gcc``.
 
@@ -683,4 +678,4 @@ Stub functions
 ^^^^^^^^^^^^^^
 
 PRU specific functions will be replaced by stub functions which print
-“function_name called with arguments arg_name” when called.
+**function_name called with arguments arg_name** when called.

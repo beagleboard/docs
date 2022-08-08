@@ -1,12 +1,11 @@
 LED blink example
 =================
 
-!!! info “Schematic” === “Pocket Beagle” |image0|
-
-::
-
-   === "BeagleBone Black / Beagle Bone Black Wireless"
-       ![](images/led_beagle_bone_black.png)
+.. image:: images/led_pocket_beagle.png
+   :width: 598
+   :align: center
+   :height: 400
+   :alt: LED blink example
 
 Code
 ----
@@ -31,4 +30,3 @@ This code runs a never ending loop, since it is ``while : true``. Inside
 header pin P1_31 to LOW, then again it waits for 1000ms. This loop runs
 endlessly, so we get a Blinking output if one connects a LED
 
-.. |image0| image:: images/led_pocket_beagle.png

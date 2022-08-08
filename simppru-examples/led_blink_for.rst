@@ -1,14 +1,12 @@
 LED blink using for loop example
 ================================
 
-!!! info “Schematic” === “Pocket Beagle” |image0|
-
-::
-
-   === "BeagleBone Black / Beagle Bone Black Wireless"
-       ![](images/led_beagle_bone_bl
+.. image:: images/led_pocket_beagle.png
+   :width: 598
+   :align: center
+   :height: 400
+   :alt: LED blink using hardware counter
        
-
 Code
 ----
 
@@ -33,4 +31,3 @@ to LOW, then again it waits for 1000ms. This loop runs endlessly, so we
 get a Blinking output if one connects a LED. So LED will blink 10 times
 with this code.
 
-.. |image0| image:: images/led_pocket_beagle.png

@@ -1,12 +1,12 @@
 Delay example
 =============
 
-!!! info “Schematic” === “Pocket Beagle” |image0|
+.. image:: images/led_pocket_beagle.png
+   :width: 598
+   :align: center
+   :height: 400
+   :alt: Delay example
 
-::
-
-   === "BeagleBone Black / Beagle Bone Black Wireless"
-       ![](images/led_beagle_bone_black.png)   
 
 Code
 ----
@@ -30,4 +30,3 @@ using the ``delay`` call, after that it writes LOW to header pin P1_31,
 then again waits for 5000ms using the ``delay`` call, and finally writes
 HIGH to header pin P1_31.
 
-.. |image0| image:: images/led_pocket_beagle.png

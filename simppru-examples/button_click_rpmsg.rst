@@ -1,12 +1,11 @@
 Sending state of button using RPMSG
 ===================================
 
-!!! info “Schematic” === “Pocket Beagle” |image0|
-
-::
-
-   === "BeagleBone Black / Beagle Bone Black Wireless"
-       ![](images/led_button_beagle_bone_black.png)   
+.. image:: images/led_button_pocket_beagle.png
+   :width: 598
+   :align: center
+   :height: 400
+   :alt: Sending state of button using RPMSG
 
 Code
 ----
