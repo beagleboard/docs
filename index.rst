@@ -27,6 +27,19 @@ Sections
    beaglebone-ai-64/index.rst
    pocketbeagle/index.rst
    beaglebone-blue/index.rst
+   beagleconnect/index.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Projects
+
+   simppru/index.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Books
+
+   bone-cook-book/index.rst
 
 Indices and tables
 ############################

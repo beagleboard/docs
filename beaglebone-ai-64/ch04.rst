@@ -27,7 +27,7 @@ BeagleBone AI-64 is manufactured and warranted by partners listed at https://bea
 * Mark Yoder, professor at Rose-Hulman Institute of Technology
 * Kathy Giori, product engineer at ZEDEDA
 
-See bbb.io/about
+See `bbb.io/about <bbb.io/about>`_
 
 BeagleBone AI-64 has been designed by Seeed Studio (Seeed Development Limited) under guidance from BeagleBoard.org Foundation.
 

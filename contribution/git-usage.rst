@@ -3,6 +3,12 @@
 Git Usage
 #########
 
+.. note:: 
+    For detailed information on Git and Gitlab checkout the official 
+    `Git and GitLab <https://git.beagleboard.org/help#git-and-gitlab>`_ 
+    help page. Also, for good GitLab workflow you can checkout the 
+    `Introduction to GitLab Flow (FREE) <https://git.beagleboard.org/help/topics/gitlab_flow.md>`_ page.
+
 These are (draft) general guidelines taken from 
 `BioPython project <https://biopython.org/wiki/GitUsage>`_ 
 to be used for BeagleBoard development using
