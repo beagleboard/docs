@@ -1,7 +1,7 @@
 .. _sippru_examples:
 
 simpPRU Examples
-##############
+##################
 
 These are the examples which have been tested on simpPRU.These examples will serve as a guide for the users to implement.
  

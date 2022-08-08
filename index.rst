@@ -31,10 +31,9 @@ Sections
 
 .. toctree::
    :maxdepth: 1
-   :caption: simpPRU
+   :caption: Projects
 
    simppru/index.rst
-   simppru-examples/index.rst
 
 .. toctree::
    :maxdepth: 1
