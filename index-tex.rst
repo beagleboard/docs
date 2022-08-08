@@ -16,3 +16,5 @@ BeagleBoard Docs
    pocketbeagle/index.rst
    beaglebone-blue/index.rst
    beagleconnect/index.rst
+   simppru/index.rst
+   bone-cook-book/index.rst
