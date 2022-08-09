@@ -162,7 +162,8 @@ Your C code isn't responding fast enough to the input signal. You want to read t
 Solution
 **********
 
-The solution is to use a simple utility called +devmem2+, with which you can read and write registers from the command line.
+The solution is to use a simple utility called +devmem2+, with which 
+you can read and write registers from the command line.
 
 .. warning:: 
     
@@ -179,7 +180,8 @@ First, download and install +devmem2+:
     bone$ <strong>sudo mv devmem2 /usr/bin</strong>
 
 This solution will read a pushbutton attached to +P9_42+ and flash an LED attached to +P9_13+. Note that this is a 
-change from the previous solutions that makes the code used here much simpler. Wire up your Bone as shown in :ref:`<realtime_pushLEDmmap_fig>`.
+change from the previous solutions that makes the code used here much simpler. Wire up your Bone as 
+shown in :ref:`<realtime_pushLEDmmap_fig>`.
 
 .. _realtime_pushLEDmmap_fig:
 
@@ -204,7 +206,11 @@ Finding +P9_13+ at GPIO 31, export GPIO 31 and make it an output:
 
 The LED will turn on when +1+ is echoed into +value+ and off when +0+ is echoed. 
 
-Now that you know the LED is working, look up its memory address. This is where things get very detailed. First, download the http://bit.ly/1B4Cm45[AM335x Technical Reference Manual]. Look up +GPIO0+ in the Memory Map chapter (sensors). Table 2-2 indicates that +GPIO0+ starts at address +0x44E0_7000+. Then go to Section 25.4.1, "GPIO Registers." This shows that +GPIO_DATAIN+ has an offset of +0x138+, +GPIO_CLEARDATAOUT+ has an offset of +0x190+, and +GPIO_SETDATAOUT+ has an offset of +0x194+.  
+Now that you know the LED is working, look up its memory address. This is where things get very detailed. 
+First, download the http://bit.ly/1B4Cm45[AM335x Technical Reference Manual]. Look up +GPIO0+ in the 
+Memory Map chapter (sensors). Table 2-2 indicates that +GPIO0+ starts at address +0x44E0_7000+. Then 
+go to Section 25.4.1, "GPIO Registers." This shows that +GPIO_DATAIN+ has an offset of +0x138+, +GPIO_CLEARDATAOUT+ 
+has an offset of +0x190+, and +GPIO_SETDATAOUT+ has an offset of +0x194+.  
 
 This means you read from address +0x44E0_7000+ + +0x138+ = +0x44E0_7138+ to see the status of the LED:
 
@@ -216,7 +222,9 @@ This means you read from address +0x44E0_7000+ + +0x138+ = +0x44E0_7138+ to see 
     Value at address 0x44E07138 (0xb6f8e138): 0xC000C404
 
 
-The returned value +0xC000C404+ (+1100 0000 0000 0000 1100 0100 0000 0100+ in binary) has bit 31 set to +1+, which means the LED is on. Turn the LED off by writing +0x80000000+ (+1000 0000 0000 0000 0000 0000 0000 0000+ binary) to the +GPIO_CLEARDATA+ register at +0x44E0_7000+ + +0x190+ = +0x44E0_7190+:
+The returned value +0xC000C404+ (+1100 0000 0000 0000 1100 0100 0000 0100+ in binary) has bit 31 set to +1+, 
+which means the LED is on. Turn the LED off by writing +0x80000000+ (+1000 0000 0000 0000 0000 0000 0000 0000+ binary) 
+to the +GPIO_CLEARDATA+ register at +0x44E0_7000+ + +0x190+ = +0x44E0_7190+:
 
 .. code-block:: bash
 
@@ -334,7 +342,8 @@ Solution
 
 The Kernel can be compiled with PREEMPT_RT enabled which reduces the delay from when a thread is scheduled to when it runs.
 
-Switching to a PREEMPT_RT kernel is rather easy, but be sure to follow the steps in the Discussion to see how much the latencies are reduced.
+Switching to a PREEMPT_RT kernel is rather easy, but be sure to follow the steps in the 
+Discussion to see how much the latencies are reduced.
 
 * First see which kernel you are running:
 
@@ -349,6 +358,7 @@ Switching to a PREEMPT_RT kernel is rather easy, but be sure to follow the steps
 .. _realtime_kernel_update_fig:
 
 The regular and RT kernels
+
 .. figure:: figures/kernel_update.pn
     :align: centerg
     :alt: The regular and RT kernels
@@ -403,7 +413,8 @@ Cyclictest
 **********
 
 +cyclictest+ is one tool for measuring the latency from when a thread is schduled and when it runs. 
-The +code/rt+ directory in the git repo has some scripts for gathering latency data and plotting it.  Here's how to run the scripts.
+The +code/rt+ directory in the git repo has some scripts for gathering latency data and plotting it. 
+Here's how to run the scripts.
 
 * First look in :ref:`<realtime_install_fig>` to see what to install.
 
@@ -420,7 +431,8 @@ The +code/rt+ directory in the git repo has some scripts for gathering latency d
 
     bone$ <strong>time sudo ./hist.gen > nort.hist</strong>
 
-:ref:`<realtime_hist_gen_fig>` shows what's being run.  It defaults to 100,000 loops, so it takes a while.  The data is saved in +nort.hist+, which stands for no RT  histogram.
+:ref:`<realtime_hist_gen_fig>` shows what's being run.  It defaults to 100,000 loops, so it takes a while. 
+The data is saved in +nort.hist+, which stands for no RT  histogram.
 
 .. _realtime_hist_gen_fig:
 
@@ -461,7 +473,9 @@ try running ./setup.sh. If that doesn't work try:
 
 Congratulations you are running the RT kernel. 
 
-.. note:: If the Beagle appears to be running (the LEDs are flashing) but you are having trouble connecting via +ssh 192.168.7.2+, you can try connecting using the approach shown in :ref:`<tips_FTDI>`.
+.. note:: 
+    If the Beagle appears to be running (the LEDs are flashing) but you are having trouble connecting 
+    via +ssh 192.168.7.2+, you can try connecting using the approach shown in :ref:`<tips_FTDI>`.
 
 Now run the scipt again (note it's being saved in +rt.hist+ this time.)
 

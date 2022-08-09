@@ -57,7 +57,8 @@ You want to acquire and attach a sensor and need to understand your basic option
 Solution
 *********
 
-:ref:`sensor cape headers<sensors_cape_headers>` shows many of the possibilities for connecting a sensor.
+:ref:`sensor cape headers<sensors_cape_headers>` 
+shows many of the possibilities for connecting a sensor.
 
 .. _sensors_cape_headers:
 
@@ -170,7 +171,8 @@ or both on the Bone, as shown in :ref:`figure below <js_pushbutton_fig>`.
    
    Bone with pushbutton
 
-The code in :ref:`js pushbutton code<js_pushbutton_code>` reads GPIO port *P9_42*, which is attached to the pushbutton. 
+The code in :ref:`js pushbutton code<js_pushbutton_code>` 
+reads GPIO port *P9_42*, which is attached to the pushbutton. 
 
 .. _py_pushbutton_code:
 
@@ -528,6 +530,7 @@ Here, we'll use the *eQEP2* encoder via the Linux +count+ subsystem.
 
 
 Then run the following commands:
+
 .. code-block:: bash
 
    bone$ config-pin P8_11 qep

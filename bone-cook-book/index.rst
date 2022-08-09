@@ -22,4 +22,3 @@ A cookbook for programming Beagles
    07kernel/kernel.rst
    08realtime/realtime.rst
    09capes/capes.rst
-   10parts/parts.rst

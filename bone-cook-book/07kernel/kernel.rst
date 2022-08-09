@@ -16,11 +16,13 @@ can have multiple kernels on your system at the same time and select from among 
 
 // TODO is this still true?
 
-.. note:: We assume here that you are logged on to your Bone as +root+ and superuser privileges. You also need to be logged in to your Linux host computer as a nonsuperuser.
+.. note:: 
+    We assume here that you are logged on to your Bone as +root+ and superuser privileges. 
+    You also need to be logged in to your Linux host computer as a nonsuperuser.
 
 
 Updating the Kernel
----------------------------------
+---------------------
 
 Problem
 ***********
@@ -109,13 +111,16 @@ When compiling on the Bone, all you need to do is load the Kernel Headers for th
 
 .. code-block:: bash
 
-bone$ sudo apt install linux-headers-`uname -r`
+    bone$ sudo apt install linux-headers-`uname -r`
 
 
-.. note:: ((("&#x60; character (backtick)")))((("backtick (&#x60;) character")))The quotes around +`uname -r`+ are backtick characters. On a United States keyboard, the backtick key is to the left of the 1 key.
+.. note:: 
+    The quotes around +`uname -r`+ are backtick characters. On a United States keyboard, 
+    the backtick key is to the left of the 1 key.
 
 
-This took a little more than three minutes on my Bone. The +`uname -r`+ part of the command looks up what version of the kernel you are running and loads the headers for it. 
+This took a little more than three minutes on my Bone. The +`uname -r`+ part of the command 
+looks up what version of the kernel you are running and loads the headers for it. 
 
 Next, add the code in :ref:`<kernel_Makefle>` to a file called _Makefile_.
 
@@ -129,7 +134,9 @@ Simple Kernel Module (_Makefile_)
 
 
 
-.. note:: Replace the two instances of +<TAB>+ with a tab character (the key left of the Q key on a United States keyboard). The tab characters are very important to makefiles and must appear as shown.
+.. note:: 
+    Replace the two instances of +<TAB>+ with a tab character (the key left of the Q key on a United States keyboard). 
+    The tab characters are very important to makefiles and must appear as shown.
 
 
 Now, compile the kernel module by using the +make+ command:
@@ -262,6 +269,7 @@ First, you need to map the +P9+ header location to GPIO number using :ref:`<kern
 .. _kernel_gpio_map_fig:
 
 .Mapping P9_42 header position to GPIO 7
+
 .. figure:: figures/cape-headers-digitalGPIO7.png
     :align: center
     :alt: Mapping Header Position to GPIO Numbers
@@ -367,7 +375,9 @@ Solution
 
 This is easier than it sounds, thanks to some very powerful scripts.
 
-.. warning:: Be sure to run this recipe on your host computer. The Bone has enough computational power to compile a module or two, but compiling the entire kernel takes lots of time and resourses.
+.. warning:: 
+    Be sure to run this recipe on your host computer. The Bone has enough computational 
+    power to compile a module or two, but compiling the entire kernel takes lots of time and resourses.
 
 
 Downloading and Compiling the Kernel
@@ -456,11 +466,14 @@ Now, while in the _bb-kernel_ directory, run the following command:
     Are you 100% sure, on selecting [/dev/sdb] (y/n)? y
 
 
-The script lists the partitions it sees and asks if you have the correct one. If you are sure, press Y, and the script will uncompress and copy the files to the correct locations on your card. When this is finished, eject your card, plug it into the Bone, and boot it up. Run +uname -a+, and you will see that you are running your compiled kernel.
+The script lists the partitions it sees and asks if you have the correct one. 
+If you are sure, press Y, and the script will uncompress and copy the files to 
+the correct locations on your card. When this is finished, eject your card, plug 
+it into the Bone, and boot it up. Run +uname -a+, and you 
+will see that you are running your compiled kernel.
 
 Discussion
 ***********
-
 
 .. _kernel_using_cross_compiler:
 
@@ -470,7 +483,8 @@ Using the Installed Cross Compiler
 Problem
 ***********
 
-You have followed the instructions in :ref:`<kernel_compiling>` and want to use the cross compiler it has downloaded.
+You have followed the instructions in :ref:`<kernel_compiling>` 
+and want to use the cross compiler it has downloaded.
 
 [TIP]
 
@@ -488,7 +502,10 @@ Then skip down to :ref:`<kernel_skip_to_here>`.
 Solution
 ***********
 
-:ref:`<kernel_compiling>` installs a cross compiler, but you need to set up a couple of things so that it can be found. :ref:`<kernel_compiling>` installed the kernel and other tools in a directory called _bb-kernel_. Run the following commands to find the path to the cross compiler:
+:ref:`<kernel_compiling>` installs a cross compiler, but you need to set up a 
+couple of things so that it can be found. :ref:`<kernel_compiling>` installed the 
+kernel and other tools in a directory called _bb-kernel_. Run the 
+following commands to find the path to the cross compiler:
 
 .. code-block:: bash
 
@@ -498,7 +515,8 @@ Solution
     gcc-linaro-arm-linux-gnueabihf-4.7-2013.04-20130415_linux.tar.xz
 
 
-Here, the path to the cross compiler contains the version number of the compiler. Yours might be different from mine. +cd+ into it:
+Here, the path to the cross compiler contains the version number 
+of the compiler. Yours might be different from mine. +cd+ into it:
 
 .. code-block:: bash
 
@@ -532,7 +550,8 @@ At this point, we are interested in what's in _bin_:
     arm-linux-gnueabihf-gdb           arm-linux-gnueabihf-strip
 
 
-What you see are all the cross-development tools. You need to add this directory to the +$PATH+ the shell uses to find the commands it runs:
+What you see are all the cross-development tools. You need to add this directory 
+to the +$PATH+ the shell uses to find the commands it runs:
 
 .. code-block:: bash
 
@@ -545,7 +564,9 @@ What you see are all the cross-development tools. You need to add this directory
         /usr/games:/usr/local/games
 
 
-The first command displays the path to the directory where the cross-development tools are located. The second shows which directories are searched to find commands to be run. Currently, the cross-development tools are not in the +$PATH+. Let's add it:
+The first command displays the path to the directory where the cross-development 
+tools are located. The second shows which directories are searched to find commands 
+to be run. Currently, the cross-development tools are not in the +$PATH+. Let's add it:
 
 .. code-block:: bash
 
@@ -557,7 +578,8 @@ The first command displays the path to the directory where the cross-development
         /usr/games:/usr/local/games
 
 
-.. note:: Those are backtick characters (left of the "1" key on your keyboard) around +pwd+.((("&#x60; character (backtick)")))((("backtick (&#x60;) character")))  
+.. note:: 
+    Those are backtick characters (left of the "1" key on your keyboard) around +pwd+.
 
 
 The second line shows the +$PATH+ now contains the directory with the cross-development tools.
@@ -658,7 +680,8 @@ Look in the _hello_ directory to see what was created:
 Discussion
 ***********
 
-:ref:`<kernel_building_modules>` shows how to build and install a module, and :ref:`<kernel_create_patch>` shows how to create your own patch file.
+:ref:`<kernel_building_modules>` shows how to build and install a module, and :ref:`<kernel_create_patch>` 
+shows how to create your own patch file.
 
 .. _kernel_create_patch:
 
@@ -671,6 +694,7 @@ You made a few changes to the kernel, and you want to share them with your frien
 
 Solution
 ***********
+
 Create a patch file that contains just the changes you have made. Before making your changes, check out a new branch:
 
 .. code-block:: bash

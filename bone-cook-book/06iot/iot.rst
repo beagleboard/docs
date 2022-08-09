@@ -13,7 +13,7 @@ wirelessly (:ref:`<networking_wireless>`), or through the USB to a host and then
 Now that you're online, this chapter offers various things to do with your connection.
 
 Accessing Your Host Computer's Files on the Bone
----------------------------------------------
+-------------------------------------------------
 
 Problem
 *********
@@ -65,7 +65,7 @@ and then access:
 Here, we are accessing the files on the Bone as +debian+. We’ve mounted the entire file system, starting with +/+, so you can access any file. Of course, with great power comes great responsibility, so be careful.
 
 Discussion
-*********
+************
 
 The +sshfs+ command gives you easy access from one computer to another. When you are done, you can unmount the files by using the following commands:
 
@@ -107,7 +107,9 @@ A sample web page (test.html)
 You will see the web page shown in :ref:`<networking_node_page>`.
 
 .. _networking_node_page:
-.test.html as served by nginx
+
+test.html as served by nginx
+
 .. figure:: figures/nginxTest.png
   :align: center
   :alt: test.html served by nginx
@@ -356,7 +358,8 @@ or
 http://192.168.7.2:8081/ledRed/off
 
 
-For the above example, *ledRed* is the “deviceName” and *on* or *off* are examples of possible “action”. Those routes will be identified and properly “worked”. The main steps are:
+For the above example, *ledRed* is the “deviceName” and *on* or *off* are examples of 
+possible “action”. Those routes will be identified and properly “worked”. The main steps are:
 
 * Convert the string “ledRED”, for example, on its equivalent GPIO pin.
 
@@ -876,6 +879,7 @@ Installing Node-RED
 To install Node-RED, run the following commands:
 
 .. code-block:: bash
+
   bone$ cd          # Change to home directory
   bone$ git clone https://github.com/node-red/node-red.git
   bone$ cd node-red/
@@ -955,7 +959,8 @@ Node-RED twitter authorization, step 2
 
 .. [start=5]
 
-- Click the "here" link, as shown in :ref:`<networking_node_twitter_auth2_fig>`, and you'll be taken to Twitter to authorize Node-RED.
+- Click the "here" link, as shown in :ref:`<networking_node_twitter_auth2_fig>`, and you'll 
+be taken to Twitter to authorize Node-RED.
 
 - Log in to Twitter and click the "Authorize app" button (:ref:`<networking_node_twitter_auth3_fig>`).
 
@@ -969,7 +974,9 @@ Node-RED Twitter site authorization
 
 .. [start=7]
 
-- When you're back to Node-RED, click the Add button, add your Twitter credentials, enter the hashtags to respond to (:ref:`<networking_node_twitter_beagle_fig>`), and then click the Ok pass:[<span class="keep-together">button</span>].
+- When you're back to Node-RED, click the Add button, add your Twitter credentials, 
+enter the hashtags to respond to (:ref:`<networking_node_twitter_beagle_fig>`), and then 
+click the Ok pass:[<span class="keep-together">button</span>].
 
 .. _networking_node_twitter_beagle_fig:
 
@@ -1034,7 +1041,7 @@ Click Ok and then Deploy.
 Test again. The LED will toggle every time the hashtag +#BeagleBone+ is tweeted. With a little more exploring, you should be able to have your Bone ringing a bell or spinning a motor in response to tweets.
 
 Discussion
-*********
+***********
 
 Communicating over a Serial Connection to an Arduino or LaunchPad
 -------------------------------------------------------------------
@@ -1065,9 +1072,8 @@ Wiring a LaunchPad to a Bone via the common serial port
   :align: center
   :alt: MSP430 LaunchPad
 
-Add the code (or _sketch_, as it's called in Arduino-speak) in 
-:ref:`<js_launchPad_code>` to a file called _launchPad.ino_ 
-and run it on your LaunchPad.
+Add the code (or _sketch_, as it's called in Arduino-speak) in :ref:`<js_launchPad_code>` 
+to a file called _launchPad.ino_ and run it on your LaunchPad.
 
 .. _js_launchPad_code:
 
@@ -1128,7 +1134,7 @@ Code for communicating via the UART (launchPad.js)
   Table of UART outputs
 
 Discussion
-*********
+************
 
 When you run the script in :ref:`<js_launchPadBeagle_code>`, the Bone opens up the 
 serial port and every second sends a new command, either +r+ or +g+. 

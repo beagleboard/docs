@@ -4,18 +4,24 @@ Beyond the Basics
 ##################
 
 Introduction
-------------------------
-In :ref:`<basics>`, you learned how to set up BeagleBone Black, and :ref:`<sensors>`, :ref:`<displays>`, and :ref:`<motors>` showed how to interface to the physical world. The remainder of the book moves into some more exciting advanced topics, and this chapter gets you ready for them.  
+---------------
 
-The recipes in this chapter assume that you are running Linux on your host computer (:ref:`<tips_pick_os>`) and are comfortable with using Linux. We continue to assume that you are logged in as +debian+ on your Bone.
+In :ref:`<basics>`, you learned how to set up BeagleBone Black, and 
+:ref:`<sensors>`, :ref:`<displays>`, and :ref:`<motors>` showed how to 
+interface to the physical world. The remainder of the book moves into some 
+more exciting advanced topics, and this chapter gets you ready for them.  
+
+The recipes in this chapter assume that you are running Linux on your host 
+computer (:ref:`<tips_pick_os>`) and are comfortable with using Linux. We 
+continue to assume that you are logged in as +debian+ on your Bone.
 
 .. _tips_hdmi:
 
 Running Your Bone Standalone
-------------------------
+-----------------------------
 
 Problem
-*************
+*********
 
 You want to use BeagleBone Black as a desktop computer with keyboard, mouse, and an HDMI display.
 
@@ -32,9 +38,14 @@ To make this recipe, you will need:
 * USB keyboard and mouse
 * Powered USB hub (see :ref:`<app_misc>`)
 
-.. note:: The microHDMI adapter is nice because it allows you to use a regular HDMI cable with the Bone. However, it will block other ports and can damage the Bone if you aren't careful. The microHDMI-to-HDMI cable won't have these problems.  
+.. note:: 
+   The microHDMI adapter is nice because it allows you to use a regular HDMI cable 
+   with the Bone. However, it will block other ports and can damage the Bone if you 
+   aren't careful. The microHDMI-to-HDMI cable won't have these problems.  
 
-.. tip:: You can also use an HDMI-to-DVI cable (:ref:`<app_misc>`) and use your Bone with a DVI-D display.
+.. tip:: 
+   You can also use an HDMI-to-DVI cable (:ref:`<app_misc>`) 
+   and use your Bone with a DVI-D display.
 
 The adapter looks something like :ref:`<tips_HDMI_adaptor_fig>`.
 
@@ -60,24 +71,25 @@ If nothing appears after the reboot, edit the _/boot/uEnv.txt_ file. Search for 
 
 Then reboot.
 
-////
-PRODUCTION: in the following tip, we're trying to display the hash symbol (#), all by itself, in constant width. Using +#+ produces an empty space in the build, and I don't know how to escape special characters within what should be literal strings.
+.. PRODUCTION: in the following tip, we're trying to display the hash symbol (#), all by itself, in constant width. Using +#+ produces an empty space in the build, and I don't know how to escape special characters within what should be literal strings.
 
-Adding to my confusion, the # signs are dropped in the first paragraph of the tip, but not in the second, which is formatted in the same exact way.
+.. Adding to my confusion, the # signs are dropped in the first paragraph of the tip, but not in the second, which is formatted in the same exact way.
 
-Also, using ## in the code italicizes the second # and everything after it in the line, which should not happen.
-////
+.. Also, using ## in the code italicizes the second # and everything after it in the line, which should not happen.
+
 
 The _/boot/uEnv.txt_ file contains a number of configuration commands that are executed at boot time. The +#+ character is used to add comments; that is, everything to the right of a +# is ignored by the Bone and is assumed to be for humans to read. In the previous example, +###Disable auto loading+ is a comment that informs us the next line(s) are for disabling things. Two +disable_uboot_overlay+ commands follow. Both should be commented-out and won't be executed by the Bon
 Why not just remove the line?  Later, you might decide you need more general-purpose input/output (GPIO) pins and don't need the HDMI display. If so, just remove the +#+ from the +disable_uboot_overlay_video=1+ command. If you had completely removed the line earlier, you would have to look up the details somewhere to re-create it.  
 
 When in doubt, comment-out; don't delete.
 
-.. note:: If you want to re-enable the HDMI audio, just comment-out the line you added.
+.. note:: 
+   If you want to re-enable the HDMI audio, just comment-out the line you added.
 
 The Bone has only one USB port, so you will need to get either a keyboard with a USB hub (see :ref:`<app_misc>`) or a USB hub. Plug the USB hub into the Bone and then plug your keyboard and mouse in to the hub. You now have a Beagle workstation; no host computer is needed.
 
-.. tip:: A powered hub is recommended because USB can supply only 500 mA, and you'll want to plug many things into the Bone.
+.. tip:: 
+   A powered hub is recommended because USB can supply only 500 mA, and you'll want to plug many things into the Bone.
 
 Discussion
 *************
@@ -124,7 +136,9 @@ Solution
 *************
 
 
-:ref:`<basics_vsc_IDE>` shows how to run shell commands in the Visual Studio Code +bash+ tab. However, the Bone has Secure Shell (SSH) enabled right out of the box, so you can easily connect by using the following command to log in as user +debian+, (note the +$+ at the end of the prompt):
+:ref:`<basics_vsc_IDE>` shows how to run shell commands in the Visual Studio Code +bash+ tab. 
+However, the Bone has Secure Shell (SSH) enabled right out of the box, so you can easily 
+connect by using the following command to log in as user +debian+, (note the +$+ at the end of the prompt):
 
 .. code-block:: bash
 
@@ -184,7 +198,7 @@ Looks like I'm already in the group, but if you aren't, just add yourself to the
 
 .. code-block:: bash
 
-host$ sudo adduser $USER dialout
+   host$ sudo adduser $USER dialout
 
 
 You have to run +adduser+ only once. Your host computer will remember the next time you boot up. Now, install and run the +screen+ command:
@@ -228,9 +242,13 @@ To make this recipe, you will need:
 
 * 3.3 V FTDI cable (see :ref:`<app_misc>`)
 
-.. warning:: Be sure to get a 3.3 V FTDI cable (shown in :ref:`<tips_FTDIcable_fig>`), because the 5 V cables won't work.
+.. warning:: 
+   Be sure to get a 3.3 V FTDI cable (shown in :ref:`<tips_FTDIcable_fig>`), 
+   because the 5 V cables won't work.
 
-.. tip:: The Bone's Serial Debug J1 connector has Pin 1 connected to ground, Pin 4 to receive, and Pin 5 to transmit. The other pins are not attached.
+.. tip:: 
+   The Bone's Serial Debug J1 connector has Pin 1 connected to ground, 
+   Pin 4 to receive, and Pin 5 to transmit. The other pins are not attached.
 
 .. _tips_FTDIcable_fig:
 
@@ -241,7 +259,8 @@ To make this recipe, you will need:
 
    FTDI cable
 
-Look for a small triangle at the end of the FTDI cable (:ref:`<tips_FTDIconnector_fig>`).  It's often connected to the black wire. 
+Look for a small triangle at the end of the FTDI cable (:ref:`<tips_FTDIconnector_fig>`). 
+It's often connected to the black wire. 
 
 .. _tips_FTDIconnector_fig:
 
@@ -252,9 +271,9 @@ Look for a small triangle at the end of the FTDI cable (:ref:`<tips_FTDIconnecto
 
    FTDI connector
 
-Next, look for the FTDI pins of the Bone (labeled +J1+ on the Bone), 
-shown in :ref:`<tips_black_hardware_details_fig>`.  
-They are next to the P9 header and begin near pin 20. There is a white dot near P9_20. 
+Next, look for the FTDI pins of the Bone (labeled +J1+ on the Bone), shown in 
+:ref:`<tips_black_hardware_details_fig>`. They are next to the P9 header 
+and begin near pin 20. There is a white dot near P9_20. 
 
 .. _tips_black_hardware_details_fig:
 
@@ -286,7 +305,9 @@ Now, run the following commands on your host computer:
    beaglebone login: 
 
 
-.. note:: Your screen might initially be blank. Press Enter a couple times to see the login prompt.
+.. note:: 
+   Your screen might initially be blank. Press Enter 
+   a couple times to see the login prompt.
 
 Discussion
 *************
@@ -313,7 +334,9 @@ Log in to your Bone and enter the following command:
 Discussion
 *************
 
-:ref:`<basics_latest_os>` shows how to open the _ID.txt_ file to see the OS version. The _/etc/dogtag_ file has the same contents and is easier to find if you already have a command prompt. See :ref:`<basics_install_os>` if you need to update your OS.
+:ref:`<basics_latest_os>` shows how to open the _ID.txt_ file to see the OS version. 
+The _/etc/dogtag_ file has the same contents and is easier to find if you already 
+have a command prompt. See :ref:`<basics_install_os>` if you need to update your OS.
 
 Controlling the Bone Remotely with a VNC
 ------------------------
@@ -382,9 +405,13 @@ Click Connect to start graphical access to your Bone, as shown in :ref:`<tips_vn
 
    The Remmina Remote Desktop Client showing the BeagleBone desktop
 
-.. tip:: You might need to resize the VNC screen on your host to see the bottom menu bar on your Bone. 
+.. tip:: 
+   You might need to resize the VNC screen on your 
+   host to see the bottom menu bar on your Bone. 
 
-.. note:: You need to have X Windows installed and running for the VNC to work.  Here's how to install it. This needs some 250M of disk space and 19 minutes to install.
+.. note:: 
+   You need to have X Windows installed and running for the VNC to work. 
+   Here's how to install it. This needs some 250M of disk space and 19 minutes to install.
 
 .. code-block:: bash
 
@@ -504,14 +531,18 @@ You want to run an editor to change a file.
 Solution
 *************
 
-The Bone comes with a number of editors. The simplest to learn is +nano+. Just enter the following command:
+The Bone comes with a number of editors. The simplest to learn is +nano+. 
+Just enter the following command:
 
 .. code-block:: bash
 
-bone$ nano file
+   bone$ nano file
 
 
-You are now in nano (:ref:`<tips_nano_fig>`). You can't move around the screen using the mouse, so use the arrow keys. The bottom two lines of the screen list some useful commands. Pressing &#708;G (Ctrl-G) will display more useful commands. &#708;X (Ctrl-X) exits nano and gives you the option of saving the file.
+You are now in nano (:ref:`<tips_nano_fig>`). You can't move around the screen 
+using the mouse, so use the arrow keys. The bottom two lines of the screen 
+list some useful commands. Pressing &#708;G (Ctrl-G) will display more useful 
+commands. &#708;X (Ctrl-X) exits nano and gives you the option of saving the file.
 
 .. _tips_nano_fig:
 
@@ -522,7 +553,9 @@ You are now in nano (:ref:`<tips_nano_fig>`). You can't move around the screen u
 
    Editing a file with nano
 
-.. tip:: By default, the file you create will be saved in the directory from which you opened +nano+.
+.. tip:: 
+   By default, the file you create will be saved 
+   in the directory from which you opened +nano+.
 
 Discussion
 *************
@@ -557,7 +590,8 @@ and the other end into your home hub/router. The yellow and green link lights on
 
    The RJ45 port on the Bone
 
-If your router is already configured to run DHCP (Dynamical Host Configuration Protocol), it will automatically assign an IP address to the Bone. 
+If your router is already configured to run DHCP (Dynamical Host Configuration Protocol), 
+it will automatically assign an IP address to the Bone. 
 
 .. warning:: It might take a minute or two for your router to detect the Bone and assign the IP address.
 
@@ -602,9 +636,12 @@ The +inet+ field shows that my Internet address is +10.0.5.144+ for the RJ45 con
 On my university campus, you must register your MAC address before any device will work on the network. 
 The +HWaddr+ field gives the MAC address. For +eth0+, it's +c8:a0:30:a6:26:e8+.  
 
-The IP address of your Bone can change. If it's been assigned by DHCP, it can change at any time. The MAC address, however, never changes;  it is assigned to your ethernet device when it's manufactured.
+The IP address of your Bone can change. If it's been assigned by DHCP, it can change at any time. 
+The MAC address, however, never changes;  it is assigned to your ethernet device when it's manufactured.
 
-.. warning:: When a Bone is connected to some networks it becomes visible to the _world_. If you don't secure your Bone, the world will soon find it. See :ref:`<tips_passwords>` and :ref:`<tips_firewall
+.. warning:: 
+   When a Bone is connected to some networks it becomes visible to the _world_. If you don't secure your Bone, 
+   the world will soon find it. See :ref:`<tips_passwords>` and :ref:`<tips_firewall
 
 On many home networks, you will be behind a firewall and won't be as visible.
 
@@ -658,7 +695,9 @@ To make this recipe, you will need:
 * USB Wifi adapter (see :ref:`<app_misc>`)
 * 5 V external power supply (see :ref:`<app_misc>`)
 
-.. warning:: Most adapters need at least 1 A of current to run, and USB supplies only 0.5 A, so be sure to use an external power supply. Otherwise, you will experience erratic behavior and random crashes.
+.. warning:: 
+   Most adapters need at least 1 A of current to run, and USB supplies only 0.5 A, so be sure to use an 
+   external power supply. Otherwise, you will experience erratic behavior and random crashes.
 
 First, plug in the WiFi adapter and the 5 V external power supply and reboot.
 
@@ -723,7 +762,7 @@ If no name appears, try +ip a+:
 
 .. code-block:: bash
 
-bone$ sudo nano /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+   bone$ sudo nano /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
 
 In the file you'll see:
@@ -870,7 +909,8 @@ Web servers typically listen to port +80+. First, look up the IP address of your
 
 It's the number following +inet addr:+, which in my case is +137.112.41.35+. 
 
-.. tip:: If you are on a wireless network, find the IP address associated with +wlan0+.
+.. tip:: 
+   If you are on a wireless network, find the IP address associated with +wlan0+.
 
 Then run the following, using your host's IP address:
 
@@ -909,6 +949,7 @@ Check out https://www.howtogeek.com/devops/how-to-secure-your-linux-server-with-
 I'll summarize the initial setup here.
 
 First install and check the status:
+
 .. code-block:: bash
 
    bone$ sudo apt install ufw
@@ -917,6 +958,7 @@ First install and check the status:
 
 
 Now turn off everything coming in and leave on all outgoing.  Note, this won't take effect until +ufw+ is enabled.
+
 .. code-block:: bash
 
    bone$ sudo ufw default deny incoming
@@ -924,6 +966,7 @@ Now turn off everything coming in and leave on all outgoing.  Note, this won't t
 
 
 Don't enable yet, make sure +ssh+ still has access
+
 .. code-block:: bash
 
    bone$ sudo ufw allow 22
@@ -973,8 +1016,8 @@ The firewall will remain on, even after a reboot. Disable it now if you don't wa
 
 .. code-block:: bash
 
-bone$ sudo ufw disable
-Firewall stopped and disabled on system startup
+   bone$ sudo ufw disable
+   Firewall stopped and disabled on system startup
 
 
 See the How-To Geek article for more examples.
@@ -995,7 +1038,9 @@ You want to do more cool things with your BeagleBone by installing more programs
 Solution
 *************
 
-.. warning:: Your Bone needs to be on the network for this to work. See :ref:`<networking_wired>`, :ref:`<networking_wireless>`, or :ref:`<networking_usb>`.
+.. warning:: 
+   Your Bone needs to be on the network for this to work. See :ref:`<networking_wired>`, 
+   :ref:`<networking_wireless>`, or :ref:`<networking_usb>`.
 
 The easiest way to install more software is to use +apt+:
 
@@ -1005,7 +1050,10 @@ The easiest way to install more software is to use +apt+:
    bone$ sudo apt install "name of software"
 
 
-A +sudo+ is necessary since you aren't running as +root+. The first command downloads package lists from various repositories and updates them to get information on the newest versions of packages and their dependencies. (You need to run it only once a week or so.) The second command fetches the software and installs it and all packages it depends on. 
+A +sudo+ is necessary since you aren't running as +root+. The first command downloads 
+package lists from various repositories and updates them to get information on the 
+newest versions of packages and their dependencies. (You need to run it only once a week or so.) 
+The second command fetches the software and installs it and all packages it depends on. 
 
 How do you find out what software you can install?  Try running this:
 
@@ -1027,7 +1075,7 @@ Suppose that you would like to install an online dictionary (+dict+). Just run t
 
 .. code-block:: bash
 
-bone$ sudo apt install dict
+   bone$ sudo apt install dict
 
 
 Now you can run +dict+. 
@@ -1035,12 +1083,10 @@ Now you can run +dict+.
 Discussion
 *************
 
-
-
 .. _tips_apt_remove:
 
 Removing Packages Installed with apt
-------------------------
+-------------------------------------
 
 Problem
 *************
@@ -1054,18 +1100,18 @@ Solution
 
 .. code-block:: bash
 
-bone$ sudo apt remove dict
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-The following packages were automatically installed and are no longer required:
-  libmaa3 librecode0 recode
-Use 'apt autoremove' to remove them.
-The following packages will be REMOVED:
-  dict
-0 upgraded, 0 newly installed, 1 to remove and 27 not upgraded.
-After this operation, 164 kB disk space will be freed.
-Do you want to continue [Y/n]? y
+   bone$ sudo apt remove dict
+   Reading package lists... Done
+   Building dependency tree       
+   Reading state information... Done
+   The following packages were automatically installed and are no longer required:
+   libmaa3 librecode0 recode
+   Use 'apt autoremove' to remove them.
+   The following packages will be REMOVED:
+   dict
+   0 upgraded, 0 newly installed, 1 to remove and 27 not upgraded.
+   After this operation, 164 kB disk space will be freed.
+   Do you want to continue [Y/n]? y
 
 
 Discussion
@@ -1162,7 +1208,9 @@ Removing preinstalled packages
 
 You might not need a few things that come preinstalled in the Debian image, including such things as OpenCV, the Chromium web browser, and some documentation. 
 
-.. note:: The Chromium web browser is the open source version of Google's Chrome web browser. Unless you are using the Bone as a desktop computer, you can probably remove it.
+.. note:: 
+   The Chromium web browser is the open source version of Google's Chrome web browser. 
+   Unless you are using the Bone as a desktop computer, you can probably remove it.
 
 
 Here's how you can remove these:
@@ -1288,7 +1336,7 @@ Discussion
 .. _misc_libsoc:
 
 Using C to Interact with the Physical World
-------------------------
+--------------------------------------------
 
 Problem
 *************

@@ -18,7 +18,8 @@ A cape is simply a board--often a printed circuit board (PCB) that connects to t
 and +P9+ headers and follows a few standard pin usages. You can stack up to four capes onto the 
 Bone. Capes can range in size from Bone-sized (:ref:`<capes_miniDisplay>`) to much larger than the Bone (:ref:`<capes_7inLCD>`).
 
-This chapter shows how to attach a couple of capes, move your design to a protoboard, then to a PCB, and finally on to mass production.
+This chapter shows how to attach a couple of capes, move your design to a protoboard, then to a PCB, 
+and finally on to mass production.
 
 .. _capes_7inLCD:
 
@@ -39,7 +40,10 @@ from `CircuitCo http://circuitco.com/`_ (shown in :ref:`<capes_7inLCD_fig>`) to 
 
 .. _capes_7inLCD_fig:
 
-.. note:: Seven-inch LCD from CircuitCo, :ref:`<capes_7inLCD_fig>` was originally posted by CircuitCo at http://elinux.org/File:BeagleBone-LCD7-Front.jpg under a `Creative Commons Attribution-ShareAlike 3.0 Unported License <http://creativecommons.org/licenses/by-sa/3.0/>`_.
+.. note:: 
+    Seven-inch LCD from CircuitCo, :ref:`<capes_7inLCD_fig>` was originally posted by CircuitCo 
+    at http://elinux.org/File:BeagleBone-LCD7-Front.jpg under a 
+    `Creative Commons Attribution-ShareAlike 3.0 Unported License <http://creativecommons.org/licenses/by-sa/3.0/>`_.
 
 .. figure:: figures/LCD.png
     :align: center
@@ -72,7 +76,7 @@ Discussion
 .. _capes_miniDisplay:
 
 Using a 128 x 128-Pixel LCD Cape
------------------------------
+---------------------------------
 
 Problem
 ***********
@@ -82,7 +86,8 @@ You want to use a small LCD to display things other than the desktop.
 Solution
 ***********
 
-The http://bit.ly/1xd0r8p[MiniDisplay] is a 128 x 128 full-color LCD cape that just fits on the Bone, as shown in :ref:`<capes_miniDisplay_fig>`. 
+The http://bit.ly/1xd0r8p[MiniDisplay] is a 128 x 128 full-color LCD cape that just fits on the 
+Bone, as shown in :ref:`<capes_miniDisplay_fig>`. 
 
 .. _capes_miniDisplay_fig:
 
@@ -99,6 +104,7 @@ To make this recipe, you will need:
 Attach to the Bone and apply power. Then run the following commands:
 
 .. code-block:: bash
+
     # From http://elinux.org/CircuitCo:MiniDisplay_Cape
     # Datasheet:
     # https://www.crystalfontz.com/products/document/3277/ST7735_V2.1_20100505.pdf
@@ -125,6 +131,7 @@ The `manufacturer's website <http://bit.ly/1xd0r8p>`_ suggests enabling SPI0 by 
 Hmmm, something isn't working here. Here's how to see what happened:
 
 .. code-block:: bash
+    
     bone$ <strong>dmesg | tail</strong>
     [  625.334497] bone_capemgr.9: part_number 'BB-SPIDEV0', version 'N/A'
     [  625.334673] bone_capemgr.9: slot #11: generic override
@@ -278,7 +285,7 @@ Discussion
 .. _capes_soldering:
 
 Moving from a Breadboard to a Protoboard
------------------------------
+-----------------------------------------
 
 Problem
 ***********
@@ -579,7 +586,6 @@ Looking at the stimulus you'll generate *before* you connect up your hardware wi
 Discussion
 ***********
 
-
 .. _capes_layout:
 
 Laying Out Your Cape PCB
@@ -621,7 +627,9 @@ through what's called a _via_. One of the goals of PCB design is to minimize the
 :ref:`<capes_quickRobo_pcb>` wasn't my first try or my last. My approach was to see what was needed to hook where and 
 move the components around to make it easier for the autorouter to carry out its job.
 
-.. note:: There are entire books and websites dedicated to creating PCB layouts. Look around and see what you can find. http://bit.ly/1wXTLki[SparkFun's guide to making PCBs] is particularly useful.
+.. note:: 
+    There are entire books and websites dedicated to creating PCB layouts. Look around and see 
+    what you can find. http://bit.ly/1wXTLki[SparkFun's guide to making PCBs] is particularly useful.
 
 Customizing the Board Outline
 *******************************
@@ -657,7 +665,8 @@ Outline SVG for BeagleBone cape (beaglebone_cape_boardoutline.svg)
 .. </dl>
 .. ++++
 
-The measurements are taken from the http://bit.ly/1C5rSa8[BeagleBone Black System Reference Manual], as shown in :ref:`<capes_dimensions_fig>`.
+The measurements are taken from the http://bit.ly/1C5rSa8[BeagleBone Black System Reference Manual], 
+as shown in :ref:`<capes_dimensions_fig>`.
 
 .. _capes_dimensions_fig:
 
@@ -775,6 +784,7 @@ Windows, Mac, and Linux, but it has three `limitations <http://bit.ly/1E5Kh3l>`_
 You can install Eagle PCB on your Linux host by using the following command:
 
 .. code-block:: bash
+
     host$ <strong>sudo apt install eagle</strong>
     Reading package lists... Done
     Building dependency tree       
@@ -840,7 +850,8 @@ The Eagle start screen
 
 Ensure that the correct version number appears.
 
-If you are moving a design from Fritzing to Eagle, see :ref:`<capes_schematic_migration>` for tips on converting from one to the other.
+If you are moving a design from Fritzing to Eagle, see :ref:`<capes_schematic_migration>` 
+for tips on converting from one to the other.
 
 *DesignSpark PCB*
 
@@ -851,12 +862,15 @@ but it runs only on Windows. Also, it doesn't seem to have the following of Eagl
 
 *Upverter*
 
-In addition to free solutions you run on your desktop, you can also work with a browser-based tool called https://upverter.com/[Upverter]. With Upverter, you can collaborate easily, editing your designs from anywhere on the Internet. It also provides many conversion options and a PCB fabrication service.
+In addition to free solutions you run on your desktop, you can also work with a browser-based 
+tool called https://upverter.com/[Upverter]. With Upverter, you can collaborate easily, editing 
+your designs from anywhere on the Internet. It also provides many conversion options and a PCB fabrication service.
 
-.. note:: Don't confuse Upverter with Upconverter (:ref:`<capes_schematic_migration>`). Though their names differ by only three letters, they differ greatly in what they do.
+.. note:: 
+    Don't confuse Upverter with Upconverter (:ref:`<capes_schematic_migration>`). 
+    Though their names differ by only three letters, they differ greatly in what they do.
 
 .. _capes_kicad:
-
 
 *Kicad*
 
@@ -885,6 +899,7 @@ to convert the Fritzing file for the diagram shown in :ref:`<capes_quickRobo_fig
 I found it necessary to install +libfreetype6+ and +freetype-py+ onto my system, but you might not need this first step:
 
 .. code-block:: bash
+
     host$ <strong>sudo apt install libfreetype6</strong>
     Reading package lists... Done
     Building dependency tree       
@@ -902,7 +917,9 @@ I found it necessary to install +libfreetype6+ and +freetype-py+ onto my system,
     Cleaning up...
 
 
-.. note:: All these commands are being run on the Linux-based host computer, as shown by the +host$+ prompt. Log in as a normal user, not +root+.
+.. note:: 
+    All these commands are being run on the Linux-based host computer, as shown by the +host$+ prompt. 
+    Log in as a normal user, not +root+.
 
 Now, install the +schematic-file-converter+ tool:
 
@@ -1037,7 +1054,9 @@ To make this recipe, you will need:
 * Multimeter (see :ref:`app misc<app_misc>`)
 * Your other components
 
-Upload your design to http://oshpark.com[OSH Park] and order a few boards. :ref:`<capes_oshpark_share>` shows a resulting http://bit.ly/1MtlzAp[shared project page for the quickBot cape] created in :ref:`<capes_layout>`. We'll proceed to break down how this design was uploaded and shared to enable ordering fabricated PCBs.
+Upload your design to http://oshpark.com[OSH Park] and order a few boards. :ref:`<capes_oshpark_share>` 
+shows a resulting http://bit.ly/1MtlzAp[shared project page for the quickBot cape] created in 
+:ref:`<capes_layout>`. We'll proceed to break down how this design was uploaded and shared to enable ordering fabricated PCBs.
 
 .. _capes_oshpark_share:
 

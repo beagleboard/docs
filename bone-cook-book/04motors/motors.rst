@@ -21,11 +21,19 @@ The type of motor you use depends on the type of motion you want:
         
 When you know which type of motor to use, interfacing is easy. This chapter shows how to interface with each of these motors.
 
-.. note:: Motors come in many sizes and types. This chapter presents some of the more popular types and shows how they can interface easily to the Bone. If you need to turn on and off a 120 V motor, consider using something like the PowerSwitch presented in :ref:`<displays_powerSwitch>`.
+.. note:: 
+    Motors come in many sizes and types. This chapter presents some of the more popular 
+    types and shows how they can interface easily to the Bone. If you need to turn on and 
+    off a 120 V motor, consider using something like the PowerSwitch presented in :ref:`<displays_powerSwitch>`.
 
-.. note:: The Bone has built-in 3.3 V and 5 V supplies, which can supply enough current to drive some small motors. Many motors, however, draw enough current that an external power supply is needed. Therefore, an external 5 V power supply is listed as optional in many of the recipes.
+.. note:: 
+    The Bone has built-in 3.3 V and 5 V supplies, which can supply enough current to drive 
+    some small motors. Many motors, however, draw enough current that an external power 
+    supply is needed. Therefore, an external 5 V power supply is listed as optional in many of the recipes.
 
-.. note:: All the examples in the book assume you have cloned the Cookbook repository on www.github.com. Go here :ref:`<basics_repo>` for instructions.
+.. note:: 
+    All the examples in the book assume you have cloned the Cookbook repository on 
+    www.github.com. Go here :ref:`<basics_repo>` for instructions.
 
 .. _motors_servo:
 
@@ -50,11 +58,16 @@ To make the recipe, you will need:
 * 1 k&#8486; resistor (optional, see :ref:`<app_resistor>`)
 * 5 V power supply (optional, see :ref:`<app_misc>`)
 
-The 1 k&#8486; resistor isn't required, but it provides some protection to the general-purpose input/output (GPIO) pin in case the servo fails and draws a large current. 
+The 1 k&#8486; resistor isn't required, but it provides some protection to the general-purpose 
+input/output (GPIO) pin in case the servo fails and draws a large current. 
 
 Wire up your servo, as shown in :ref:`<motors_servoMotor>`.  
 
-.. note:: There is no standard for how servo motor wires are colored. One of my servos is wired like :ref:`<motors_servoMotor>`: red is 3.3 V, black is ground, and yellow is the control line. I have another servo that has red as 3.3 V and ground is brown, with the control line being orange. Generally, though, the 3.3 V is in the middle. Check the datasheet for your servo before wiring.
+.. note:: 
+    There is no standard for how servo motor wires are colored. One of my servos is wired 
+    like :ref:`<motors_servoMotor>`: red is 3.3 V, black is ground, and yellow is the control line. 
+    I have another servo that has red as 3.3 V and ground is brown, with the control line being orange. 
+    Generally, though, the 3.3 V is in the middle. Check the datasheet for your servo before wiring.
 
 .. _motors_servoMotor:
 
@@ -64,7 +77,8 @@ Wire up your servo, as shown in :ref:`<motors_servoMotor>`.
 
 Driving a servo motor with the 3.3 V power supply
 
-The code for controlling the servo motor is in _servoMotor.py_, shown in :ref:`<py_servoMotor_code>`. You need to configure the pin for PWM.
+The code for controlling the servo motor is in _servoMotor.py_, shown 
+in :ref:`<py_servoMotor_code>`. You need to configure the pin for PWM.
 
 .. code-block:: bash
 
@@ -77,12 +91,14 @@ The code for controlling the servo motor is in _servoMotor.py_, shown in :ref:`<
 .. _py_servoMotor_code:
 
 Code for driving a servo motor (servoMotor.py)
+
 .. code-block:: python
 
     include::code/servoMotor.py[]
 
 
 .. _motors_servoMotor_code:
+
 Code for driving a servo motor (servoMotor.js)
 
 .. code-block:: JavaScript
@@ -111,6 +127,7 @@ Combine the code from :ref:`<digital_rotaryEncoder_js>` and :ref:`<motors_servo>
 
 
 .. code-block:: bash
+
     bone$ <strong>config-pin P9_16 pwm</strong>
     bone$ <strong>config-pin P8_11 eqep</strong>
     bone$ <strong>config-pin P8_12 eqep</strong>
@@ -127,7 +144,7 @@ Code for driving a servo motor with a rotary encorder(servoEncoder.py)
 .. _motors_dcSpeed:
 
 Controlling the Speed of a DC Motor
---------------------------------------------
+-------------------------------------
 
 Problem
 **************
@@ -137,9 +154,13 @@ You have a DC motor (or a solenoid) and want a simple way to control its speed, 
 Solution
 **********
 
-It would be nice if you could just wire the DC motor to BeagleBone Black and have it work, but it won't.  Most motors require more current than the GPIO ports on the Bone can supply. Our solution is to use a transistor to control the current to the bone. 
+It would be nice if you could just wire the DC motor to BeagleBone Black and have it work, 
+but it won't.  Most motors require more current than the GPIO ports on the Bone can supply. 
+Our solution is to use a transistor to control the current to the bone. 
 
-Here we configure the encoder to returns value between 0 and 180 inclusive.   This value is then mapped to a value between +min+ (0.6 ma) and +max+ (2.5 ms).  This number is converted from milliseconds and nanoseconds (time 1000000) and sent to the servo motor via the pwm.
+Here we configure the encoder to returns value between 0 and 180 inclusive. This value is then 
+mapped to a value between +min+ (0.6 ma) and +max+ (2.5 ms).  This number is converted from 
+milliseconds and nanoseconds (time 1000000) and sent to the servo motor via the pwm.
 
 
 Here's what you will need:

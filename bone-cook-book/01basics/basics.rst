@@ -57,7 +57,8 @@ a new USB drive appear on your host computer. :ref:`figure below <basics_01getti
 shows how it will appear on a Windows host, and Linux and Mac hosts will look similar. 
 The Bone acting like a USB drive and the files you see are located on the Bone.
 
-.. todo:: Update
+.. todo:: 
+   Update
 
 .. _basics_01gettingStarted_fig:
 
@@ -172,6 +173,7 @@ perform physical computing tasks without first learning Linux.
 
 Solution
 ***********
+
 Plug your board into the USB of your host computer and browse to 
 http://192.168.7.2:3000 using Google Chrome or Firefox (as shown in 
 :ref:`basics of out of the box <basics_out_of_the_box>`). In the left 
@@ -346,7 +348,8 @@ with *am57xx-debian-* is for programming the Beagle AI's.
    The onboard flash is often called the *eMMC* memory. We just call it *onboard flash*, but you'll 
    often see *eMMC* appearing in filenames of images used to update the onboard flash.
 
-Click the image you want to use and it will download.  The images are some 500M, so it might take a while.
+Click the image you want to use and it will download. 
+The images are some 500M, so it might take a while.
 
 Discussion
 ************
@@ -370,9 +373,16 @@ If you boot the Bone with a microSD card inserted with a valid boot image,
 it will boot from the microSD card. If you boot without the microSD card 
 installed, it will boot from the onboard flash.  
 
-.. tip:: If you want to reflash the onboard flash memory, see :ref:`basic onboard flash <basics_onboard_flash>`.
+.. tip:: 
+   If you want to reflash the onboard flash memory, 
+   see :ref:`basic onboard flash <basics_onboard_flash>`.
 
-.. note:: I instruct my students to use the microSD for booting. I suggest they keep an extra microSD flashed with the current OS. If they mess up the one on the Bone, it takes only a moment to swap in the extra microSD, boot up, and continue running. If they are running off the onboard flash, it will take much longer to reflash and boot from it.
+.. note:: 
+   I instruct my students to use the microSD for booting. I suggest they 
+   keep an extra microSD flashed with the current OS. If they mess up the 
+   one on the Bone, it takes only a moment to swap in the extra microSD, 
+   boot up, and continue running. If they are running off the onboard flash, 
+   it will take much longer to reflash and boot from it.
 
 Download the image you found in :ref:`basic find image <basics_find_image>`. It's more than 500 MB, 
 so be sure to have a fast Internet connection. Then go to http://beagleboard.org/getting-started#update and 
