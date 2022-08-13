@@ -1,4 +1,4 @@
-.. _bone-cook-book-parts:
+.. _beaglebone-cookbook-parts:
 
 Parts and Suppliers
 ####################

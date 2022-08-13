@@ -1,4 +1,4 @@
-.. _bone-cook-book-basics:
+.. _beaglebone-cookbook-basics:
 
 Basics
 #######
@@ -9,8 +9,8 @@ Introduction
 When you buy BeagleBone Black, pretty much everything you need to get going comes with it. 
 You can just plug it into the USB of a host computer, and it works. The goal of this 
 chapter is to show what you can do with your Bone, right out of the box. It has enough 
-information to carry through the next three chapters on sensors (:ref:`sensors <bone-cook-book-sensors>`), 
-displays (:ref:`display <bone-cook-book-display>`), and motors (:ref:`motors <bone-cook-book-motors>`).
+information to carry through the next three chapters on sensors (:ref:`sensors <beaglebone-cookbook-sensors>`), 
+displays (:ref:`display <beaglebone-cookbook-display>`), and motors (:ref:`motors <beaglebone-cookbook-motors>`).
 
 Picking Your Beagle
 ---------------------

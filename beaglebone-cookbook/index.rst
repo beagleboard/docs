@@ -1,4 +1,4 @@
-.. _bone-cook-book-home:
+.. _beaglebone-cookbook-home:
 
 BeagleBone Cookbook
 #######################

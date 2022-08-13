@@ -1,4 +1,4 @@
-.. _bone-cook-book-displays:
+.. _beaglebone-cookbook-displays:
 
 Displays and Other Outputs
 ###########################

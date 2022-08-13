@@ -1,4 +1,4 @@
-.. _bone-cook-book-sensors:
+.. _beaglebone-cookbook-sensors:
 
 Sensors
 ########

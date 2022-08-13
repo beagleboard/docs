@@ -1,4 +1,4 @@
-.. _bone-cook-book-tips:
+.. _beaglebone-cookbook-tips:
 
 Beyond the Basics
 ##################

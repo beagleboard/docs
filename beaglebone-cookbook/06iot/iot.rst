@@ -1,4 +1,4 @@
-.. _bone-cook-book-iot:
+.. _beaglebone-cookbook-iot:
 
 Internet of Things
 ####################

@@ -1,4 +1,4 @@
-.. _bone-cook-book-capes:
+.. _beaglebone-cookbook-capes:
 
 Capes
 #####

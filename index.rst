@@ -39,7 +39,7 @@ Sections
    :maxdepth: 1
    :caption: Books
 
-   bone-cook-book/index.rst
+   beaglebone-cookbook/index.rst
 
 Indices and tables
 ############################

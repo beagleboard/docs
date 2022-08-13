@@ -1,4 +1,4 @@
-.. _bone-cook-book-kernel:
+.. _beaglebone-cookbook-kernel:
 
 The Kernel
 ###########

@@ -1,4 +1,4 @@
-.. _bone-cook-book-realtime:
+.. _beaglebone-cookbook-realtime:
 
 Real-Time I/O
 ###############

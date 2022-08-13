@@ -1,4 +1,4 @@
-.. _bone-cook-book-motors:
+.. _beaglebone-cookbook-motors:
 
 Motors
 ########
