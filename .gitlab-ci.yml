@@ -6,6 +6,7 @@ stages:
 pages:
   stage: deploy
   script:
+  - pip install sphinx_design
   - sphinx-build -b html . public
   - sphinx-build -M latexpdf . public
   - mv public/latex/beagleboard-docs.pdf public/
