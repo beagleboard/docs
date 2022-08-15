@@ -26,7 +26,7 @@ independently of the ARM processor, therefore they can
 be programmed to respond quickly to inputs and produce very precisely timed 
 outputs. 
 
-There are many :ref:`Projects <pru-cookbook-projects>`_ that use the PRU.
+There are many :ref:`Projects <pru-cookbook-projects>` that use the PRU.
 They are able to do things that can't be done with just a SBC or just a microcontroller. 
 Here we present some case studies that give a high-level view of using the PRUs. In later
 chapters you will see the details of how they work.
