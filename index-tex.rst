@@ -18,3 +18,4 @@ BeagleBoard Docs
    beagleconnect/index.rst
    simppru/index.rst
    beaglebone-cookbook/index.rst
+   pru-cookbook/index.rst
