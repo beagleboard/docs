@@ -25,7 +25,7 @@ author = 'BeagleBoard.org Foundation'
 # -- General configuration ---------------------------------------------------
 
 extensions = [
-    "sphinxcontrib.rsvgconverter",
+    "sphinxcontrib.rsvgconverter", "sphinx_design"
 ]
 
 templates_path = ['_templates']

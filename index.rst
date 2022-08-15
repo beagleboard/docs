@@ -40,6 +40,7 @@ Sections
    :caption: Books
 
    beaglebone-cookbook/index.rst
+   pru-cookbook/index.rst
 
 Indices and tables
 ############################
