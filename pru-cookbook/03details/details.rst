@@ -13,7 +13,7 @@ The following are resources used in this chapter.
 Resources
 ~~~~~~~~~~
 
-* `PRU Code Generation Tools - Compiler <http://software-dl.ti.com/codegen/esd/cgt_public_sw/PRU/2.1.5/ti_cgt_pru_2.1.5_armlinuxa8hf_busybox_installer.sh>`_
+* `PRU Code Generation Tools - Compiler <http://software-dl.ti.com/codegen/esd/cgt_ai_64_lic_sw/PRU/2.1.5/ti_cgt_pru_2.1.5_armlinuxa8hf_busybox_installer.sh>`_
 * `PRU Software Support Package <http://git.ti.com/pru-software-support-package>`_
 * `PRU Optimizing C/C++ Compiler <http://www.ti.com/lit/ug/spruhv7b/spruhv7b.pdf>`_
 * `PRU Assembly Language Tools <http://www.ti.com/lit/ug/spruhv6b/spruhv6b.pdf>`_

@@ -20,7 +20,7 @@ def get_params():
     # Options include:
     # attachments, author_id, context_annotations,
     # conversation_id, created_at, entities, geo, id,
-    # in_reply_to_user_id, lang, non_public_metrics, organic_metrics,
+    # in_reply_to_user_id, lang, non_ai_64_lic_metrics, organic_metrics,
     # possibly_sensitive, promoted_metrics, public_metrics, referenced_tweets,
     # source, text, and withheld
     return {"tweet.fields": "created_at"}

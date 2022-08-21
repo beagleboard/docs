@@ -30,6 +30,10 @@ extensions = [
 
 templates_path = ['_templates']
 
+source_suffix = '.rst'
+numfig = True
+navigation_with_keys = True
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -43,7 +47,7 @@ html_show_sphinx = False
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_options = {
     "logo_only": True,
-    "prev_next_buttons_location": None,
+    'prev_next_buttons_location': 'bottom',
 }
 html_title = "BeagleBoard Documentation"
 html_logo = str(BBDOCS_BASE / "_static" / "images" / "logo.svg")
