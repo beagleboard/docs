@@ -17,5 +17,5 @@ BeagleBoard Docs
    beaglebone-blue/index.rst
    beagleconnect/index.rst
    simppru/index.rst
-   bone-cook-book/index.rst
-
+   beaglebone-cookbook/index.rst
+   pru-cookbook/index.rst
