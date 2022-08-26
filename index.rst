@@ -11,12 +11,9 @@ Sections
 
 .. toctree::
    :maxdepth: 1
+   :caption: General
 
    support/index.rst
-
-.. toctree::
-   :maxdepth: 1
-
    contribution/index.rst
 
 .. toctree::
@@ -47,9 +44,6 @@ Indices and tables
 
 * :ref:`glossary`
 * :ref:`genindex`
-
-Indices and Tables
-******************
 
 This work is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>`_. 
 

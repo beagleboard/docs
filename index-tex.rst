@@ -11,6 +11,7 @@ BeagleBoard Docs
 
 .. toctree::
    support/index.rst
+   contribution/index.rst
    beaglebone-black/index.rst
    beaglebone-ai-64/index.rst
    pocketbeagle/index.rst
