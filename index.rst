@@ -11,31 +11,28 @@ Sections
 
 .. toctree::
    :maxdepth: 1
-   :caption: General
+   :caption: Introduction
 
-   support/index.rst
-   contribution/index.rst
+   intro/index.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Boards
 
-   beaglebone-black/index.rst
-   beaglebone-ai-64/index.rst
-   pocketbeagle/index.rst
-   beaglebone-blue/index.rst
-   beagleconnect/index.rst
+   boards/index.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Projects
 
+   projects/index.rst
    simppru/index.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Books
 
+   books/index.rst
    beaglebone-cookbook/index.rst
    pru-cookbook/index.rst
 

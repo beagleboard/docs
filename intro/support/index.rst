@@ -1,15 +1,19 @@
-Overview
-=========
+.. _support:
+
+Support
+#########
+
+.. note:: #TODO# all the links need updating and content moved into this repo.
 
 Getting started
----------------
+===============
 
 The starting experience for all Beagles has been made to be as
 consistent as is possible. For any of the Beagle Linux-based open
 hardware computers, visit our `getting started guide <getting-started>`__.
 
 Getting support
----------------
+===============
 
 BeagleBoard.org products and `open
 hardware <https://www.oshwa.org/definition/>`__ designs are supported
@@ -23,8 +27,14 @@ to provide a link to your questions on the `community
 forums <https://forum.beagleboard.org>`__ as answers will be provided
 there.
 
+.. toctree::
+   :maxdepth: 1
+
+   getting-started.rst
+
+
 Diagnostic tools
-----------------
+================
 
 Best to be prepared with good diagnostic information to aide with
 support.
@@ -33,7 +43,7 @@ support.
 -  `Beagle Tester source <https://git.beagleboard.org/jkridner/beagle-tester>`__
 
 Community resources
--------------------
+===================
 
 Please execute the board diagnostics, review the hardware documentation,
 and consult the mailing list and IRC channel for support.
@@ -46,7 +56,7 @@ of the entire community.
 -  `Live Chat <https://beagleboard.org/chat>`__
 
 Consulting and other resources
-------------------------------
+==============================
 
 Need timely response or contract resources because you are building a
 product?
@@ -54,7 +64,7 @@ product?
 -  `Resources <https://beagleboard.org/resources>`__
 
 Repairs
--------
+=======
 
 Repairs and replacements only provided on unmodified boards purchased
 via an authorized distributor within the first 90 days. All repaired
@@ -62,10 +72,10 @@ board will have their flash reset to factory contents. For repairs and
 replacements, please contact ‘support’ at BeagleBoard.org using the RMA
 form:
 
--  `RMA request <https://beagleboard.org//support/rma>`__
+-  `RMA request <https://beagleboard.org/support/rma>`__
 
 Understanding Your Beagle
--------------------------
+=========================
 
 -  `BeagleBone Introduction <https://beagleboard.org/Support/bone101>`__
 -  `Hardware <https://beagleboard.org/Support/Hardware+Support>`__
@@ -77,4 +87,9 @@ Understanding Your Beagle
    -  `Exploring BeagleBone <https://beagleboard.org/ebb>`__
    -  `BeagleBone Cookbook <https://beagleboard.org/cookbook>`__
    -  `Bad to the Bone <https://beagleboard.org/bad-to-the-bone>`__
+
+Working with Cape Add-on Boards
+===============================
+
+- `BeagleBone Cape Interface Specification <../../boards/capes/cape-interface-spec>`__
 

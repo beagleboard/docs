@@ -1,5 +1,0 @@
-.. _beagleconnect-Change-History:
-
-**************
-Change History
-**************

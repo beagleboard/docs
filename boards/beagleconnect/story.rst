@@ -41,7 +41,7 @@ computer users without any thoughtful provisions for what already worked?
 .. toctree::
    :maxdepth: 1
 
-   ch01.rst
+   intro.rst
    ch02.rst
    ch03.rst
    ch04.rst
@@ -52,4 +52,5 @@ computer users without any thoughtful provisions for what already worked?
    ch09.rst
    ch10.rst
    ch11.rst
+   freedom/index.rst
 
