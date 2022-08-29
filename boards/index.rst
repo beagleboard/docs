@@ -24,6 +24,7 @@ started.
    beaglebone/index.rst
    capes/index.rst
    pocketbeagle/index.rst
+   capes/index.rst
    beagleconnect/index.rst
    beagleboard/index.rst
 
