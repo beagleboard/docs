@@ -4,10 +4,10 @@ BeagleBone
 BeagleBone boards are intended to be bare-bones, with a balance of features to enable
 rapid prototyping and provide a solid reference for building end products.
 
-The most popular design is BeagleBone Black, a staple reference for an open hardware
+The most popular design is `BeagleBone Black <black>`__, a staple reference for an open hardware
 embedded Linux single board computer.
 
-BeagleBone AI-64 is our most powerful design with tremendous machine learning inference
+`BeagleBone AI-64 <ai-64>`__ is our most powerful design with tremendous machine learning inference
 performance and 
 
 For simplicity of developing small, mobile robotics, check out BeagleBone Blue, a highly

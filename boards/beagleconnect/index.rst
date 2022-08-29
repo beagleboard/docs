@@ -1,8 +1,7 @@
 .. _beagleconnect-home:
 
-**************
 BeagleConnect™
-**************
+###############
 
 BeagleConnect™ is a revolutionary technology virtually eliminating low-level 
 software development for `IoT <https://en.wikipedia.org/wiki/Internet_of_things>`_ 
@@ -90,9 +89,9 @@ For home automaters, integration into WebThings…
 
 .. _beagleconnect-Change-History:
 
-**************
 Change History
-**************
+--------------
+
 
 .. toctree::
    :maxdepth: 1
