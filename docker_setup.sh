@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t sphinx-build-env .
+docker build -t beagle/sphinx-build-env .
