@@ -19,7 +19,8 @@ options that enable almost endless sensing and actuation expansion.
 started.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+
    beaglebone/index.rst
    capes/index.rst
    pocketbeagle/index.rst
