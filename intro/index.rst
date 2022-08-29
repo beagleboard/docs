@@ -12,7 +12,7 @@ to contribute to the BeagleBoard documentation project and any of the many open-
 projects on-going on our `Contribution Page <contribution>`__.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    support/index.rst
    contribution/index.rst

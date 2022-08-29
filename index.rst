@@ -15,21 +15,14 @@ Sections
    :maxdepth: 2
 
    intro/index.rst
-
-.. toctree::
-   :maxdepth: 2
-
    boards/index.rst
-
-.. toctree::
-   :maxdepth: 2
-
+   boards/beaglebone/index.rst
+   boards/beaglebone/black/index.rst
+   boards/beaglebone/ai-64/index.rst
    projects/index.rst
-
-.. toctree::
-   :maxdepth: 2
-
+   projects/index.rst
    books/index.rst
+
 
 Indices and tables
 ********************

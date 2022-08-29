@@ -15,7 +15,6 @@ Links to additional books available for purchase can be found on the
 
 .. toctree::
    :maxdepth: 1
-   :caption: Books
 
    beaglebone-cookbook/index.rst
    pru-cookbook/index.rst
