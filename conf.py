@@ -95,7 +95,7 @@ html_context = {
     "current_version": version,
     "versions": (
         ("latest", "/"),
-        ("0.0.7", "/0.0.7/"),
+        ("0.1.0", "/0.1.0/"),
     )
 }
 
