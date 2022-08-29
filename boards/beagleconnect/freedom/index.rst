@@ -171,3 +171,9 @@ Each BeagleBoard.org BeagleConnect™ solution will be:
   to secure your own network, and
 * Fully FCC/CE certified.
 
+.. toctree::
+   :maxdepth: 1
+
+   usage.rst
+   zephyr.rst
+

@@ -1,8 +1,7 @@
 .. _beagleconnect-home:
 
-*************
-BeagleConnect
-*************
+BeagleConnect™ Story
+*********************
 
 There are many stories behind BeagleConnect™, mine is just one of them. It 
 begins with my mom teaching me about computers. She told me I could anything I 

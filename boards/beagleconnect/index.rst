@@ -1,6 +1,6 @@
 .. _beagleconnect-home:
 
-BeagleConnect™
+BeagleConnect
 ###############
 
 BeagleConnect™ is a revolutionary technology virtually eliminating low-level 
@@ -38,8 +38,8 @@ BeagleConnect™ technology solves:
 * The need to produce high-volume custom hardware cost-optimized for your 
   requirements.
 
-BeagleConnect™ Experience
-#########################
+BeagleConnect Experience
+*************************
 
 BeagleConnect™ provides a scalable experience for interacting with the physical
 world.
@@ -87,18 +87,26 @@ For home automaters, integration into WebThings…
    :height: 400
    :alt: BeagleConnect
 
-.. _beagleconnect-Change-History:
 
-Change History
---------------
+BeagleConnect Technology
+************************
 
+Learn about the technology behind BeagleConnect.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   story.rst
-   overview.rst
+   technology/index.rst
+   technology/story.rst
+
+
+BeagleConnect Boards
+********************
+
+Get started using your BeagleConnect.
+
+.. toctree::
+   :maxdepth: 2
+
    freedom/index.rst
-   freedom/usage.rst
-   freedom/zephyr.rst
 

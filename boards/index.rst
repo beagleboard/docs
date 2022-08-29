@@ -1,4 +1,4 @@
-BOARDS
+Boards
 #########
 
 `BeagleBone <beaglebone>`__ is a family of ARM-based, Linux-capable boards intended to be
@@ -23,7 +23,7 @@ started.
 
    beaglebone/index.rst
    capes/index.rst
-   pocketbeagle/index.rst
+   pocketbeagle/original/index.rst
    capes/index.rst
    beagleconnect/index.rst
    beagleboard/index.rst

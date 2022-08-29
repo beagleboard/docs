@@ -1,5 +1,5 @@
-INTRODUCTION
-*************
+Introduction
+#############
 
 Welcome to the BeagleBoard documentation project. If you are looking for help with your Beagle
 open-hardware development platform, you've found the right place!

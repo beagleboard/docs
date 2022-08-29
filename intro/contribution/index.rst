@@ -9,3 +9,4 @@ Contribution
    :maxdepth: 1
 
    git-usage.rst
+   style.rst

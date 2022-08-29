@@ -6,6 +6,8 @@
 BeagleBoard Documentation
 ############################
 
+Welcome to the `BeagleBoard project documentation <https://git.beagleboard.org/docs/docs.beagleboard.io>`__.
+
 Sections
 ********
 
@@ -30,7 +32,7 @@ Sections
    books/index.rst
 
 Indices and tables
-############################
+********************
 
 * :ref:`glossary`
 * :ref:`genindex`
