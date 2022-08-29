@@ -25,7 +25,8 @@ author = 'BeagleBoard.org Foundation'
 # -- General configuration ---------------------------------------------------
 
 extensions = [
-    "sphinxcontrib.rsvgconverter", "sphinx_design"
+    "sphinxcontrib.rsvgconverter",
+    "sphinx_design"
 ]
 
 templates_path = ['_templates']
@@ -38,9 +39,6 @@ navigation_with_keys = True
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
-# -- Options for HTML output -------------------------------------------------
 
 html_theme = 'sphinx_rtd_theme'
 html_show_sphinx = False
@@ -56,8 +54,7 @@ html_static_path = [str(BBDOCS_BASE / "_static")]
 html_last_updated_fmt = "%b %d, %Y"
 html_domain_indices = False
 html_split_index = True
-html_show_sourcelink = True
-html_baseurl = 'https://docs.beagleboard.io/'
+html_show_sourcelink = False
 
 # parse version from 'VERSION' file
 with open(BBDOCS_BASE  / "VERSION") as f:
@@ -84,15 +81,22 @@ with open(BBDOCS_BASE  / "VERSION") as f:
 
 release = version
 
+is_release = tags.has("release")  # pylint: disable=undefined-variable
+reference_prefix = ""
+if tags.has("publish"):  # pylint: disable=undefined-variable
+    reference_prefix = f"/{version}" if is_release else "/latest"
+docs_title = "Docs / {}".format(version if is_release else "Latest")
+
 html_context = {
     "display_gitlab": True,
-    "gitlab_host": "git.beagleboard.org",
-    "gitlab_user": "docs",
-    "gitlab_repo": "docs.beagleboard.io",
-    "gitlab_version": "main",
-    "conf_py_path": "/",
+    "show_license": True,
+    "docs_title": docs_title,
+    "is_release": is_release,
+    "current_version": version,
     "versions": (
         ("latest", "/"),
+        ("0.0.7", "/0.0.7/"),
+        ("0.1.0", "/0.1.0/"),
     )
 }
 
@@ -118,6 +122,10 @@ latex_logo = str(BBDOCS_BASE / "_static" / "images" / "logo-latex.pdf")
 latex_documents = [
     ("index-tex", "beagleboard-docs.tex", "BeagleBoard Docs", author, "manual"),
 ]
+
+vcs_link_version = f"v{version}" if is_release else "main"
+vcs_link_base_url = f"https://git.beagleboard.org/docs/docs.beagleboard.io/blob/{vcs_link_version}"
+
 
 def setup(app):
     # theme customizations
