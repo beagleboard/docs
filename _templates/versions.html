@@ -14,7 +14,8 @@
       </dl>
       <dl>
         <dt>{{ _('Downloads') }}</dt>
-        <dd><a href="{{ url }}/beagleboard-docs.pdf">PDF</a></dd>
+        {% set prefix = current_version if is_release else "latest" %}
+        <dd><a href="/{{ prefix }}/beagleboard-docs.pdf">PDF</a></dd>
       </dl>
       <dl>
         <dt>{{ _('BeagleBoard.org Links') }}</dt>
