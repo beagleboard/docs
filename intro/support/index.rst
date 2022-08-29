@@ -3,7 +3,7 @@
 Support
 #########
 
-.. note:: #TODO# all the links need updating and content moved into this repo.
+.. note:: #TODO# all the links need updating and content moved into this repo, especially bone101.
 
 Getting started
 ===============
@@ -11,6 +11,8 @@ Getting started
 The starting experience for all Beagles has been made to be as
 consistent as is possible. For any of the Beagle Linux-based open
 hardware computers, visit our `getting started guide <getting-started>`__.
+
+- `Getting Started Guide <getting-started>`__
 
 Getting support
 ===============
@@ -26,12 +28,6 @@ will help escalate issues to suppliers, manufacturers or others. Be sure
 to provide a link to your questions on the `community
 forums <https://forum.beagleboard.org>`__ as answers will be provided
 there.
-
-.. toctree::
-   :maxdepth: 1
-
-   getting-started.rst
-
 
 Diagnostic tools
 ================
@@ -91,5 +87,6 @@ Understanding Your Beagle
 Working with Cape Add-on Boards
 ===============================
 
+- `Cape Documentation <../../boards/capes>`__
 - `BeagleBone Cape Interface Specification <../../boards/capes/cape-interface-spec>`__
 
