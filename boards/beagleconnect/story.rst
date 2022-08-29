@@ -30,27 +30,3 @@ locations on the screen, she adopted using a joystick and her productivity came
 to a crawl. How is it that such assumptions could be made impacting all 
 computer users without any thoughtful provisions for what already worked?
 
-
-
-.. image:: media/image1.jpg
-   :width: 598
-   :align: center
-   :height: 400
-   :alt: BeagleConnect
-
-.. toctree::
-   :maxdepth: 1
-
-   intro.rst
-   ch02.rst
-   ch03.rst
-   ch04.rst
-   ch05.rst
-   ch06.rst
-   ch07.rst
-   ch08.rst
-   ch09.rst
-   ch10.rst
-   ch11.rst
-   freedom/index.rst
-

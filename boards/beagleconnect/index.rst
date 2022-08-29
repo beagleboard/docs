@@ -82,7 +82,7 @@ For home automaters, integration into WebThings…
 
 #TODO: think a bit more about this section with some feedback from Cathy.
 
-.. image:: media/image1.jpg
+.. image:: freedom/media/image1.jpg
    :width: 598
    :align: center
    :height: 400
