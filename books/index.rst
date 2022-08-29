@@ -1,4 +1,4 @@
-Books
+BOOKS
 ********
 
 This is a collection of open-source books written to help Beagle developers.

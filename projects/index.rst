@@ -1,4 +1,4 @@
-Projects
+PROJECTS
 ********
 
 This is a collection of reasonably well-supported projects useful to Beagle developers.

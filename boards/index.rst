@@ -1,4 +1,4 @@
-Boards
+BOARDS
 #########
 
 `BeagleBone <beaglebone>`__ is a family of ARM-based, Linux-capable boards intended to be

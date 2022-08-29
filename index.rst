@@ -10,31 +10,24 @@ Sections
 ********
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Introduction
+   :maxdepth: 2
 
    intro/index.rst
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Boards
+   :maxdepth: 2
 
    boards/index.rst
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Projects
+   :maxdepth: 2
 
    projects/index.rst
-   simppru/index.rst
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Books
+   :maxdepth: 2
 
    books/index.rst
-   beaglebone-cookbook/index.rst
-   pru-cookbook/index.rst
 
 Indices and tables
 ############################
