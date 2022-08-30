@@ -10,7 +10,7 @@ embedded Linux single board computer.
 `BeagleBone AI-64 <ai-64>`__ is our most powerful design with tremendous machine learning inference
 performance and 
 
-For simplicity of developing small, mobile robotics, check out BeagleBone Blue, a highly
+For simplicity of developing small, mobile robotics, check out `BeagleBone Blue <blue>`__, a highly
 integrated board with motor drivers, battery support, altimeter, gyroscope, accelerometer,
 and much more to get started developing quickly.
 
