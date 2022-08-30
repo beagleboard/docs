@@ -12,6 +12,7 @@ Contribution
 The BeagleBoard.org Foundation maintains source for many open source projects.
 
 Example projects suitable for first contributions:
+
 * `BeagleBoard project documentation <https://git.beagleboard.org/docs/docs.beagleboard.io>`__
 * `Debian image bug repository <https://git.beagleboard.org/beagleboard/Latest-Images>`__
 * `Debian image builder <https://git.beagleboard.org/beagleboard/image-builder>`__
@@ -22,15 +23,19 @@ to propose changes to this document in a pull request.
 Code of Conduct
 ***************
 
-This project and everyone participating in it is governed by
-the `BeagleBoard.org Code of Conduct </intro/contribution/code_of_conduct.html>`. By
-participating, you are expected to
-uphold this code. Please report unacceptable behavior to [coc@bbb.io](mailto:coc@bbb.io) or
-contact one of the administrators on https://forum.beagleboard.org.
+This project and everyone participating in it is governed by the same code of conduct.
 
-## FAQ
+.. note::
+   Check out https://forum.beagleboard.org/faq as a starting place to unify our code of conduct.
 
-* [Frequently Asked Questions category on the BeagleBoard.org Forum](https://forum.beagleboard.org/c/faq/19)
+By participating, you are expected to
+uphold this code. Please report unacceptable behavior to
+contact one of our administrators or moderators on https://forum.beagleboard.org/about.
+
+Frequently Asked Questions
+**************************
+
+* `Frequently asked questions contribution category on the BeagleBoard.org Forum <https://forum.beagleboard.org/c/faq/19>`__
 
 What should I know before I get started?
 ****************************************
