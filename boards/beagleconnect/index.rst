@@ -96,8 +96,8 @@ Learn about the technology behind BeagleConnect.
 .. toctree::
    :maxdepth: 2
 
-   technology/index.rst
-   technology/story.rst
+   /boards/beagleconnect/technology/index.rst
+   /boards/beagleconnect/technology/story.rst
 
 
 BeagleConnect Boards
@@ -108,5 +108,5 @@ Get started using your BeagleConnect.
 .. toctree::
    :maxdepth: 2
 
-   freedom/index.rst
+   /boards/beagleconnect/freedom/index.rst
 

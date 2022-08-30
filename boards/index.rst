@@ -1,5 +1,5 @@
 Boards
-#########
+######
 
 `BeagleBone <beaglebone>`__ is a family of ARM-based, Linux-capable boards intended to be
 bare-bones, with a balance of features to enable rapid prototyping and provide a solid
@@ -19,12 +19,11 @@ options that enable almost endless sensing and actuation expansion.
 started.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   beaglebone/index.rst
-   capes/index.rst
-   pocketbeagle/original/index.rst
-   capes/index.rst
-   beagleconnect/index.rst
-   beagleboard/index.rst
+   /boards/beaglebone/index
+   /boards/pocketbeagle/original/index
+   /boards/capes/index
+   /boards/beagleconnect/index
+   /boards/beagleboard/index
 

@@ -6,16 +6,20 @@ Support
 .. note:: #TODO# all the links need updating and content moved into this repo, especially bone101.
 
 Getting started
-===============
+***************
 
 The starting experience for all Beagles has been made to be as
 consistent as is possible. For any of the Beagle Linux-based open
 hardware computers, visit our `getting started guide <getting-started>`__.
 
-- `Getting Started Guide <getting-started>`__
+.. toctree::
+   :maxdepth: 2
+
+   /intro/support/getting-started
+
 
 Getting support
-===============
+***************
 
 BeagleBoard.org products and `open
 hardware <https://www.oshwa.org/definition/>`__ designs are supported
@@ -29,13 +33,33 @@ to provide a link to your questions on the `community
 forums <https://forum.beagleboard.org>`__ as answers will be provided
 there.
 
+Be sure to ask `smart questions <http://www.catb.org/~esr/faqs/smart-questions.html>`__
+that provide the following:
+
+*  What am I trying to accomplish?
+*  What did find when researching how to accomplish it?
+*  What are the detailed results of what I tried?
+*  How did these results differ from what I expected?
+*  What would I consider to be a success?
+
+.. note::
+   Remember that community developers are volunteering their expertise. If you
+   want paid support, there are options for that. Respect developers time and
+   expertise and they might be happy to share with you.
+
 Diagnostic tools
 ================
 
 Best to be prepared with good diagnostic information to aide with
 support.
 
--  Output of ‘beagle-version’ script needed for support requests
+.. todo::
+   Need a reference to how to run `beagle-version`.
+
+.. note::
+   #TODO#: Need a reference to how to run `beagle-version`.
+
+-  Output of `beagle-version` script needed for support requests
 -  `Beagle Tester source <https://git.beagleboard.org/jkridner/beagle-tester>`__
 
 Community resources
@@ -71,13 +95,11 @@ form:
 -  `RMA request <https://beagleboard.org/support/rma>`__
 
 Understanding Your Beagle
-=========================
+*************************
 
 -  `BeagleBone Introduction <https://beagleboard.org/Support/bone101>`__
 -  `Hardware <https://beagleboard.org/Support/Hardware+Support>`__
 -  `Software <https://beagleboard.org/Support/Software+Support>`__
--  `BoneScript JavaScript
-   library <https://beagleboard.org/Support/bonescript>`__
 -  `Books <https://beagleboard.org/books>`__
 
    -  `Exploring BeagleBone <https://beagleboard.org/ebb>`__
@@ -85,8 +107,9 @@ Understanding Your Beagle
    -  `Bad to the Bone <https://beagleboard.org/bad-to-the-bone>`__
 
 Working with Cape Add-on Boards
-===============================
+*******************************
 
-- `Cape Documentation <../../boards/capes>`__
-- `BeagleBone Cape Interface Specification <../../boards/capes/cape-interface-spec>`__
+- `Cape Documentation </boards/capes/>`__
+- `BeagleBone Cape Interface Specification </boards/capes/cape-interface-spec.html>`__
+
 

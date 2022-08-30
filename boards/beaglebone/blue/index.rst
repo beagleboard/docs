@@ -19,16 +19,12 @@ and of course the `BeagleBoard.org Foundation <https://beagleboard.org/about>`_.
 .. toctree::
    :maxdepth: 1
    
-   pinouts.rst
-   ssh.rst
-   wifi.rst
-   ip-settings.rst
-   flashing-firmware.rst
-   code.rst
-   tests.rst
-   accessories.rst
-   faq.rst
-   rev-c-priorities.rst
-
-
-
+   /boards/beaglebone/blue/pinouts.rst
+   /boards/beaglebone/blue/ssh.rst
+   /boards/beaglebone/blue/wifi.rst
+   /boards/beaglebone/blue/ip-settings.rst
+   /boards/beaglebone/blue/flashing-firmware.rst
+   /boards/beaglebone/blue/code.rst
+   /boards/beaglebone/blue/tests.rst
+   /boards/beaglebone/blue/accessories.rst
+   /boards/beaglebone/blue/faq.rst

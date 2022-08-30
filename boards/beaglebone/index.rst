@@ -26,7 +26,7 @@ of your screen.
    :maxdepth: 1
    :caption: Boards
 
-   black/index.rst
-   ai-64/index.rst
-   blue/index.rst
+   /boards/beaglebone/black/index
+   /boards/beaglebone/ai-64/index
+   /boards/beaglebone/blue/index
 

@@ -1,19 +1,20 @@
 .. _beagleboard-getting-started:
 
-Getting Started
-==================
+Getting Started Guide
+#####################
 
 Beagles are tiny computers ideal for learning and prototyping with electronics.
 Read the step-by-step getting started tutorial below to begin developing with your Beagle in minutes.
 
 Update board with latest software
-------------------------------------
+************************************
 
 This step may or may not be necessary, depending on how old a software image you already have,
-but executing this, the longest, step will ensure the rest will go as smooth as possible.
+but executing this step, the longest step, will ensure the rest will go as smooth as possible.
 
 Download the latest software image
-********************************************
+============================================
+
 Download the lastest Debian image from `beagleboard.org/latest-images <https://beagleboard.org/latest-images>`_.
 The "IoT" images provide more free disk space if you don't need to use a graphical user interface (GUI).
 
@@ -26,19 +27,20 @@ This is a compressed sector-by-sector image of the SD card.
 |image0|
 
 Install SD card programming utility
-*********************************************
+=============================================
+
 Download and install `balenaEtcher <https://www.balena.io/etcher/>`_.
 
 |image1|
 |image2|
 
 Connect SD card to your computer
-*******************************************
+===========================================
 
 Use your computer's SD slot or a USB adapter to connect the SD card to your computer.
 
 Write the image to your SD card
-*****************************************
+=========================================
 
 Use Etcher to write the image to your SD card. Etcher will transparently decompress the
 image on-the-fly before writing it to the SD card.
@@ -46,32 +48,35 @@ image on-the-fly before writing it to the SD card.
 |image3|
 
 Eject the SD card
-****************************
+============================
+
 Eject the newly programmed SD card.
 
 Boot your board off of the SD card
-********************************************
+============================================
+
 Insert SD card into your (powered-down) board, hold down the USER/BOOT button
 and apply power, either by the USB cable or 5V adapter.
 	
 If using an original BeagleBone or PocketBeagle, you are done.
-	
-If using BeagleBone Black, BeagleBone Blue, BeagleBone AI, BeagleBone AI-64 or other board with on-board eMMC
-flash and you desire to write the image to your on-board eMMC, you'll need to follow the
-instructions at http://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Flashing_eMMC.
-When the flashing is complete, all 4 USRx LEDs will be steady on or off. The latest Debian
-flasher images automatically power down the board upon completion. This can take up to 45 minutes.
-Power-down your board, remove the SD card and apply power again to finish.
+
+.. note::
+    If using BeagleBone Black, BeagleBone Blue, BeagleBone AI, BeagleBone AI-64 or other board with on-board eMMC
+    flash and you desire to write the image to your on-board eMMC, you'll need to follow the
+    instructions at http://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Flashing_eMMC.
+    When the flashing is complete, all 4 USRx LEDs will be steady on or off. The latest Debian
+    flasher images automatically power down the board upon completion. This can take up to 45 minutes.
+    Power-down your board, remove the SD card and apply power again to finish.
 
 Start your Beagle
-------------------
+*****************
 
 If any step fails, it is recommended to update to the
 `latest software image <https://beagleboard.org/latest-images>`_
 using the instructions above.
 
 Power and boot
-----------------
+================
 
 Most Beagles can be powered via a USB cable, providing a convenient way to provide both power to your
 Beagle and connectivity to your computer. Be sure the cable is of good quality and your source can provide enough power.
@@ -95,7 +100,7 @@ Manual (SRM) for your board to locate these LEDs.
 - USR4/WIFI is typically configured at boot to light with WiFi (client) network association (BeagleBone Blue and BeagleBone AI only).
 
 Enable a network connection
-----------------------------
+============================
 
 If connected via USB, a network adapter should show up on your computer.
 Your Beagle should be running a DHCP server that will provide your computer
@@ -115,7 +120,7 @@ Non-BeagleBone boards will utilize alternate names. Multiple BeagleBone boards o
 network will add a suffix such as beaglebone-2.local.
 
 Browse to your Beagle
-----------------------
+============================
 
 A web server with an IDE should be running on your Beagle. Point your browser to it to begin development.
 
@@ -149,7 +154,7 @@ The below table summarizes the typical addresses.
       - mDNS enabled
 
 Troubleshooting
-------------------
+***************
 
 Do not use Internet Explorer.
 
@@ -198,14 +203,14 @@ an older operating system or need additional drivers for serial access to older 
 	Visit https://beagleboard.org/support for additional debugging tips.
 
 Hardware documentation
---------------------------
+**********************
 
 Be sure to check check the latest hardware documentation for your board at https://docs.beagleboard.org.
 
 Detailed design materials for various boards can be found at https://git.beagleboard.org/explore/projects/topics/boards.
 
 Books
------
+*****
 
 For a complete list of books on BeagleBone, see `beagleboard.org/books <https://beagleboard.org/books>`_.
 

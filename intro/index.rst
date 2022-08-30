@@ -14,6 +14,6 @@ projects on-going on our `Contribution Page <contribution>`__.
 .. toctree::
    :maxdepth: 2
 
-   support/index.rst
-   contribution/index.rst
+   /intro/support/index
+   /intro/contribution/index
 

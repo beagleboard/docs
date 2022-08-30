@@ -8,12 +8,12 @@ BeagleBone® AI-64 brings a complete system for developing artificial intelligen
 .. toctree::
    :maxdepth: 1
 
-   ch01.rst
-   ch02.rst
-   ch03.rst
-   ch04.rst
-   ch05.rst
-   ch09.rst
-   ch10.rst
-   ch11.rst
-   edge_ai_apps/index.rst
+   /boards/beaglebone/ai-64/ch01.rst
+   /boards/beaglebone/ai-64/ch02.rst
+   /boards/beaglebone/ai-64/ch03.rst
+   /boards/beaglebone/ai-64/ch04.rst
+   /boards/beaglebone/ai-64/ch05.rst
+   /boards/beaglebone/ai-64/ch09.rst
+   /boards/beaglebone/ai-64/ch10.rst
+   /boards/beaglebone/ai-64/ch11.rst
+   /boards/beaglebone/ai-64/edge_ai_apps/index.rst

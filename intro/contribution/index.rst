@@ -8,5 +8,5 @@ Contribution
 .. toctree::
    :maxdepth: 1
 
-   git-usage.rst
-   style.rst
+   /intro/contribution/git-usage
+   /intro/contribution/style
