@@ -51,6 +51,7 @@ from source using appropriate design tools.
    :caption: Boards
 
    /boards/beaglebone/ai-64/index
+   /boards/beaglebone/ai/index
    /boards/beaglebone/black/index
    /boards/beaglebone/blue/index
    /boards/beaglebone/index

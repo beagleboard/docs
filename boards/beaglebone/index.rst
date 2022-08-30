@@ -23,4 +23,5 @@ of your screen.
 * `BeagleBone Black </boards/beaglebone/black/index.html>`__
 * `BeagleBone Blue </boards/beaglebone/blue/index.html>`__
 * `BeagleBone AI-64 </boards/beaglebone/ai-64/index.html>`__
+* `BeagleBone AI </boards/beaglebone/ai/index.html>`__
 
