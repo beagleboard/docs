@@ -26,6 +26,7 @@ These are the examples which have been tested on simpPRU.These examples will ser
    led_blink_for.rst
    led_blink_while.rst
    led_blink.rst
+   led_blink_counter.rst
    read_counter.rst
    rpmsg_example.rst
    rpmsg_pru_calculator.rst

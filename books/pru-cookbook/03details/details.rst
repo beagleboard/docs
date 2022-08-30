@@ -8,15 +8,16 @@ Fortunately those details are captured in a common `Makefile` that is
 used througout this book. This chapter shows how to use the `Makefile` to 
 compile code and also start and stop the PRUs.
 
-The following are resources used in this chapter.
-
 .. note::
+   The following are resources used in this chapter:
+
    * `PRU Code Generation Tools - Compiler <http://software-dl.ti.com/codegen/esd/cgt_ai_64_lic_sw/PRU/2.1.5/ti_cgt_pru_2.1.5_armlinuxa8hf_busybox_installer.sh>`_
    * `PRU Software Support Package <http://git.ti.com/pru-software-support-package>`_
    * `PRU Optimizing C/C++ Compiler <http://www.ti.com/lit/ug/spruhv7b/spruhv7b.pdf>`_
    * `PRU Assembly Language Tools <http://www.ti.com/lit/ug/spruhv6b/spruhv6b.pdf>`_
    * `AM572x Technical Reference Manual <http://www.ti.com/lit/pdf/spruhz6l>`_ (AI)
    * `AM335x Technical Reference Manual <http://www.ti.com/lit/pdf/spruh73>`_ (All others)
+
 
 Getting Example Code
 =====================
@@ -260,7 +261,7 @@ It's easy, if you already have ``TARGET`` set up:
     -    Starting PRU 0
     start
 
-See :ref:`_dmesg_hw` to see how to tell if the PRU
+See :ref:`dmesg_hw` to see how to tell if the PRU
 is stopped.
 
 This assumes ``TARGET`` is set to the PRU you are using.
@@ -350,7 +351,7 @@ AM335x_PRU.cmd important things
     |Line | Explanation                                                                             |
     +=====+=========================================================================================+
     |16   | This is where the instructions are stored. See page 206 of the                          |
-    |     | `AM335x Technical Reference Manual <https://www.ti.com/lit/ug/spruh73p/spruh73p.pdf>`_  |
+    |     | `AM335x Technical Reference Manual rev. P <https://www.ti.com/lit/ug/spruh73p/spruh73p.pdf>`_  |
     |     | Or see page 417 of                                                                      |
     |     | `AM572x Technical Reference Manual <http://www.ti.com/lit/pdf/spruhz6l>`_ for the AI.   |
     +-----+-----------------------------------------------------------------------------------------+

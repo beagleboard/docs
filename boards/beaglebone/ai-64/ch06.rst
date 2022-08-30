@@ -114,7 +114,7 @@ DC Input
 
 .. _figure-23,Figure 23:
 
-.. figure:: :media/image38.png
+.. figure:: media/image38.png
    :width: 400px
    :align: center 
    :alt: Fig: TPS65217 DC Connection
@@ -651,7 +651,7 @@ Full documentation for the processor can be found on the TI website at `https://
 Crystal Circuitry
 ***********************
 
-:ref:`figure-30`is the crystal circuitry for the TDA4VM processor.
+:ref:`figure-30` is the crystal circuitry for the TDA4VM processor.
 
 .. _figure-30,Figure 30:
 
