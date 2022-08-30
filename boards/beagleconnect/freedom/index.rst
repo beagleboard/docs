@@ -1,4 +1,4 @@
-BeagleConnect™ Freedom
+BeagleConnect Freedom
 ######################
 
 .. image:: media/image1.jpg
@@ -6,10 +6,6 @@ BeagleConnect™ Freedom
    :align: center
    :height: 400
    :alt: BeagleConnect-Freedom-C5-HandPhoto
-
-Important: BeagleConnect™ Freedom enables wirelessly adding new device nodes 
-and is targeted to cost initially around US$20 with a roadmap to variants as 
-low as US$1. 
 
 The initial BeagleConnect™ Freedom production release will:
 
@@ -24,6 +20,27 @@ The initial BeagleConnect™ Freedom production release will:
 Future releases will be collaborated with the community, evolve dynamically, 
 and contain additional functionality. The goal is to support over 500 add-on 
 devices within the first year after the initial release.
+
+.. important::
+   BeagleConnect™ Freedom enables wirelessly adding new device nodes 
+   and is targeted to cost initially around US$20 with a roadmap to variants as 
+   low as US$1. 
+
+BeagleConnect™ Freedom
+**********************
+
+BeagleConnect™ Freedom is based on the `TI CC1352 <https://www.ti.com/product/CC1352R>`_ 
+and is the first available BeagleConnect™ solution. It implements:
+
+* BeagleConnect™ gateway device function for Sub-GHz 802.15.4 long-range 
+  wireless
+* BeagleConnect™ node device function for Bluetooth Low-Energe (BLE) and 
+  Sub-GHz 802.15.4 long range wireless
+* USB-based serial console and firmware updates
+* 2x `mikroBUS sockets <https://www.mikroe.com/mikrobus>`_ with BeagleConnect™ 
+  protocol support
+
+#TODO: provide image of BeagleConnect™ Freedom in a case with a hand for size perspective
 
 BeagleConnect™ Freedom beta kit
 *******************************
@@ -40,46 +57,15 @@ The kit includes:
 To get started with this kit, see [demo-1].
 
 
-BeagleConnect™ Mobile Gateway
-#############################
-
-This is a work-in-progress that will be released as the first integrated 
-BeagleConnect™ gateway. It is possible to assemble a gateway with any Linux 
-computer, but this computer will ship setup and ready to go.
-
-The gateway is built from:
-
-* BeagleBoard.org PocketBeagle,
-* BeagleConnect™ Freedom,
-* a cellular modem,
-* a USB WiFi dongle,
-* antennas, and
-* an enclosure.
-
-Architecture
-************
-BeagleConnect™ Freedom
-**********************
-BeagleConnect™ Freedom is based on the `TI CC1352 <https://www.ti.com/product/CC1352R>`_ 
-and is the first available BeagleConnect™ solution. It implements:
-
-* BeagleConnect™ gateway device function for Sub-GHz 802.15.4 long-range 
-  wireless
-* BeagleConnect™ node device function for Bluetooth Low-Energe (BLE) and 
-  Sub-GHz 802.15.4 long range wireless
-* USB-based serial console and firmware updates
-* 2x `mikroBUS sockets <https://www.mikroe.com/mikrobus>`_ with BeagleConnect™ 
-  protocol support
-
-#TODO: provide image of BeagleConnect™ Freedom in a case with a hand for size perspective
-
 What makes BeagleConnect™ new and different?
 ********************************************
-Important: BeagleConnect™ solves IoT in a different and better way than any 
-previous solution.
+
+.. important::
+  BeagleConnect™ solves IoT in a different and better way than any 
+  previous solution.
 
 The device interface software is already done
-*********************************************
+=============================================
 
 BeagleConnect™ uses the collaboratively developed Linux kernel to contain the 
 intelligence required to speak to these devices (sensors, actuators, and 
@@ -108,7 +94,7 @@ microcontroller firmware and the Linux kernel, which is highly peer reviewed
 under a `highly-regarded governance model <https://wiki.p2pfoundation.net/Linux_-_Governance>`_. 
 
 On-going maintenance
-********************
+====================
 
 Because there isn't code specific to any given network-of-devices configuration
 , we can all leverage the same software code base. This means that when someone
@@ -122,7 +108,7 @@ potential for bugs is kept low. With large user base, the potential for
 discovering and resolving bugs is high.
 
 Rapid prototyping without wiring
-********************************
+================================
 
 BeagleConnect™ utilizes the `mikroBUS standard <https://elinux.org/Mikrobus>`_.
 The mikroBUS standard interface is flexible enough for almost any typical 
@@ -136,7 +122,7 @@ available Click mikroBUS add-on boards will be supported as well as the
 hundreds of compliant boards developed every year. 
 
 Long-range, low-power wireless
-******************************
+==============================
 
 BeagleConnect™ Freedom wireless hardware is built around a 
 `TI CC1352 <http://www.ti.com/product/CC1352R>`_ multiprotocol and multi-band 
@@ -146,7 +132,7 @@ ultra-low leakage SRAM, and `Over-the-Air <https://en.wikipedia.org/wiki/Over-th
 upgrades (OTA).
 
 Full customization possible
-***************************
+===========================
 
 BeagleConnect™ utilizes `open source hardware <https://www.oshwa.org/definition/>`_ 
 and `open source software <https://en.wikipedia.org/wiki/Open-source_software>`_, 
@@ -171,9 +157,15 @@ Each BeagleBoard.org BeagleConnect™ solution will be:
   to secure your own network, and
 * Fully FCC/CE certified.
 
+Getting Started
+***************
+
+* `Typical usage with a Linux host </boards/beagleconnect/freedom/usage.html>`__
+* `Programming with Zephyr </boards/beagleconnect/freedom/zephyr.html>`__
+
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    usage.rst
    zephyr.rst
-

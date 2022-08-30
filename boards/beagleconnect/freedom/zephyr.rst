@@ -1,11 +1,10 @@
 .. _beagleconnect-connectivity:
 
-*******************************
-BeagleConnect™ Freedom & Zephyr
-*******************************
+BeagleConnect Freedom & Zephyr
+###############################
 
-Develop for BeagleConnect™ Freedom with Zephyr
-##############################################
+Develop for BeagleConnect Freedom with Zephyr
+**********************************************
 
 Developing directly in Zephyr will not be ultimately required for end-users 
 who won't touch the firmware running on BeagleConnect™ Freedom and will instead
@@ -15,7 +14,7 @@ source design. If you are one of those people, this is a good place to get
 started.
 
 Equipment to begin development
-******************************
+==============================
 
 There are many options, but let's get started with one recommended set for the beta users.
 
@@ -55,7 +54,7 @@ Optional
 
 
 Install the latest software image for BeagleBone Green Gateway
-**************************************************************
+==============================================================
 
 Download and install the Debian Linux operating system image for the Seeed 
 BeagleBone® Green Gateway host.
@@ -75,7 +74,7 @@ BeagleBone® Green Gateway host.
 #TODO: describe how to know it is working
 
 Log into BeagleBone Green Gateway
-*********************************
+=================================
 
 These instructions assume an x86_64 computer runing Ubuntu 20.04.3 LTS, but any
 computer can be used to connect to your BeagleBone Green Gateway.
@@ -128,7 +127,7 @@ establishment procedure easy.
 TODO: Simplify and elaborate on this section, add boot session debugging walkthrough
 
 Install Zephyr development tools on BeagleBone Green Gateway
-************************************************************
+============================================================
 
 #. Update the system.
     .. code-block:: bash
@@ -189,7 +188,7 @@ Install Zephyr development tools on BeagleBone Green Gateway
         source $HOME/.bashrc
     
 Build applications for BeagleConnect Freedom on BeagleBone Green Gateway
-************************************************************************
+========================================================================
 
 Now you can build various Zephyr applications
 
@@ -226,7 +225,7 @@ Now you can build various Zephyr applications
 
 
 Flash applications to BeagleConnect Freedom from BeagleBone Green Gateway
-*************************************************************************
+=========================================================================
 
 And then you can flash the BeagleConnect Freedom boards over USB
 
@@ -241,6 +240,6 @@ And then you can flash the BeagleConnect Freedom boards over USB
         cc2538-bsl.py build/blinky
 
 Debug applications over the serial terminal
-*******************************************
+===========================================
 
-#TODO
+#TODO#

@@ -1,4 +1,4 @@
-BeagleBone
+BeagleBone (all)
 ###################
 
 BeagleBone boards are intended to be bare-bones, with a balance of features to enable
@@ -19,14 +19,8 @@ with links to their latest PDF-formatted System Reference Manual and the latest 
 included both here and in the downloadable beagleboard-docs.pdf linked on the bottom-left
 of your screen.
 
-* `BeagleBone (original) <https://git.beagleboard.org/beagleboard/beaglebone/-/blob/master/BeagleBone_SRM_A6_0_1.pdf>`_
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Boards
-
-   /boards/beaglebone/black/index
-   /boards/beaglebone/ai-64/index
-   /boards/beaglebone/blue/index
+* `BeagleBone (original) <https://git.beagleboard.org/beagleboard/beaglebone/-/blob/master/BeagleBone_SRM_A6_0_1.pdf>`__
+* `BeagleBone Black </boards/beaglebone/black/index.html>`__
+* `BeagleBone Blue </boards/beaglebone/blue/index.html>`__
+* `BeagleBone AI-64 </boards/beaglebone/ai-64/index.html>`__
 

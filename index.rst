@@ -48,9 +48,14 @@ from source using appropriate design tools.
    :hidden:
    :caption: Boards
 
-   /boards/beaglebone/black/index
    /boards/beaglebone/ai-64/index
-   more... </boards/index.rst>
+   /boards/beaglebone/black/index
+   /boards/beaglebone/blue/index
+   /boards/beaglebone/index
+   /boards/capes/index
+   /boards/pocketbeagle/original/index
+   /boards/beagleconnect/freedom/index
+   /boards/beagleboard/index
 
 
 Projects
@@ -65,7 +70,7 @@ developers. Some developers choose to host documentation for their projects `her
    :caption: Projects
 
    /projects/simppru/index
-   more... </projects/index.rst>
+   /boards/beagleconnect/technology/index
 
 Books
 *****

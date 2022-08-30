@@ -1,4 +1,4 @@
-BeagleBoard
+BeagleBoard (all)
 ###################
 
 BeagleBoard boards are low-cost, ARM-based development boards suitable for rapid prototyping and 

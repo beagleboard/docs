@@ -1,9 +1,9 @@
 .. _beagleconnect-overview:
 
-BeagleConnect Overview
-#######################
+BeagleConnect Technology
+########################
 
-This is the deep-dive introduction to BeagleConnect technology and software
+This is the deep-dive introduction to BeagleConnect™ technology and software
 architecture.
 
 .. note:: 

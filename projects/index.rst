@@ -6,5 +6,5 @@ This is a collection of reasonably well-supported projects useful to Beagle deve
 .. toctree::
    :maxdepth: 1
 
-   simppru/index.rst
-
+   /projects/simppru/index.rst
+   /boards/beagleconnect/technology/index.rst
