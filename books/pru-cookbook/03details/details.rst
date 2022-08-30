@@ -10,15 +10,13 @@ compile code and also start and stop the PRUs.
 
 The following are resources used in this chapter.
 
-Resources
-~~~~~~~~~~
-
-* `PRU Code Generation Tools - Compiler <http://software-dl.ti.com/codegen/esd/cgt_ai_64_lic_sw/PRU/2.1.5/ti_cgt_pru_2.1.5_armlinuxa8hf_busybox_installer.sh>`_
-* `PRU Software Support Package <http://git.ti.com/pru-software-support-package>`_
-* `PRU Optimizing C/C++ Compiler <http://www.ti.com/lit/ug/spruhv7b/spruhv7b.pdf>`_
-* `PRU Assembly Language Tools <http://www.ti.com/lit/ug/spruhv6b/spruhv6b.pdf>`_
-* `AM572x Technical Reference Manual <http://www.ti.com/lit/pdf/spruhz6l>`_ (AI)
-* `AM335x Technical Reference Manual <http://www.ti.com/lit/pdf/spruh73>`_ (All others)
+.. note::
+   * `PRU Code Generation Tools - Compiler <http://software-dl.ti.com/codegen/esd/cgt_ai_64_lic_sw/PRU/2.1.5/ti_cgt_pru_2.1.5_armlinuxa8hf_busybox_installer.sh>`_
+   * `PRU Software Support Package <http://git.ti.com/pru-software-support-package>`_
+   * `PRU Optimizing C/C++ Compiler <http://www.ti.com/lit/ug/spruhv7b/spruhv7b.pdf>`_
+   * `PRU Assembly Language Tools <http://www.ti.com/lit/ug/spruhv6b/spruhv6b.pdf>`_
+   * `AM572x Technical Reference Manual <http://www.ti.com/lit/pdf/spruhz6l>`_ (AI)
+   * `AM335x Technical Reference Manual <http://www.ti.com/lit/pdf/spruh73>`_ (All others)
 
 Getting Example Code
 =====================
@@ -36,6 +34,13 @@ It's all on a GitHub repository.
 .. code-block:: bash
 
     bone$ git clone https://github.com/MarkAYoder/PRUCookbook.git
+
+
+.. note::
+   #TODO#: There needs to be a code-only repo that is validated against the documentation
+   code to be identical for specific version. The version needs to be noted in the
+   documentation.
+
 
 Compiling with clpru and lnkpru
 ================================
@@ -255,7 +260,7 @@ It's easy, if you already have ``TARGET`` set up:
     -    Starting PRU 0
     start
 
-See :ref:`../04debug/debug.html#_dmesg_hw,dmesg -Hw` to see how to tell if the PRU
+See :ref:`_dmesg_hw` to see how to tell if the PRU
 is stopped.
 
 This assumes ``TARGET`` is set to the PRU you are using.

@@ -47,6 +47,8 @@ see what's happening.
 Another useful tool that let's you see the contents of the registers and 
 RAM is discussed in :ref:`debug_prudebug`.
 
+.. _dmesg_hw:
+
 dmesg Hw
 =========
 
