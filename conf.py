@@ -10,7 +10,6 @@ from pathlib import Path
 import re
 # sys.path.insert(0, os.path.abspath('.'))
 # sys.path.append('.')
-from sphinx.cmd.build import get_parser
 import sphinx_rtd_theme
 
 BBDOCS_BASE = Path(__file__).resolve().parents[0]
@@ -55,6 +54,7 @@ html_last_updated_fmt = "%b %d, %Y"
 html_domain_indices = False
 html_split_index = True
 html_show_sourcelink = False
+html_baseurl = 'docs.beagleboard.io'
 
 # parse version from 'VERSION' file
 with open(BBDOCS_BASE  / "VERSION") as f:
@@ -89,14 +89,15 @@ docs_title = "Docs / {}".format(version if is_release else "Latest")
 
 html_context = {
     "display_gitlab": True,
+    "gitlab_host": "git.beagleboard.org",
+    "gitlab_user": "docs",
+    "gitlab_repo": "docs.beagleboard.io",
+    "gitlab_version": "main",
+    "conf_py_path": "/",
     "show_license": True,
     "docs_title": docs_title,
     "is_release": is_release,
-    "current_version": version,
-    "versions": (
-        ("latest", "/"),
-        ("0.1.0", "/0.1.0/"),
-    )
+    "current_version": version
 }
 
 # -- Options for LaTeX output ---------------------------------------------
