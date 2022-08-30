@@ -8,9 +8,11 @@ BeagleBoard Documentation
 
 Welcome to the `BeagleBoard project documentation <https://git.beagleboard.org/docs/docs.beagleboard.io>`__.
 
-.. note:: BeagleBoard.org is a US-based 501(c)3 non-profit organization providing open hardware
+.. note:: 
+   The BeagleBoard.org Foundation is a US-based 501(c)3 non-profit organization providing open hardware
    computing solutions for a community of makers, educators and professionals that enable
-   rapid prototyping without barriers to creating real-world embedded systems.
+   rapid prototyping without barriers to creating real-world embedded systems. The BeagleBoard.org Foundation
+   supports the BeagleBoard community through efforts like developing this documentation.
 
 Introduction
 ************
