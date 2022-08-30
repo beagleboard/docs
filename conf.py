@@ -10,7 +10,6 @@ from pathlib import Path
 import re
 # sys.path.insert(0, os.path.abspath('.'))
 # sys.path.append('.')
-
 import sphinx_rtd_theme
 
 BBDOCS_BASE = Path(__file__).resolve().parents[0]
