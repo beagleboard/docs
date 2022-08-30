@@ -1,0 +1,9 @@
+.. _beaglebone-ai-support:
+
+Support Information
+######################
+
+TODO: Reference https://beagleboard.org/support and
+https://beagleboard.org/resources
+
+Related TI documentation: http://www.ti.com/tool/BEAGLE-3P-BBONE-AI

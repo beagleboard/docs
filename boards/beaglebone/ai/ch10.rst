@@ -1,0 +1,13 @@
+.. _beaglebone-ai-pictures:
+
+Pictures
+#########
+
+BeagleBone AI Back of Board Image
+
+
+.. image:: images/BB_AI_Front.jpg
+    :align: center
+
+.. image:: images/BB_AI_Back.jpg
+    :align: center
