@@ -5,7 +5,7 @@ on_latest:
   - sphinx-build -b html . public/latest/
   - sphinx-build -M latexpdf . public/latest/
   - mv public/latest/latex/beagleboard-docs.pdf public/latest/
-  - echo "/ /latest/ 302" > public/latest/_redirects
+  - echo "/ /latest/ 302" > public/_redirects
   artifacts:
     paths:
     - public
