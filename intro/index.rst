@@ -15,5 +15,6 @@ projects on-going on our `Contribution Page <contribution>`__.
    :maxdepth: 2
 
    /intro/support/index
+   /intro/bone101/index
    /intro/contribution/index
 
