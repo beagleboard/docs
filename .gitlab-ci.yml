@@ -1,22 +1,49 @@
 image: beagle/sphinx-build-env:latest
 
 stages:
-  - deploy
-
-cache:
-  paths:
-    - public
-    - public/0.0.7
+  - deploy-main
+  - deploy-branch
+  - deploy-tag
 
 pages:
-  stage: deploy
+  stage: deploy-main
   script:
-  - sphinx-build -b html . public
-  - sphinx-build -M latexpdf . public
-  - mv public/latex/beagleboard-docs.pdf public/
+  - sphinx-build -b html . public/latest/
+  - sphinx-build -M latexpdf . public/latest/
+  - mv public/latex/beagleboard-docs.pdf public/latest/
+  - echo "/ /latest/ 302" > public/latest/_redirects
   artifacts:
     paths:
     - public
-  only:
-    - main
-    - 0.0.7
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: always
+
+pages:
+  stage: deploy-branch
+  script:
+  - sphinx-build -b html . public/$CI_COMMIT_BRANCH/
+  - sphinx-build -M latexpdf . public/$CI_COMMIT_BRANCH/
+  - mv public/latex/beagleboard-docs.pdf public/$CI_COMMIT_BRANCH/
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: never
+    - if: $CI_COMMIT_BRANCH
+      when: always
+
+pages:
+  stage: deploy-tag
+  script:
+  - export GIT_BRANCH=$(git branch -a --contains tags/$CI_COMMIT_TAG | grep origin | sed 's/.*origin\///'`
+  - sphinx-build -b html . public/$GIT_BRANCH/
+  - sphinx-build -M latexpdf . public/$GIT_BRANCH/
+  - mv public/latex/beagleboard-docs.pdf public/$GIT_BRANCH/
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: always
