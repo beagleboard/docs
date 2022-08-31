@@ -1,5 +1,8 @@
-QWIIC, STEMMA and Grove on Linux
-################################
+.. _qwiic_stemma_grove_addons:
+
+
+QWIIC, STEMMA and Grove Add-ons in Linux
+########################################
 
 .. note::
 

@@ -28,6 +28,7 @@ Get started by `engaging the BealgeBoard.org developer community </intro/>`__.
    :caption: Introduction
 
    /intro/support/index
+   /intro/bone101/index
    /intro/contribution/index
 
 

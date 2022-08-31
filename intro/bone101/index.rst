@@ -10,18 +10,19 @@ I don't want to completely lose the useful documentation we had at:
 
 * https://beagleboard.github.io/bone101/Support/bone101/
 
-Most of the useful information has moved to :ref:`_bone-cook-book-home`, but this has been
-the place I've most brainstormed free-form about introducing people to BeagleBone.  For now,
-it can serve as a place to put some introductory information that is meant to be
+Most of the useful information has moved to :ref:`bone-cook-book-home` , but this has been
+the place I've most brainstormed free-form to make articles introducing people to BeagleBone.
+For now, it can serve as a place to put some introductory information that is meant to be
 from a bit of a different approach.
 
 Articles under construction:
 
-* `QWIIC, STEMMA, and Grove add-ons under Linux <quiic-stemma-grove-addons>`__
+* :ref:`qwiic_stemma_grove_addons`
+
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
-   qwiic-stemma-grove-addons.rst
+   /intro/bone101/qwiic-stemma-grove-addons.rst
 
