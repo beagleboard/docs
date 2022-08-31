@@ -3,6 +3,11 @@ image: beagle/sphinx-build-env:latest
 stages:
   - deploy
 
+cache:
+  paths:
+    - public
+    - public/0.0.7
+
 pages:
   stage: deploy
   script:
